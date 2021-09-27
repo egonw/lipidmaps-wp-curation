@@ -53,3 +53,6 @@ index.md:
 	@for report in $(REPORTS) ; do \
 		echo "* [$$report]($$report)" >> index.md ; \
 	done
+
+update:
+	@wget -O Makefile https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/Makefile
