@@ -2,8 +2,14 @@ GPMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/gpml\/\1.gpml/' }
 WPRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/Human\/\1.ttl/' }
 GPMLRDFS := ${shell cat pathways.txt | sed -e 's/\(.*\)/wp\/gpml\/Human\/\1.ttl/' }
 REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
+SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
+SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 
 all: wikipathways-rdf-wp.zip wikipathways-rdf-gpml.zip
+
+sbml: ${SBMLS}
+
+svg: ${SVGS}
 
 fetch:clean ${GPMLS}
 
@@ -21,6 +27,16 @@ wikipathways-rdf-wp.zip: ${WPRDFS}
 wikipathways-rdf-gpml.zip: ${GPMLRDFS}
 	@rm -f wikipathways-rdf-gpml.zip
 	@zip wikipathways-rdf-gpml.zip wp/gpml/Human/*
+
+sbml/%.sbml: gpml/%.gpml
+	@mkdir -p sbml
+	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-dev.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
+
+sbml/%.txt: sbml/%.sbml
+	@xpath -e "/sbml/model/notes/body/p/text()" $< > $@ || :
+
+sbml/%.svg: sbml/%.sbml
+	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
 
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateRDF.class
 	@mkdir -p wp/Human
@@ -56,3 +72,4 @@ index.md:
 
 update:
 	@wget -O Makefile https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/Makefile
+	@wget -O src/java/main/org/wikipathways/covid/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CheckRDF.java
