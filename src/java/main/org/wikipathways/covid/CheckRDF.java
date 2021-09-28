@@ -24,7 +24,7 @@ public class CheckRDF {
         String notesFile = sbmlFile.replace(".sbml",".txt");
         String svgFile  = sbmlFile.replace(".sbml",".svg");
         String wpid     = wpFile.substring(9,wpFile.indexOf(".ttl"));
-        System.out.println("<img style=\"float: right; width: 200px\" src=\"logo.png\" />");
+        System.out.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
 
         System.out.println("# WikiPathways " + wpid + "\n");
         System.out.println("* WikiPathways: [" + wpid + "](https://identifiers.org/wikipathways:" + wpid + ")");
