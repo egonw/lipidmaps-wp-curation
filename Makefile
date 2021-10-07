@@ -65,8 +65,8 @@ reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/
 	@java -cp libs/jena-arq-3.17.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< > $@
 
 index.md:
-	@echo "# Validation Reports\n" > index.md
-	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />\n" >> index.md
+	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />\n" > index.md
+	@echo "# Validation Reports\n" >> index.md
 	@for report in $(REPORTS) ; do \
 		echo "* [$$report]($$report)" >> index.md ; \
 	done

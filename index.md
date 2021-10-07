@@ -1,6 +1,6 @@
-# Validation Reports
-
 <img style="float: right; width: 200px" src="logo.png" />
+
+# Validation Reports
 
 * [reports/WP167.md](reports/WP167.md)
 * [reports/WP430.md](reports/WP430.md)
