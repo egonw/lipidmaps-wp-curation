@@ -66,7 +66,7 @@ reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/
 
 index.md:
 	@echo "# Validation Reports\n" > index.md
-	@echo "<img style=\"float: right; width: 200px\" src=\"../logo.png\" />\n" >> index.md
+	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />\n" >> index.md
 	@for report in $(REPORTS) ; do \
 		echo "* [$$report]($$report)" >> index.md ; \
 	done
