@@ -5,7 +5,14 @@ REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 
+FRAMEWORKVERSION=release-1
+
 all: wikipathways-rdf-wp.zip wikipathways-rdf-gpml.zip
+
+install:
+	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT-jar-with-dependencies.jar
+	@wget -O libs/jena-arq-3.17.0.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/jena-arq-3.17.0.jar
+	@wget -O libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar
 
 sbml: ${SBMLS}
 
@@ -15,6 +22,7 @@ fetch:clean ${GPMLS}
 
 clean:
 	@rm -f ${GPMLS}
+	@rm libs/*.jar
 
 gpml/%.gpml:
 	@echo "Git fetching $@ ..."
