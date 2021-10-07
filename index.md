@@ -1,5 +1,7 @@
 # Validation Reports
 
+<img style="float: right; width: 200px" src="../logo.png" />
+
 * [reports/WP167.md](reports/WP167.md)
 * [reports/WP430.md](reports/WP430.md)
 * [reports/WP1423.md](reports/WP1423.md)
