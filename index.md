@@ -1,13 +1,13 @@
 <img style="float: right; width: 200px" src="logo.png" />
 # Validation Reports
 
-* [reports/WP167.md](reports/WP167.md) ⨯
+* [reports/WP167.md](reports/WP167.md) ✓
 * [reports/WP430.md](reports/WP430.md) ⨯
 * [reports/WP1423.md](reports/WP1423.md) ⨯
 * [reports/WP1531.md](reports/WP1531.md) ⨯
 * [reports/WP2533.md](reports/WP2533.md) ⨯
 * [reports/WP3601.md](reports/WP3601.md) ⨯
-* [reports/WP3933.md](reports/WP3933.md) ⨯
+* [reports/WP3933.md](reports/WP3933.md) ✓
 * [reports/WP3965.md](reports/WP3965.md) ⨯
 * [reports/WP4142.md](reports/WP4142.md) ⨯
 * [reports/WP4153.md](reports/WP4153.md) ⨯
@@ -22,7 +22,7 @@
 * [reports/WP4351.md](reports/WP4351.md) ⨯
 * [reports/WP4522.md](reports/WP4522.md) ⨯
 * [reports/WP4523.md](reports/WP4523.md) ⨯
-* [reports/WP4524.md](reports/WP4524.md) ⨯
+* [reports/WP4524.md](reports/WP4524.md) ✓
 * [reports/WP4545.md](reports/WP4545.md) ⨯
 * [reports/WP4690.md](reports/WP4690.md) ⨯
 * [reports/WP4718.md](reports/WP4718.md) ⨯
@@ -34,5 +34,5 @@
 * [reports/WP4724.md](reports/WP4724.md) ⨯
 * [reports/WP4725.md](reports/WP4725.md) ⨯
 * [reports/WP4726.md](reports/WP4726.md) ⨯
-* [reports/WP4971.md](reports/WP4971.md) ⨯
-* [reports/WP5037.md](reports/WP5037.md) ⨯
+* [reports/WP4971.md](reports/WP4971.md) ✓
+* [reports/WP5037.md](reports/WP5037.md) ✓
