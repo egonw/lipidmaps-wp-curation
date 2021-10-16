@@ -78,7 +78,7 @@ index.md: ${REPORTS}
 	@echo "# Validation Reports\n" >> index.md
 	@for report in $(REPORTS) ; do \
 		echo -n "* [$$report]($$report) " >> index.md ; \
-		echo `echo "$$report" | sed -e 's/.md/.txt/' | xargs cut -d'=' -f2` >> index.md ; \
+		echo `echo "$$report" | sed -e 's/.md/.txt/' | xargs cut -d'=' -f2 | sed -e 's/✓/<span style="color:green">✓<\/span>/' | sed -e 's/⨯/<span style="color:red">⨯<\/span>/'` >> index.md ; \
 	done
 
 update:
