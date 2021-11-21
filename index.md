@@ -1,0 +1,38 @@
+<img style="float: right; width: 200px" src="logo.png" />
+# Validation Reports
+
+* [reports/WP167.md](reports/WP167.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP167.json">
+* [reports/WP430.md](reports/WP430.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP430.json">
+* [reports/WP1423.md](reports/WP1423.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP1423.json">
+* [reports/WP1531.md](reports/WP1531.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP1531.json">
+* [reports/WP2533.md](reports/WP2533.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP2533.json">
+* [reports/WP3601.md](reports/WP3601.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP3601.json">
+* [reports/WP3933.md](reports/WP3933.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP3933.json">
+* [reports/WP3965.md](reports/WP3965.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP3965.json">
+* [reports/WP4142.md](reports/WP4142.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4142.json">
+* [reports/WP4153.md](reports/WP4153.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4153.json">
+* [reports/WP4189.md](reports/WP4189.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4189.json">
+* [reports/WP4190.md](reports/WP4190.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4190.json">
+* [reports/WP4345.md](reports/WP4345.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4345.json">
+* [reports/WP4346.md](reports/WP4346.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4346.json">
+* [reports/WP4347.md](reports/WP4347.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4347.json">
+* [reports/WP4348.md](reports/WP4348.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4348.json">
+* [reports/WP4349.md](reports/WP4349.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4349.json">
+* [reports/WP4350.md](reports/WP4350.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4350.json">
+* [reports/WP4351.md](reports/WP4351.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4351.json">
+* [reports/WP4522.md](reports/WP4522.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4522.json">
+* [reports/WP4523.md](reports/WP4523.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4523.json">
+* [reports/WP4524.md](reports/WP4524.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4524.json">
+* [reports/WP4545.md](reports/WP4545.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4545.json">
+* [reports/WP4690.md](reports/WP4690.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4690.json">
+* [reports/WP4718.md](reports/WP4718.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4718.json">
+* [reports/WP4719.md](reports/WP4719.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4719.json">
+* [reports/WP4720.md](reports/WP4720.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4720.json">
+* [reports/WP4721.md](reports/WP4721.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4721.json">
+* [reports/WP4722.md](reports/WP4722.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4722.json">
+* [reports/WP4723.md](reports/WP4723.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4723.json">
+* [reports/WP4724.md](reports/WP4724.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4724.json">
+* [reports/WP4725.md](reports/WP4725.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4725.json">
+* [reports/WP4726.md](reports/WP4726.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4726.json">
+* [reports/WP4971.md](reports/WP4971.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP4971.json">
+* [reports/WP5037.md](reports/WP5037.md) <img alt="pathway status" src="https://img.shields.io/endpoint?url=https://egonw.github.io/lipidmaps-wp-curation/reports/WP5037.json">
