@@ -30,6 +30,7 @@ public class CheckRDF {
 
         PrintWriter report = new PrintWriter(reportFile);
         PrintWriter reportStatus = new PrintWriter(reportFile.replace(".md",".txt"));
+        PrintWriter reportJSON = new PrintWriter(reportFile.replace(".md",".json"));
 
         report.println("<img style=\"float: right; width: 200px\" src=\"../logo.png\" />");
 
@@ -197,14 +198,23 @@ public class CheckRDF {
                 }
             }
         }
+        reportJSON.println("{");
+        reportJSON.println("  \"schemaVersion\": 1,");
+        reportJSON.println("  \"label\": \"curation\",");
         if (anyTestClassHasFails) {
           reportStatus.println("status=⨯");
+          reportJSON.println("  \"message\": \"" + failedAssertions.size() + " errors\",");
+          reportJSON.println("  \"color\": \"red\"");
         } else {
           reportStatus.println("status=✓");
+          reportJSON.println("  \"message\": \"success\",");
+          reportJSON.println("  \"color\": \"green\"");
         }
+        reportJSON.println("}");
 
         report.flush(); report.close();
         reportStatus.flush(); reportStatus.close();
+        reportJSON.flush(); reportJSON.close();
     }
 
 }
