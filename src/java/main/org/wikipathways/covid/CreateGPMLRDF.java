@@ -19,6 +19,7 @@ import org.wikipathways.wp2rdf.GpmlConverter;
 import org.wikipathways.wp2rdf.WPREST2RDF;
 
 import com.hp.hpl.jena.rdf.model.Model;
+import com.hp.hpl.jena.rdf.model.ModelFactory;
 
 public class CreateGPMLRDF {
 
@@ -31,7 +32,8 @@ public class CreateGPMLRDF {
         Pathway pathway = PathwayReader.readPathway(input);
         input.close();
 
-        Model model = GpmlConverter.convertGpml(pathway, wpid, rev);
+        Model model = ModelFactory.createDefaultModel();
+        GpmlConverter.convertGpml(pathway, wpid, rev, model, Collections.<String>emptyList());
         ByteArrayOutputStream output = new ByteArrayOutputStream();
         model.write(output, "TURTLE");
         System.out.print(new String(output.toByteArray()));
