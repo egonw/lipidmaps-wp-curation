@@ -15,7 +15,7 @@ install:
 	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
 	@wget -O libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
-	@wget -O libs/jena-arq-4.2.0.jar.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/4.2.0/jena-arq-4.2.0.jar
+	@wget -O libs/jena-arq-4.2.0.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/4.2.0/jena-arq-4.2.0.jar
 
 sbml: ${SBMLS}
 
@@ -79,7 +79,7 @@ check: ${REPORTS} index.md
 reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class tests.txt
 	@echo "Detection curation events for $@ ..."
 	@mkdir -p reports
-	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-3.17.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< $@
+	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-4.2.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< $@
 
 index.md: ${REPORTS}
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md
