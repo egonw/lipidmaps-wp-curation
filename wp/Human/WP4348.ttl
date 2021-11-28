@@ -1,23 +1,23 @@
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix pav:   <http://purl.org/pav/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix freq:  <http://purl.org/cld/freq/> .
-@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cito:  <http://purl.org/spar/cito/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
-@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wprdf: <http://rdf.wikipathways.org/> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ae640>
-        a                   wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ae640> ;
@@ -26,7 +26,7 @@
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/c37e8> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9983fb1e>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id9983fb1e> ;
         wp:participants   <https://identifiers.org/ncbigene/11689> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5cb741e> ;
@@ -34,7 +34,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5cb741e> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id27be66c5>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id27be66c5> ;
         wp:participants   <https://identifiers.org/ncbigene/17001> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id1d855663> ;
@@ -42,29 +42,29 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id1d855663> .
 
 <https://identifiers.org/ncbigene/14598>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Ggt1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Ggt1" ;
         dc:identifier       <https://identifiers.org/ncbigene/14598> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "14598"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "14598" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/14598> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/cd171> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/14598> .
 
 <https://identifiers.org/pubmed/20923771>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "20923771" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20923771> .
 
 <https://identifiers.org/uniprot/Q99JA4>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "CYSLT1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "CYSLT1" ;
         dc:identifier       <https://identifiers.org/uniprot/Q99JA4> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q99JA4"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q99JA4" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q99JA4> ;
@@ -72,7 +72,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q99JA4> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id563b7bbe>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id563b7bbe> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020057> , <https://identifiers.org/lipidmaps/LMFA03020016> ;
@@ -80,7 +80,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020057> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/c37e8>
-        a                   wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/c37e8> ;
@@ -89,12 +89,12 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060084> .
 
 <https://identifiers.org/lipidmaps/LMFA03020001>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LTB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-AMOLWHMGSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020001> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020001"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020001" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id7b2dd4d1> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide7f5e341> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id4c5a7bd4> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a16a8> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15647> ;
@@ -106,10 +106,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280492> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q2704449> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e78a9> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020001> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cd374>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/cd374> ;
@@ -118,7 +118,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03020003> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc299c7d0>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idc299c7d0> ;
         wp:participants   <https://identifiers.org/ncbigene/11684> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9753c7b9> ;
@@ -126,11 +126,11 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9753c7b9> .
 
 <https://identifiers.org/uniprot/O88855>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "BLT1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "BLT1" ;
         dc:identifier       <https://identifiers.org/uniprot/O88855> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "O88855"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "O88855" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/O88855> ;
@@ -138,12 +138,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/O88855> .
 
 <https://identifiers.org/lipidmaps/LMFA03020014>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "6-trans-12-epi-delta-LTB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "6-trans-12-epi-delta-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-CTOJTRLNSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020014> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020014"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020014" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6df8cba5> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63982> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446253> ;
@@ -153,21 +153,21 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283129> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132948> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d0513> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020014> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020014> .
 
 <https://identifiers.org/ncbigene/13117>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Cyp4a10"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Cyp4a10" ;
         dc:identifier       <https://identifiers.org/ncbigene/13117> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "13117"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "13117" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/13117> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a4966> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/13117> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id7b2dd4d1>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id7b2dd4d1> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020018> , <https://identifiers.org/lipidmaps/LMFA03020001> ;
@@ -175,11 +175,11 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020018> .
 
 <https://identifiers.org/uniprot/P39655>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "12(R)-LOX"^^xsd:string , "12-LOX"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "12(R)-LOX" , "12-LOX" ;
         dc:identifier       <https://identifiers.org/uniprot/P39655> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P39655"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P39655" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/eefb9> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> , <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P39655> ;
@@ -187,18 +187,18 @@
         foaf:page           <http://www.uniprot.org/uniprot/P39655> .
 
 <https://identifiers.org/ec-code/2.3.2.2>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "GGT"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "GGT" ;
         dc:identifier       <https://identifiers.org/ec-code/2.3.2.2> ;
-        dc:source           "Enzyme Nomenclature"^^xsd:string ;
-        dcterms:identifier  "2.3.2.2"^^xsd:string ;
+        dc:source           "Enzyme Nomenclature" ;
+        dcterms:identifier  "2.3.2.2" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e71dc> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ef50f> ;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.3.2.2> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/bd7c3>
-        a                   wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
+        rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/bd7c3> ;
@@ -207,7 +207,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060088> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf9a1a190>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idf9a1a190> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03040001> , <https://identifiers.org/lipidmaps/LMFA03060014> ;
@@ -215,7 +215,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03040001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id66ef89c>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id66ef89c> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03040008> , <https://identifiers.org/lipidmaps/LMFA03040009> ;
@@ -223,7 +223,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03040008> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id60a10f67>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id60a10f67> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020031> , <https://identifiers.org/lipidmaps/LMFA03040001> ;
@@ -231,7 +231,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020031> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/iddea48c53>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/iddea48c53> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020032> , <https://identifiers.org/lipidmaps/LMFA03020031> ;
@@ -239,12 +239,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020032> .
 
 <https://identifiers.org/lipidmaps/LMFA03060070>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "12(R)-HpETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "12(R)-HpETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ZIOZYRSDNLNNNJ-ZYBDYUKJSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060070> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060070"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060070" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a3039> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:34145> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/7827808> ;
@@ -254,10 +254,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID9548885> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27070763> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a928b> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060070> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060070> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6d73c8fb>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id6d73c8fb> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020023> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -265,7 +265,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020023> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id659425d4>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id659425d4> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03030006> , <https://identifiers.org/lipidmaps/LMFA03090003> ;
@@ -273,7 +273,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03030006> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id13eb13f9>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id13eb13f9> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020006> , <https://identifiers.org/lipidmaps/LMFA03020003> ;
@@ -281,12 +281,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020006> .
 
 <https://identifiers.org/lipidmaps/LMFA03060014>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "15-HpETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "15-HpETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/BFWYTORDSFIVKP-VAEKSGALSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060014> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060014"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060014" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf9a1a190> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id574fa6dc> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e3f1b> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaca85037> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15628> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444416> ;
@@ -297,26 +297,26 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280893> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27070784> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b90cf> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060014> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060014> .
 
 <https://identifiers.org/ncbigene/319446>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Dpep2"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Dpep2" ;
         dc:identifier       <https://identifiers.org/ncbigene/319446> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "319446"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "319446" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/319446> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b1a2b> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/319446> .
 
 <https://identifiers.org/lipidmaps/LMFA03020021>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "11-trans-LTD4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "11-trans-LTD4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YEESKJGWJFYOOK-KJGJJCHRSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020021> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020021"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020021" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idfa747c29> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:140493> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446259> ;
@@ -325,15 +325,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283135> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q59342392> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/da8b7> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020021> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020021> .
 
 <https://identifiers.org/lipidmaps/LMFA03020006>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LTD4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LTD4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YEESKJGWJFYOOK-IJHYULJSSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020006> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020006"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020006" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id13eb13f9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id864a78a9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idfa747c29> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:28666> ;
@@ -345,14 +345,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280878> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q647917> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ae757> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020006> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020006> .
 
 <https://identifiers.org/ncbigene/17001>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Ltc4s"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Ltc4s" ;
         dc:identifier       <https://identifiers.org/ncbigene/17001> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "17001"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "17001" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ida069e416> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id27be66c5> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/17001> ;
@@ -360,7 +360,7 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/17001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide3e5e516>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ide3e5e516> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03040002> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -368,7 +368,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03040002> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id4c5a7bd4>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id4c5a7bd4> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020001> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -376,7 +376,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaf75c3f1>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idaf75c3f1> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060084> , <https://identifiers.org/lipidmaps/LMFA03060108> ;
@@ -384,7 +384,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060084> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a16a8>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/a16a8> ;
@@ -393,7 +393,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03020001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5cb741e>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idb5cb741e> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060108> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -401,56 +401,56 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060108> .
 
 <https://identifiers.org/ncbigene/77219>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Ptgr2"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Ptgr2" ;
         dc:identifier       <https://identifiers.org/ncbigene/77219> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "77219"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "77219" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/77219> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/da9a1> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d953e> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/77219> .
 
 <https://identifiers.org/ec-code/3.4.13.19>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "MBD"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "MBD" ;
         dc:identifier       <https://identifiers.org/ec-code/3.4.13.19> ;
-        dc:source           "Enzyme Nomenclature"^^xsd:string ;
-        dcterms:identifier  "3.4.13.19"^^xsd:string ;
+        dc:source           "Enzyme Nomenclature" ;
+        dcterms:identifier  "3.4.13.19" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ffbd0> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ce667> ;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=3.4.13.19> .
 
 <https://identifiers.org/ncbigene/80911>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Acox3"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Acox3" ;
         dc:identifier       <https://identifiers.org/ncbigene/80911> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "80911"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "80911" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/80911> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/af171> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/80911> .
 
 <https://identifiers.org/ncbigene/113868>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Acaa1a"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Acaa1a" ;
         dc:identifier       <https://identifiers.org/ncbigene/113868> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "113868"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "113868" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/113868> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ff9c6> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/113868> .
 
 <https://identifiers.org/lipidmaps/LMFA03020013>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "6-trans-delta-LTB4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "6-trans-delta-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-UKNWISKWSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020013> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020013"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020013" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id892a210f> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63981> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446252> ;
@@ -460,14 +460,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283128> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132947> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c0593> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020013> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020013> .
 
 <https://identifiers.org/uniprot/P23204>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "PPAR alpha"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "PPAR alpha" ;
         dc:identifier       <https://identifiers.org/uniprot/P23204> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P23204"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P23204" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P23204> ;
@@ -475,12 +475,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/P23204> .
 
 <https://identifiers.org/lipidmaps/LMFA03030006>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "TXB3"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "TXB3" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OYPPJMLKAYYWHH-NXJDUNGTSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03030006> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03030006"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03030006" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id659425d4> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:84444> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446264> , <https://identifiers.org/chemspider/24822079> ;
@@ -490,19 +490,19 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283140> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27157766> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/dcc03> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03030006> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03030006> .
 
 <https://doi.org/10.1038%2FNRI3859>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1038/NRI3859" .
 
 <https://identifiers.org/lipidmaps/LMFA03060019>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "12-oxoETE"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "12-oxoETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/GURBRQGDZZKITB-VXBMJZGYSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060019> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060019"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060019" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id56d09ef9> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:34151> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446286> ;
@@ -513,14 +513,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283162> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27115848> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/f2334> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060019> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060019> .
 
 <https://identifiers.org/uniprot/P39654>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "12/15-LOX"^^xsd:string , "15-LOX"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "12/15-LOX" , "15-LOX" ;
         dc:identifier       <https://identifiers.org/uniprot/P39654> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P39654"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P39654" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> , <https://identifiers.org/pubmed/18761324> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P39654> ;
@@ -528,12 +528,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/P39654> .
 
 <https://identifiers.org/lipidmaps/LMFA03060088>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "12-HETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "12-HETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ZNHVWPKMFKADKW-VXBMJZGYSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060088> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060088"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060088" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc569edaa> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/bd7c3> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id56d09ef9> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:84447> ;
@@ -543,14 +543,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID13786989> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27157768> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e6b39> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060088> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060088> .
 
 <https://identifiers.org/uniprot/Q920A1>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "CYSLT2"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "CYSLT2" ;
         dc:identifier       <https://identifiers.org/uniprot/Q920A1> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q920A1"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q920A1" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q920A1> ;
@@ -558,12 +558,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q920A1> .
 
 <https://identifiers.org/lipidmaps/LMFA03060013>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "12-HpETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "12-HpETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ZIOZYRSDNLNNNJ-LQWMCKPYSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060013> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060013"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060013" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5ad163> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc569edaa> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/def83> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15626> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444415> ;
@@ -574,15 +574,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280892> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27070764> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b2643> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060013> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060013> .
 
 <https://identifiers.org/lipidmaps/LMFA03020020>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "11-trans-LTC4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "11-trans-LTC4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/GWNVDXQDILPJIG-CCHJCNDSSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020020> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020020"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020020" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8f3c10bc> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:88515> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446258> ;
@@ -592,10 +592,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283134> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27160404> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/de733> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020020> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020020> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5ad163>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idb5ad163> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060013> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -603,12 +603,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060013> .
 
 <https://identifiers.org/lipidmaps/LMFA03020033>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "EXE4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "EXE4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/JLJNENVYAVKECZ-HRXVJLLUSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020033> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020033"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020033" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2c29ded6> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63986> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/27471349> ;
@@ -617,21 +617,21 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID52921882> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q19597087> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ee8ab> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020033> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020033> .
 
 <https://identifiers.org/ncbigene/277753>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Cyp4a12a"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Cyp4a12a" ;
         dc:identifier       <https://identifiers.org/ncbigene/277753> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "277753"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "277753" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/277753> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e5a34> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/277753> .
 
 <https://identifiers.org/pubmed/26139350>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "26139350" ;
         dcterms:isPartOf    <https://identifiers.org/uniprot/P35396> , <https://identifiers.org/ncbigene/16993> , <https://identifiers.org/lipidmaps/LMFA03060087> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cd374> , <https://identifiers.org/lipidmaps/LMFA03040002> , <https://identifiers.org/uniprot/P39655> , <https://identifiers.org/lipidmaps/LMFA03020003> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cf4eb> , <https://identifiers.org/uniprot/O88536> , <https://identifiers.org/lipidmaps/LMFA03060073> , <https://identifiers.org/lipidmaps/LMFA03020002> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8d75adb2> , <https://identifiers.org/lipidmaps/LMFA03020001> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cb763> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/b7ec9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a16a8> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f3b1b> , <https://identifiers.org/ec-code/2.3.2.2> , <https://identifiers.org/uniprot/Q920A1> , <https://identifiers.org/uniprot/P39654> , <https://identifiers.org/ec-code/3.4.13.19> , <https://identifiers.org/ncbigene/17001> , <https://identifiers.org/uniprot/O88855> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ffbd0> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e3f1b> , <https://identifiers.org/uniprot/Q704Y3> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/def83> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a3039> , <https://identifiers.org/uniprot/O35936> , <https://identifiers.org/uniprot/P23204> , <https://identifiers.org/uniprot/Q8BLA8> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e71dc> , <https://identifiers.org/uniprot/Q99JA4> , <https://identifiers.org/uniprot/Q9JJL9> , <https://identifiers.org/lipidmaps/LMFA03020006> ;
@@ -640,23 +640,23 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26139350> .
 
 <https://identifiers.org/wikipathways/WP4348_r117877>
-        a                      skos:Collection , wp:Pathway ;
+        rdf:type               skos:Collection , wp:Pathway ;
         dc:identifier          <https://identifiers.org/wikipathways/WP4348> ;
-        dc:source              "WikiPathways"^^xsd:string ;
+        dc:source              "WikiPathways" ;
         dc:title               "Eicosanoid metabolism via lipoxygenases (LOX)"@en ;
         dcterms:description    "This pathway is inspired by the Lipidmaps>Eicosanoids Pathway expended pathway display [https://lipidmaps.org/resources/pathways/vanted.php].\nEicosanoids are a large group of compounds metabolised from arachidonic acid (AA), either via cyclooxygenases (COX)[https://www.wikipathways.org/index.php/Pathway:WP4347], lipooxygenases(LOX)[https://www.wikipathways.org/index.php/Pathway:WP4348], or cytochrome P450 monooxygenases (CYP)[https://www.wikipathways.org/index.php/Pathway:WP4349].\nThis pathway visualises the second route, via LOX.\nGreen and orange boxes represent receptors, where the orange colour depicts peroxisome-proliferator activating receptors (PPARs) potentially activated by the eicosanoids." ;
-        dcterms:identifier     "WP4348"^^xsd:string ;
+        dcterms:identifier     "WP4348" ;
         dcterms:references     <https://identifiers.org/pubmed/20923771> ;
         cito:cites             <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/26139350> , <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4348_r117877> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000462> , <http://purl.obolibrary.org/obo/PW_0000485> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
-        wp:organismName        "Mus musculus"^^xsd:string ;
+        wp:organismName        "Mus musculus" ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000462> , <http://purl.obolibrary.org/obo/PW_0000485> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4348_r117877> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide7f5e341>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ide7f5e341> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020024> , <https://identifiers.org/lipidmaps/LMFA03020001> ;
@@ -664,12 +664,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020024> .
 
 <https://identifiers.org/lipidmaps/LMFA03020018>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "20-hydroxy-LTB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "20-hydroxy-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/PTJFJXLGRSTECQ-PSPARDEHSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020018> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020018"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020018" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc6ee6af3> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id7b2dd4d1> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15646> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444320> ;
@@ -680,14 +680,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280745> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27071451> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/f8dfb> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020018> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020018> .
 
 <https://doi.org/10.1016%2FJ.BCP.2008.07.033>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1016/J.BCP.2008.07.033" .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id5a284c22>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id5a284c22> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020022> , <https://identifiers.org/lipidmaps/LMFA03020002> ;
@@ -695,11 +695,11 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020022> .
 
 <https://identifiers.org/uniprot/P35396>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "PPAR beta"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "PPAR beta" ;
         dc:identifier       <https://identifiers.org/uniprot/P35396> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P35396"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P35396" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P35396> ;
@@ -707,11 +707,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/P35396> .
 
 <https://identifiers.org/uniprot/P48999>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "5-LOX"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "5-LOX" ;
         dc:identifier       <https://identifiers.org/uniprot/P48999> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P48999"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P48999" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ae640> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P48999> ;
@@ -719,12 +719,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/P48999> .
 
 <https://identifiers.org/lipidmaps/LMFA03090005>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "HXA3"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "HXA3" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SGTUOBURCVMACZ-CIQDQOFUSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03090005> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03090005"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03090005" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2b9909b7> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/b7ec9> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id3c11ff27> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15631> , <https://identifiers.org/chebi/CHEBI:36190> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4573947> ;
@@ -735,29 +735,29 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5460414> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27098156> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/cd302> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03090005> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03090005> .
 
 <https://identifiers.org/lipidmaps/LMFA03030005>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "TXA3"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "TXA3" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NMZKLLJQNNTBRJ-OIXZZONUSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03030005> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03030005"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03030005" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2b9909b7> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/NMZKLLJQNNTBRJ-OIXZZONUSA-N> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMFA03030005> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283139> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q58216014> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a73b2> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03030005> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03030005> .
 
 <https://identifiers.org/uniprot/Q8BLA8>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "TRPA1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "TRPA1" ;
         dc:identifier       <https://identifiers.org/uniprot/Q8BLA8> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q8BLA8"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q8BLA8" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q8BLA8> ;
@@ -765,12 +765,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q8BLA8> .
 
 <https://identifiers.org/lipidmaps/LMFA01030001>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Arachidonic acid"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Arachidonic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YZXBAPSDXZZRGB-DOFZRALJSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA01030001> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA01030001"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA01030001" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e93ae> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idd2b094e2> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/bd7c3> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/c37e8> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5ad163> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f0414> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9753c7b9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6d73c8fb> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id3c11ff27> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5cb741e> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id574fa6dc> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15843> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/392692> ;
@@ -781,15 +781,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID444899> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q407699> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e1578> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA01030001> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA01030001> .
 
 <https://identifiers.org/lipidmaps/LMFA03060087>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "15-HETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "15-HETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/JSFATNQSLKRBCI-USWFWKISSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060087> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060087"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060087" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/def83> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cb763> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e3f1b> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/abf93> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f0414> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cf4eb> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/b7ec9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a16a8> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a3039> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id91379063> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaca85037> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f3b1b> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cd374> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> , <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:64017> ;
@@ -799,10 +799,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID9966861> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132968> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c643e> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d46c4> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060087> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060087> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf6f2da91>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idf6f2da91> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060086> , <https://identifiers.org/lipidmaps/LMFA03060073> ;
@@ -810,7 +810,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060086> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc6ee6af3>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idc6ee6af3> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020016> , <https://identifiers.org/lipidmaps/LMFA03020018> ;
@@ -818,7 +818,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020016> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id892a210f>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id892a210f> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020013> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -826,7 +826,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020013> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id56d09ef9>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id56d09ef9> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060019> , <https://identifiers.org/lipidmaps/LMFA03060088> ;
@@ -834,18 +834,18 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060019> .
 
 <https://identifiers.org/ncbigene/11684>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Alox12"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Alox12" ;
         dc:identifier       <https://identifiers.org/ncbigene/11684> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "11684"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "11684" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc299c7d0> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9af7826b> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/11684> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/bfa6f> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d668e> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/11684> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ffbd0>
-        a                   wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ffbd0> ;
@@ -857,7 +857,7 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4348_r117877> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ida069e416>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ida069e416> ;
         wp:participants   <https://identifiers.org/ncbigene/17001> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id60a10f67> ;
@@ -865,7 +865,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id60a10f67> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idfa747c29>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idfa747c29> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020021> , <https://identifiers.org/lipidmaps/LMFA03020006> ;
@@ -873,23 +873,23 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020021> .
 
 <https://identifiers.org/ncbigene/11430>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Acox1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Acox1" ;
         dc:identifier       <https://identifiers.org/ncbigene/11430> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "11430"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "11430" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/11430> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d3e29> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/11430> .
 
 <https://identifiers.org/lipidmaps/LMFA03020032>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "EXD4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "EXD4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/BUTLPEVGZIRJOA-SPCGXPCUSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020032> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020032"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020032" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/iddea48c53> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2c29ded6> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63985> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/24822074> ;
@@ -898,10 +898,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID42607304> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q19597086> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ff775> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020032> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020032> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id864a78a9>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id864a78a9> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020002> , <https://identifiers.org/lipidmaps/LMFA03020006> ;
@@ -909,7 +909,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020002> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide66bfcbf>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ide66bfcbf> ;
         wp:participants   <https://identifiers.org/ncbigene/11687> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id574fa6dc> ;
@@ -917,11 +917,11 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id574fa6dc> .
 
 <https://identifiers.org/ncbigene/16993>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Lta4h"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Lta4h" ;
         dc:identifier       <https://identifiers.org/ncbigene/16993> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "16993"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "16993" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id874c55ce> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/16993> ;
@@ -929,7 +929,7 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/16993> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2c29ded6>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id2c29ded6> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020033> , <https://identifiers.org/lipidmaps/LMFA03020032> ;
@@ -937,7 +937,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020033> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id574fa6dc>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id574fa6dc> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060014> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -945,7 +945,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060014> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id1d855663>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id1d855663> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020003> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -953,12 +953,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020003> .
 
 <https://identifiers.org/lipidmaps/LMFA03040009>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "15-oxo-LXA4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "15-oxo-LXA4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/KMQGFEBCBYXSPZ-OABWHSJTSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03040009> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03040009"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03040009" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf5482975> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id66ef89c> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63992> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/27471351> ;
@@ -967,14 +967,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID52921886> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132953> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a5681> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03040009> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03040009> .
 
 <https://identifiers.org/uniprot/Q9JJL9>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "BLT2"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "BLT2" ;
         dc:identifier       <https://identifiers.org/uniprot/Q9JJL9> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q9JJL9"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q9JJL9" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q9JJL9> ;
@@ -982,18 +982,18 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q9JJL9> .
 
 <https://identifiers.org/ncbigene/15446>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Hpgd"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Hpgd" ;
         dc:identifier       <https://identifiers.org/ncbigene/15446> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "15446"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "15446" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/iddab615cd> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/15446> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d1746> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a311d> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/15446> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id91379063>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id91379063> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060051> , <https://identifiers.org/lipidmaps/LMFA03060087> ;
@@ -1001,7 +1001,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060051> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6df8cba5>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id6df8cba5> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020014> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -1009,7 +1009,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020014> .
 
 <https://identifiers.org/pubmed/18761324>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "18761324" ;
         dcterms:isPartOf    <https://identifiers.org/lipidmaps/LMFA03060052> , <https://identifiers.org/uniprot/P39654> , <https://identifiers.org/lipidmaps/LMFA03060087> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f0414> , <https://identifiers.org/uniprot/P39655> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/bd7c3> , <https://identifiers.org/lipidmaps/LMFA03060088> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/c37e8> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/abf93> , <https://identifiers.org/lipidmaps/LMFA03060084> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/eefb9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ae640> , <https://identifiers.org/uniprot/P48999> ;
@@ -1018,18 +1018,18 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18761324> .
 
 <https://identifiers.org/ncbigene/74147>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Ehhadh"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Ehhadh" ;
         dc:identifier       <https://identifiers.org/ncbigene/74147> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "74147"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "74147" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/74147> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e5318> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/74147> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e93ae>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/e93ae> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03040001> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -1037,7 +1037,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03040001> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/iddab615cd>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/iddab615cd> ;
         wp:participants   <https://identifiers.org/ncbigene/15446> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf5482975> ;
@@ -1045,23 +1045,23 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf5482975> .
 
 <https://identifiers.org/ncbigene/11689>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Alox5"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Alox5" ;
         dc:identifier       <https://identifiers.org/ncbigene/11689> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "11689"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "11689" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9983fb1e> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/11689> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/f3246> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e878b> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c7604> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/11689> .
 
 <https://identifiers.org/lipidmaps/LMFA03060073>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "8-HpETE"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "8-HpETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/QQUFCXFFOZDXLA-VYOQERLCSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060073> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060073"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060073" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f3b1b> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idd2b094e2> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf6f2da91> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:34487> ;
@@ -1072,15 +1072,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID9548880> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27116104> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d2bd6> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060073> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060073> .
 
 <https://identifiers.org/lipidmaps/LMFA03020024>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "12-oxo-LTB4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "12-oxo-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SJVWVCVZWMJXOK-NOJHDUNKSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020024> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020024"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020024" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide7f5e341> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:27814> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444399> ;
@@ -1090,15 +1090,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280876> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27103352> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c915c> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020024> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020024> .
 
 <https://identifiers.org/lipidmaps/LMFA03060086>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "8-HETE"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "8-HETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NLUNAYAEIJYXRB-HEJOTXCHSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060086> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060086"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060086" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf6f2da91> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:72643> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/10149472> ;
@@ -1107,10 +1107,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID11976122> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27140041> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b3997> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060086> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060086> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8d75adb2>
-        a                   wp:DirectedInteraction , wp:Interaction , wp:Catalysis ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Catalysis ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id8d75adb2> ;
@@ -1119,7 +1119,7 @@
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f3b1b> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9753c7b9>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id9753c7b9> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03090003> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -1127,7 +1127,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03090003> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9af7826b>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id9af7826b> ;
         wp:participants   <https://identifiers.org/ncbigene/11684> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id3c11ff27> ;
@@ -1135,7 +1135,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id3c11ff27> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idd2b094e2>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idd2b094e2> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060073> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -1143,12 +1143,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060073> .
 
 <https://identifiers.org/lipidmaps/LMFA03060011>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "5-oxoETE"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "5-oxoETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/MEASLHGILYBXFO-XTDASVJISA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060011> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060011"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060011" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ida31a02c1> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:52449> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446283> ;
@@ -1159,15 +1159,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283159> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q25323762> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ae668> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060011> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060011> .
 
 <https://identifiers.org/lipidmaps/LMFA03060052>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "5,12-diHETE"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "5,12-diHETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-XUOUMLBJSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060052> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060052"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060052" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/abf93> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-XUOUMLBJSA-N> ;
@@ -1175,10 +1175,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5312972> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q61197463> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/df0e5> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060052> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060052> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e3f1b>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/e3f1b> ;
@@ -1187,12 +1187,12 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060014> .
 
 <https://identifiers.org/lipidmaps/LMFA03020031>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "EXC4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "EXC4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OBQVBASHEWLKCQ-PKBWNXTMSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020031> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020031"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020031" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id60a10f67> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/iddea48c53> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63984> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/24822073> ;
@@ -1201,15 +1201,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID42607303> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q19597085> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/cc793> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020031> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020031> .
 
 <https://identifiers.org/lipidmaps/LMFA03020003>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LTC4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LTC4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/GWNVDXQDILPJIG-NXOLIXFESA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020003> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020003"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020003" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8f3c10bc> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id1d855663> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id13eb13f9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cd374> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16978> ;
@@ -1221,10 +1221,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280493> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q2704310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ee2cd> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020003> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020003> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id874c55ce>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id874c55ce> ;
         wp:participants   <https://identifiers.org/ncbigene/16993> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id4c5a7bd4> ;
@@ -1232,12 +1232,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id4c5a7bd4> .
 
 <https://identifiers.org/lipidmaps/LMFA03020016>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "20-carboxy-LTB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "20-carboxy-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SXWGPVJGNOLNHT-VFLUTPEKSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020016> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020016"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020016" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id563b7bbe> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc6ee6af3> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:27562> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444400> ;
@@ -1248,10 +1248,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280877> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27103196> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c930e> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020016> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020016> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f0414>
-        a                   wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/f0414> ;
@@ -1260,12 +1260,12 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060087> .
 
 <https://identifiers.org/lipidmaps/LMFA03040008>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "13,14-dihydro- 15-oxo-LXA4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "13,14-dihydro- 15-oxo-LXA4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/FPRPRBFSKMFXRV-JWVNNVTNSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03040008> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03040008"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03040008" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id66ef89c> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:63993> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/27471352> ;
@@ -1274,34 +1274,34 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID52921885> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132954> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e602d> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03040008> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03040008> .
 
 <https://identifiers.org/lipidmaps/LMFA03020057>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "18-carboxy- dinor-LTB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "18-carboxy- dinor-LTB4" ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020057> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020057"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020057" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id563b7bbe> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMFA03020057> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID53481489> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q59342393> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/ad8a9> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020057> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020057> .
 
 <https://identifiers.org/ncbigene/23887>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Ggt5"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Ggt5" ;
         dc:identifier       <https://identifiers.org/ncbigene/23887> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "23887"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "23887" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/23887> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/bfb42> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/23887> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf5482975>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idf5482975> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03040009> , <https://identifiers.org/lipidmaps/LMFA03040001> ;
@@ -1309,12 +1309,12 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03040009> .
 
 <https://identifiers.org/lipidmaps/LMFA03090003>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "HXB3"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "HXB3" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/DWNBPRRXEVJMPO-RNGYDEEPSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03090003> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03090003"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03090003" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id659425d4> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id9753c7b9> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cf4eb> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:34784> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/DWNBPRRXEVJMPO-RNGYDEEPSA-N> ;
@@ -1323,10 +1323,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID16759353> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27116271> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/f6301> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03090003> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03090003> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cb763>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/cb763> ;
@@ -1335,11 +1335,11 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03040002> .
 
 <https://identifiers.org/lipidmaps/LMFA03040002>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LXB4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LXB4" ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03040002> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03040002"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03040002" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide3e5e516> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cb763> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:6499> ;
@@ -1350,15 +1350,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280915> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q4329> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/dcbef> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a4343> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03040002> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03040002> .
 
 <https://identifiers.org/lipidmaps/LMFA03020023>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "LTA4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "LTA4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/UFPQIRYSPUYQHK-WAQVJNLQSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020023> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020023"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020023" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8ebf2e05> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id4c5a7bd4> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id892a210f> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6df8cba5> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide3e5e516> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id6d73c8fb> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id1d855663> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15651> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444074> ;
@@ -1369,10 +1369,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280383> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q3024044> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/beafd> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020023> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020023> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/abf93>
-        a                   wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/abf93> ;
@@ -1381,7 +1381,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060052> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/a3039>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/a3039> ;
@@ -1390,7 +1390,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060070> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ida31a02c1>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ida31a02c1> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060011> , <https://identifiers.org/lipidmaps/LMFA03060084> ;
@@ -1398,7 +1398,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060011> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide6d79683>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/ide6d79683> ;
         wp:participants   <https://identifiers.org/ncbigene/11687> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idd2b094e2> ;
@@ -1406,12 +1406,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idd2b094e2> .
 
 <https://identifiers.org/lipidmaps/LMFA03060108>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "5-HpETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "5-HpETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/JNUUNUQHXIOFDA-XTDASVJISA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060108> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060108"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060108" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaf75c3f1> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idb5cb741e> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:91268> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446295> ;
@@ -1421,14 +1421,14 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283171> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27163174> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d04bc> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060108> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060108> .
 
 <https://identifiers.org/lipidmaps/LMFA03060051>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "15-oxoETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "15-oxoETE" ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060051> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060051"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060051" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id91379063> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15559> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0010210> ;
@@ -1437,10 +1437,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280701> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q50318261> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/bda94> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060051> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060051> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/b7ec9>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/b7ec9> ;
@@ -1449,7 +1449,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03090005> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id3c11ff27>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id3c11ff27> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03090005> , <https://identifiers.org/lipidmaps/LMFA01030001> ;
@@ -1457,7 +1457,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03090005> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e71dc>
-        a                   wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/e71dc> ;
@@ -1466,12 +1466,12 @@
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id13eb13f9> .
 
 <https://identifiers.org/lipidmaps/LMFA03020002>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LTE4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LTE4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OTZRAYGBFWZKMX-FRFVZSDQSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020002> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020002"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020002" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id864a78a9> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id5a284c22> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15650> ;
@@ -1483,10 +1483,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280879> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q2705859> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d09f6> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020002> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020002> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/cf4eb>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/cf4eb> ;
@@ -1495,23 +1495,23 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03090003> .
 
 <https://identifiers.org/ncbigene/13479>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Dpep1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Dpep1" ;
         dc:identifier       <https://identifiers.org/ncbigene/13479> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "13479"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "13479" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/13479> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b2cec> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/13479> .
 
 <https://identifiers.org/lipidmaps/LMFA03020015>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "12-epi-LTB4"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "12-epi-LTB4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VNYSSYRCGWBHLG-CBBLYLIKSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020015> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020015"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020015" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8ebf2e05> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:72795> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446254> ;
@@ -1521,21 +1521,21 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283130> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27070760> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/aeac6> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020015> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020015> .
 
 <https://identifiers.org/ncbigene/13118>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Cyp4a12b"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Cyp4a12b" ;
         dc:identifier       <https://identifiers.org/ncbigene/13118> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "13118"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "13118" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/13118> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/b4322> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/13118> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idc569edaa>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idc569edaa> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060088> , <https://identifiers.org/lipidmaps/LMFA03060013> ;
@@ -1543,11 +1543,11 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060088> .
 
 <https://identifiers.org/uniprot/O88536>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "ALX"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "ALX" ;
         dc:identifier       <https://identifiers.org/uniprot/O88536> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "O88536"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "O88536" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/O88536> ;
@@ -1555,7 +1555,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/O88536> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/f3b1b>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/f3b1b> ;
@@ -1564,18 +1564,18 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060073> .
 
 <https://identifiers.org/ncbigene/72054>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Cyp4f18"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Cyp4f18" ;
         dc:identifier       <https://identifiers.org/ncbigene/72054> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "72054"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "72054" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/72054> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e6f64> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/72054> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8ebf2e05>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id8ebf2e05> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020015> , <https://identifiers.org/lipidmaps/LMFA03020023> ;
@@ -1583,7 +1583,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020015> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id2b9909b7>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id2b9909b7> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03030005> , <https://identifiers.org/lipidmaps/LMFA03090005> ;
@@ -1591,7 +1591,7 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03030005> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/def83>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/def83> ;
@@ -1600,7 +1600,7 @@
         wp:target           <https://identifiers.org/lipidmaps/LMFA03060013> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8f3c10bc>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/id8f3c10bc> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03020020> , <https://identifiers.org/lipidmaps/LMFA03020003> ;
@@ -1608,18 +1608,18 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03020020> .
 
 <https://identifiers.org/ncbigene/67103>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Ptgr1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Ptgr1" ;
         dc:identifier       <https://identifiers.org/ncbigene/67103> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "67103"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "67103" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/67103> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/a47b6> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/fefcc> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/67103> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/eefb9>
-        a                   wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/eefb9> ;
@@ -1628,11 +1628,11 @@
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/bd7c3> .
 
 <https://identifiers.org/uniprot/O35936>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "8/15-LOX"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "8/15-LOX" ;
         dc:identifier       <https://identifiers.org/uniprot/O35936> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "O35936"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "O35936" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id8d75adb2> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/O35936> ;
@@ -1640,18 +1640,18 @@
         foaf:page           <http://www.uniprot.org/uniprot/O35936> .
 
 <https://identifiers.org/ncbigene/11687>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Alox15"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Alox15" ;
         dc:identifier       <https://identifiers.org/ncbigene/11687> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "11687"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "11687" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide6d79683> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ide66bfcbf> , <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/11687> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/c86ad> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/11687> .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaca85037>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4348_r117877/Interaction/idaca85037> ;
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03060087> , <https://identifiers.org/lipidmaps/LMFA03060014> ;
@@ -1659,11 +1659,11 @@
         wp:target         <https://identifiers.org/lipidmaps/LMFA03060087> .
 
 <https://identifiers.org/uniprot/Q704Y3>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "TRPV1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "TRPV1" ;
         dc:identifier       <https://identifiers.org/uniprot/Q704Y3> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q704Y3"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q704Y3" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q704Y3> ;
@@ -1671,12 +1671,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q704Y3> .
 
 <https://identifiers.org/lipidmaps/LMFA03040001>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LXA4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LXA4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/IXAQOQZEOGMIQS-SSQFXEBMSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03040001> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03040001"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03040001" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf5482975> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id60a10f67> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/e93ae> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idf9a1a190> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:6498> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444429> ;
@@ -1687,37 +1687,37 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280914> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27082450> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/fe4d0> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03040001> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03040001> .
 
 <https://identifiers.org/ncbigene/93732>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Acox2"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Acox2" ;
         dc:identifier       <https://identifiers.org/ncbigene/93732> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "93732"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "93732" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/93732> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/daf51> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/93732> .
 
 <https://identifiers.org/ncbigene/64385>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "Cyp4f14"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "Cyp4f14" ;
         dc:identifier       <https://identifiers.org/ncbigene/64385> ;
-        dc:source           "Entrez Gene"^^xsd:string ;
-        dcterms:identifier  "64385"^^xsd:string ;
+        dc:source           "Entrez Gene" ;
+        dcterms:identifier  "64385" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/64385> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/d8694> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64385> .
 
 <https://identifiers.org/lipidmaps/LMFA03060084>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "5-HETE"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "5-HETE" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/KGIJOOYOSFUGPC-XTDASVJISA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060084> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03060084"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060084" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/idaf75c3f1> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/c37e8> , <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/ida31a02c1> ;
         dcterms:references  <https://identifiers.org/pubmed/18761324> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:60943> ;
@@ -1727,15 +1727,15 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID9862886> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27104878> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/cf338> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03060084> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060084> .
 
 <https://identifiers.org/lipidmaps/LMFA03020022>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "11-trans-LTE4"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "11-trans-LTE4" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OTZRAYGBFWZKMX-DVFCZEDWSA-N> ;
         dc:identifier       <https://identifiers.org/lipidmaps/LMFA03020022> ;
-        dc:source           "LIPID MAPS"^^xsd:string ;
-        dcterms:identifier  "LMFA03020022"^^xsd:string ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03020022" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r117877> , <http://rdf.wikipathways.org/Pathway/WP4348_r117877/WP/Interaction/id5a284c22> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:72779> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446260> ;
@@ -1744,4 +1744,4 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283136> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27140140> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r117877/DataNode/e6c28> ;
-        foaf:page           <http://www.lipidmaps.org/data/LMSDRecord.php?LMID=LMFA03020022> .
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020022> .

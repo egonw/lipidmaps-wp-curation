@@ -1,27 +1,27 @@
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix pav:   <http://purl.org/pav/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix freq:  <http://purl.org/cld/freq/> .
-@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cito:  <http://purl.org/spar/cito/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
-@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wprdf: <http://rdf.wikipathways.org/> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/chebi/CHEBI:18035>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "DAG"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "DAG" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:18035> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:18035"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:18035" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:18035> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00165> ;
@@ -31,7 +31,7 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18035> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b75a7>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/b75a7> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00189> , <https://identifiers.org/chebi/CHEBI:26739> ;
@@ -39,11 +39,11 @@
         wp:target         <https://identifiers.org/kegg.compound/C00189> .
 
 <https://identifiers.org/ensembl/ENSG00000139163>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "ETNK1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ETNK1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000139163> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000139163"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000139163" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000139163> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/55500> ;
@@ -53,11 +53,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000139163> .
 
 <https://identifiers.org/kegg.compound/C00350>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Phosphatidylethanolamine"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Phosphatidylethanolamine" ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00350> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00350"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00350" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id23aa80e2> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:64674> , <https://identifiers.org/chebi/CHEBI:16038> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00350> ;
@@ -67,7 +67,7 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00350> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228>
-        a                 wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/a8514> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/ea228> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idc316950a> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id3ef3c127> ;
         wp:participants   <https://identifiers.org/chebi/CHEBI:73341> , <https://identifiers.org/chebi/CHEBI:17361> , <https://identifiers.org/kegg.compound/C00350> , <https://identifiers.org/kegg.compound/C00570> , <https://identifiers.org/chebi/CHEBI:18035> ;
@@ -75,11 +75,11 @@
         wp:target         <https://identifiers.org/kegg.compound/C00350> , <https://identifiers.org/chebi/CHEBI:17361> .
 
 <https://identifiers.org/ensembl/ENSG00000110721>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "CHKA"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "CHKA" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000110721> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000110721"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000110721" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000110721> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1119> ;
@@ -89,12 +89,12 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000110721> .
 
 <https://identifiers.org/kegg.compound/C00570>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CDP-Ethanolamine"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CDP-Ethanolamine" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/WVIMUEUQJFPNDK-PEBGCTIMSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00570> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00570"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00570" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16732> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/110296> ;
@@ -107,11 +107,11 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00570> .
 
 <https://identifiers.org/ensembl/ENSG00000143845>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "ETNK2"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "ETNK2" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000143845> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000143845"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000143845" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000143845> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/55224> ;
@@ -121,12 +121,12 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000143845> .
 
 <https://identifiers.org/kegg.compound/C00307>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CDP-choline"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CDP-choline" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/RZZPDXZPRHQOCG-OJAKKHQRSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00307> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00307"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00307" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16436> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/13207> ;
@@ -139,12 +139,12 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00307> .
 
 <https://identifiers.org/cas/58-64-0>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "ADP"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "ADP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XTWYTFMLZFPYCI-KQYNXXCUSA-N> ;
         dc:identifier       <https://identifiers.org/cas/58-64-0> ;
-        dc:source           "CAS"^^xsd:string ;
-        dcterms:identifier  "58-64-0"^^xsd:string ;
+        dc:source           "CAS" ;
+        dcterms:identifier  "58-64-0" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/a84c9> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/cddb0> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16761> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5800> ;
@@ -154,22 +154,22 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6022> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q185253> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3933_r116372/DataNode/dc928> ;
-        foaf:page           <http://commonchemistry.org/ChemicalDetail.aspx?ref=58-64-0> .
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=58-64-0> .
 
 <https://identifiers.org/pubmed/20503434>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "20503434" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20503434> .
 
 <https://identifiers.org/kegg.compound/C00189>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Ethanolamine"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Ethanolamine" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/HZAXFHJVJLSVMW-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00189> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00189"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00189" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b75a7> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/cddb0> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/13835336> ;
@@ -182,7 +182,7 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00189> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id89f85b6>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id89f85b6> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000134255> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> ;
@@ -190,7 +190,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3>
-        a                 wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id9b21a8c3> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id550cab47> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id6fda7025> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00350> , <https://identifiers.org/kegg.compound/C02737> , <https://identifiers.org/kegg.compound/C00189> , <https://identifiers.org/kegg.compound/C00065> ;
@@ -198,11 +198,11 @@
         wp:target         <https://identifiers.org/kegg.compound/C00189> , <https://identifiers.org/kegg.compound/C02737> .
 
 <https://identifiers.org/ensembl/ENSG00000100288>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "CHKB"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "CHKB" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000100288> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000100288"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000100288" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000100288> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1120> ;
@@ -212,12 +212,12 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000100288> .
 
 <https://identifiers.org/kegg.compound/C00114>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Choline"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Choline" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OEYIOHPDSNJKLS-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00114> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00114"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00114" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/a84c9> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15354> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/299> ;
@@ -230,7 +230,7 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00114> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9fbc963a>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id9fbc963a> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000133027> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> ;
@@ -238,11 +238,11 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> .
 
 <https://identifiers.org/ensembl/ENSG00000174915>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "PTDSS2"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "PTDSS2" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000174915> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000174915"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000174915" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id7a191428> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000174915> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/81490> ;
@@ -252,11 +252,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000174915> .
 
 <https://identifiers.org/wikidata/Q650187>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Phosphatidylcholines"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Phosphatidylcholines" ;
         dc:identifier       <https://identifiers.org/wikidata/Q650187> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q650187"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q650187" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:64482> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0062577> ;
@@ -265,12 +265,12 @@
         foaf:page           <https://scholia.toolforge.org/Q650187> .
 
 <https://identifiers.org/chebi/CHEBI:17361>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "CMP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "CMP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/IERHLVCPSMICTF-XVFCMESISA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:17361> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:17361"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:17361" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17361> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5901> ;
@@ -283,11 +283,11 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17361> .
 
 <https://identifiers.org/ensembl/ENSG00000111666>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "CHPT1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "CHPT1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000111666> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000111666"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000111666" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/iddd2951f5> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000111666> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/56994> ;
@@ -297,11 +297,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000111666> .
 
 <https://identifiers.org/chebi/CHEBI:26739>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Sphingolipid"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Sphingolipid" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:26739> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:26739"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:26739" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b75a7> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:26739> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMSP> ;
@@ -310,7 +310,7 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26739> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id83d92e91>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id83d92e91> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000241878> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id23aa80e2> ;
@@ -318,11 +318,11 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id23aa80e2> .
 
 <https://identifiers.org/ensembl/ENSG00000156471>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "PTDSS1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "PTDSS1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000156471> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000156471"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000156471" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ida25be2e6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000156471> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/9791> ;
@@ -332,11 +332,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000156471> .
 
 <https://identifiers.org/wikidata/Q290828>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "PPi"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "PPi" ;
         dc:identifier       <https://identifiers.org/wikidata/Q290828> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q290828"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q290828" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:18361> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/559142> ;
@@ -347,12 +347,12 @@
         foaf:page           <https://scholia.toolforge.org/Q290828> .
 
 <https://identifiers.org/kegg.compound/C00021>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "SAH"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "SAH" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ZJUKTBDSGOFHSH-WFMPWKQPSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00021> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00021"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00021" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16680> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/388301> ;
@@ -365,7 +365,7 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00021> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/iddd2951f5>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/iddd2951f5> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000111666> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> ;
@@ -373,11 +373,11 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> .
 
 <https://identifiers.org/ensembl/ENSG00000241878>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "Pisd"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "Pisd" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000241878> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000241878"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000241878" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id83d92e91> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000241878> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/23761> ;
@@ -387,11 +387,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000241878> .
 
 <https://identifiers.org/kegg.compound/C02737>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Phosphatidylserine"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Phosphatidylserine" ;
         dc:identifier       <https://identifiers.org/kegg.compound/C02737> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C02737"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C02737" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id23aa80e2> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:11750> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C02737> ;
@@ -401,12 +401,12 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C02737> .
 
 <https://identifiers.org/kegg.compound/C00019>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "SAM"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "SAM" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/MEFKEPWMEQBLKI-AIRLBKTGSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00019> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00019"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00019" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15414> , <https://identifiers.org/chebi/CHEBI:67040> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/21169292> , <https://identifiers.org/chemspider/31982> ;
@@ -419,11 +419,11 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00019> .
 
 <https://identifiers.org/ensembl/ENSG00000161217>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "PCYT1A"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "PCYT1A" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000161217> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000161217"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000161217" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000161217> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/5130> ;
@@ -433,12 +433,12 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000161217> .
 
 <https://identifiers.org/chebi/CHEBI:18132>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Phosphocholine"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Phosphocholine" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YHHSONZFOIEMCP-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:18132> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:18132"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:18132" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/a84c9> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:18132> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/989> ;
@@ -451,12 +451,12 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18132> .
 
 <https://identifiers.org/kegg.compound/C00346>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "O-Phosphoethanolamine"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "O-Phosphoethanolamine" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SUHOOTKUPISOBE-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00346> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00346"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00346" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/cddb0> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17553> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/990> ;
@@ -469,7 +469,7 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00346> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1>
-        a                 wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/b48e1> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id272af754> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idce2998ed> ;
         wp:participants   <https://identifiers.org/wikidata/Q290828> , <https://identifiers.org/cas/2056-98-6> , <https://identifiers.org/kegg.compound/C00346> , <https://identifiers.org/kegg.compound/C00570> ;
@@ -477,7 +477,7 @@
         wp:target         <https://identifiers.org/wikidata/Q290828> , <https://identifiers.org/kegg.compound/C00570> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ida25be2e6>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/ida25be2e6> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000156471> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> ;
@@ -485,12 +485,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> .
 
 <https://identifiers.org/cas/2056-98-6>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CTP"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CTP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/RGWHQCVHVJXOKC-SHYZEUOFSA-N> ;
         dc:identifier       <https://identifiers.org/cas/2056-98-6> ;
-        dc:source           "CAS"^^xsd:string ;
-        dcterms:identifier  "2056-98-6"^^xsd:string ;
+        dc:source           "CAS" ;
+        dcterms:identifier  "2056-98-6" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a> , <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16311> , <https://identifiers.org/chebi/CHEBI:61481> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/26332240> , <https://identifiers.org/chemspider/58601> ;
@@ -500,10 +500,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID25244665> , <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID65091> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27131102> , <http://www.wikidata.org/entity/Q424680> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3933_r116372/DataNode/fdc80> ;
-        foaf:page           <http://commonchemistry.org/ChemicalDetail.aspx?ref=2056-98-6> .
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=2056-98-6> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068>
-        a                 wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/e6068> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/a510d> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/ida63fea90> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idcff7778d> ;
         wp:participants   <https://identifiers.org/chebi/CHEBI:17361> , <https://identifiers.org/chebi/CHEBI:18035> , <https://identifiers.org/wikidata/Q650187> , <https://identifiers.org/kegg.compound/C00307> , <https://identifiers.org/chebi/CHEBI:73341> ;
@@ -511,7 +511,7 @@
         wp:target         <https://identifiers.org/wikidata/Q650187> , <https://identifiers.org/chebi/CHEBI:17361> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/a84c9>
-        a                 wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/a84c9> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/ide2275b17> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id4a8b090a> ;
         wp:participants   <https://identifiers.org/cas/1927-31-7> , <https://identifiers.org/kegg.compound/C00114> , <https://identifiers.org/cas/58-64-0> , <https://identifiers.org/chebi/CHEBI:18132> ;
@@ -519,12 +519,12 @@
         wp:target         <https://identifiers.org/cas/1927-31-7> , <https://identifiers.org/chebi/CHEBI:18132> .
 
 <https://identifiers.org/cas/1927-31-7>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "ATP"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "ATP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SUYVUBYJARFZHO-RRKCRQDMSA-N> ;
         dc:identifier       <https://identifiers.org/cas/1927-31-7> ;
-        dc:source           "CAS"^^xsd:string ;
-        dcterms:identifier  "1927-31-7"^^xsd:string ;
+        dc:source           "CAS" ;
+        dcterms:identifier  "1927-31-7" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/cddb0> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/a84c9> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16284> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/15194> ;
@@ -534,10 +534,10 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID15993> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q201090> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3933_r116372/DataNode/cbcb0> ;
-        foaf:page           <http://commonchemistry.org/ChemicalDetail.aspx?ref=1927-31-7> .
+        foaf:page           <https://commonchemistry.cas.org/detail?cas_rn=1927-31-7> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058>
-        a                 wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id4e618349> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id8c824058> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id2566f2a8> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00065> , <https://identifiers.org/kegg.compound/C02737> , <https://identifiers.org/wikidata/Q650187> , <https://identifiers.org/kegg.compound/C00114> ;
@@ -545,7 +545,7 @@
         wp:target         <https://identifiers.org/kegg.compound/C02737> , <https://identifiers.org/kegg.compound/C00114> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id7a191428>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id7a191428> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000174915> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> ;
@@ -553,12 +553,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> .
 
 <https://identifiers.org/chebi/CHEBI:73341>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "AAG"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "AAG" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/KIUYPHAMDKDICO-WHFBIAKZSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:73341> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:73341"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:73341" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/e6068> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/ea228> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:73341> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/28639265> ;
@@ -569,11 +569,11 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:73341> .
 
 <https://identifiers.org/ensembl/ENSG00000185813>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "PCYT2"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "PCYT2" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000185813> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000185813"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000185813" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/d895c> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000185813> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/5833> ;
@@ -583,11 +583,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000185813> .
 
 <https://identifiers.org/ensembl/ENSG00000134255>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "CEPT1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "CEPT1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000134255> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000134255"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000134255" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id89f85b6> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000134255> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/10390> ;
@@ -597,11 +597,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000134255> .
 
 <https://identifiers.org/ensembl/ENSG00000102230>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "PCYT1B"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "PCYT1B" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000102230> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000102230"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000102230" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000102230> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/9468> ;
@@ -614,7 +614,7 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP3933_r116372> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id23aa80e2>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id23aa80e2> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00350> , <https://identifiers.org/kegg.compound/C02737> ;
@@ -622,23 +622,23 @@
         wp:target         <https://identifiers.org/kegg.compound/C00350> .
 
 <https://identifiers.org/wikipathways/WP3933_r116372>
-        a                      skos:Collection , wp:Pathway ;
+        rdf:type               skos:Collection , wp:Pathway ;
         dc:identifier          <https://identifiers.org/wikipathways/WP3933> ;
-        dc:source              "WikiPathways"^^xsd:string ;
+        dc:source              "WikiPathways" ;
         dc:title               "Kennedy pathway from sphingolipids"@en ;
         dcterms:description    "The CDP-choline pathway, first identified by Eugene Kennedy in 1956, is the predominant mechanism by which mammalian cells synthesize phosphatidylcholine (PC) for incorporation into membranes or lipid-derived signalling molecules. The CDP-choline pathway on the left-hand side represents one half of what is known as the Kennedy pathway. The other half on the right-hand side is the CDP-ethanolamine pathway which is responsible for the biosynthesis of the phospholipid product phosphatidylethanolamine (PE).\nSource: [https://en.wikipedia.org/wiki/CDP-choline_pathway Wikipedia]" ;
-        dcterms:identifier     "WP3933"^^xsd:string ;
+        dcterms:identifier     "WP3933" ;
         dcterms:references     <https://identifiers.org/pubmed/33093177> , <https://identifiers.org/pubmed/20503434> ;
         cito:cites             <https://identifiers.org/pubmed/20503434> , <https://identifiers.org/pubmed/33093177> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3933_r116372> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001336> , <http://purl.obolibrary.org/obo/PW_0000155> , <http://purl.obolibrary.org/obo/PW_0000010> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:organismName        "Homo sapiens" ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000155> , <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0001336> ;
         foaf:page              <http://www.wikipathways.org/instance/WP3933_r116372> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/cddb0>
-        a                 wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        rdf:type          wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idf410dfff> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/ide313c2f2> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/cddb0> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00346> , <https://identifiers.org/cas/1927-31-7> , <https://identifiers.org/cas/58-64-0> , <https://identifiers.org/kegg.compound/C00189> ;
@@ -646,7 +646,7 @@
         wp:target         <https://identifiers.org/kegg.compound/C00346> , <https://identifiers.org/cas/1927-31-7> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/bf63a>
-        a                 wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/bf63a> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/iddca7db93> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id19882214> ;
         wp:participants   <https://identifiers.org/kegg.compound/C00307> , <https://identifiers.org/cas/2056-98-6> , <https://identifiers.org/wikidata/Q290828> , <https://identifiers.org/chebi/CHEBI:18132> ;
@@ -654,7 +654,7 @@
         wp:target         <https://identifiers.org/wikidata/Q290828> , <https://identifiers.org/kegg.compound/C00307> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idd2dc803e>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idd2dc803e> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000166224> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b75a7> ;
@@ -662,7 +662,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b75a7> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/d895c>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/d895c> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000185813> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> ;
@@ -670,12 +670,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/b48e1> .
 
 <https://identifiers.org/kegg.compound/C00065>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "L-Serine"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "L-Serine" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/MTCFGRXMJLQNBG-REOHCLBHSA-N> ;
         dc:identifier       <https://identifiers.org/kegg.compound/C00065> ;
-        dc:source           "KEGG Compound"^^xsd:string ;
-        dcterms:identifier  "C00065"^^xsd:string ;
+        dc:source           "KEGG Compound" ;
+        dcterms:identifier  "C00065" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9b21a8c3> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id8c824058> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17115> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5736> ;
@@ -688,11 +688,11 @@
         foaf:page           <http://www.genome.jp/dbget-bin/www_bget?cpd:C00065> .
 
 <https://identifiers.org/ensembl/ENSG00000133027>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "PEMT"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "PEMT" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000133027> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000133027"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000133027" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/id9fbc963a> , <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000133027> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/10400> ;
@@ -702,14 +702,14 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000133027> .
 
 <https://identifiers.org/pubmed/33093177>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "33093177" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/33093177> .
 
 <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idb87590ce>
-        a                 wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
+        rdf:type          wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3933_r116372> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id9c12f1c9> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/id64a948d1> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/Interaction/idb87590ce> ;
         wp:participants   <https://identifiers.org/wikidata/Q650187> , <https://identifiers.org/kegg.compound/C00350> , <https://identifiers.org/kegg.compound/C00021> , <https://identifiers.org/kegg.compound/C00019> ;
@@ -717,11 +717,11 @@
         wp:target         <https://identifiers.org/wikidata/Q650187> , <https://identifiers.org/kegg.compound/C00021> .
 
 <https://identifiers.org/ensembl/ENSG00000166224>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "SGPL1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "SGPL1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000166224> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000166224"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000166224" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3933_r116372> , <http://rdf.wikipathways.org/Pathway/WP3933_r116372/WP/Interaction/idd2dc803e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000166224> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8879> ;

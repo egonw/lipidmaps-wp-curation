@@ -1,28 +1,28 @@
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix pav:   <http://purl.org/pav/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix freq:  <http://purl.org/cld/freq/> .
-@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cito:  <http://purl.org/spar/cito/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
-@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wprdf: <http://rdf.wikipathways.org/> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <https://identifiers.org/wikidata/Q27088347>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "P'-geranyl 2-fluoromevalonate 5-diphosphate"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "P'-geranyl 2-fluoromevalonate 5-diphosphate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ACYPMTKDKJZHBJ-MDWZMJQESA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27088347> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27088347"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27088347" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/34980934> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/ACYPMTKDKJZHBJ-MDWZMJQESA-N> ;
@@ -32,7 +32,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27088347> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idcc5fc71f> ;
         wp:participants   <https://identifiers.org/wikidata/Q45416123> , <https://identifiers.org/wikidata/Q418125> ;
@@ -40,7 +40,7 @@
         wp:target         <https://identifiers.org/wikidata/Q45416123> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/ida18c5874>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/ida18c5874> ;
         wp:participants   <https://identifiers.org/wikidata/Q417403> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> ;
@@ -48,12 +48,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> .
 
 <https://identifiers.org/wikidata/Q27096447>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "isoferulic acid"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "isoferulic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/QURCVMIEKCOAJU-HWKANZROSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27096447> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27096447"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27096447" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:27794> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/643318> ;
@@ -66,12 +66,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27096447> .
 
 <https://identifiers.org/chebi/CHEBI:15351>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Acetyl-CoA"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Acetyl-CoA" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ZSLZBFCDCINBPY-ZSJPKINUSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:15351> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:15351"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:15351" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8e4c1> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15351> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/392413> ;
@@ -85,12 +85,12 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15351> .
 
 <https://identifiers.org/wikidata/Q27108899>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "3-hydroxy-3-methylglutaryl-CoA"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "3-hydroxy-3-methylglutaryl-CoA" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/CABVTRNMFUVUDM-SJBCKIPMSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27108899> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27108899"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27108899" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf9c676ff> , <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8e4c1> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:11814> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/82627> ;
@@ -103,12 +103,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27108899> .
 
 <https://identifiers.org/hmdb/HMDB0000567>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Cinnamic acid"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Cinnamic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/WBYWAXJHAXSJNI-SREVYHEPSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000567> ;
-        dc:source           "HMDB"^^xsd:string ;
-        dcterms:identifier  "HMDB0000567"^^xsd:string ;
+        dc:source           "HMDB" ;
+        dcterms:identifier  "HMDB0000567" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:35699> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/10286933> ;
@@ -121,7 +121,7 @@
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000567> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8f3f314e>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id8f3f314e> ;
         wp:participants   <https://identifiers.org/wikidata/Q45414671> , <https://identifiers.org/wikidata/Q27109878> ;
@@ -129,18 +129,18 @@
         wp:target         <https://identifiers.org/wikidata/Q45414671> .
 
 <https://identifiers.org/wikidata/Q45414671>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "mevalonate-P"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "mevalonate-P" ;
         dc:identifier       <https://identifiers.org/wikidata/Q45414671> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q45414671"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q45414671" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9678638b> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8f3f314e> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q45414671> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/df3ad> ;
         foaf:page           <https://scholia.toolforge.org/Q45414671> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id815a65a8>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id815a65a8> ;
         wp:participants   <https://identifiers.org/wikidata/Q21107439> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id84fcabc8> ;
@@ -148,12 +148,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id84fcabc8> .
 
 <https://identifiers.org/chembl.compound/CHEMBL1207858>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "CHEMBL1207858"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "CHEMBL1207858" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/AGJZDRXKAQZWEP-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL1207858> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL1207858"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL1207858" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25065466> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/AGJZDRXKAQZWEP-UHFFFAOYSA-N> ;
@@ -163,12 +163,12 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1207858> .
 
 <https://identifiers.org/wikidata/Q99374>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "p-coumaric acid"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "p-coumaric acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NGSWKAQJJWESNS-ZZXKWVIFSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q99374> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q99374"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q99374" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:32374> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/553148> ;
@@ -181,7 +181,7 @@
         foaf:page           <https://scholia.toolforge.org/Q99374> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id28e0714e>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id28e0714e> ;
         wp:participants   <https://identifiers.org/wikidata/Q418125> , <https://identifiers.org/wikidata/Q417398> ;
@@ -189,34 +189,34 @@
         wp:target         <https://identifiers.org/wikidata/Q418125> .
 
 <https://identifiers.org/wikidata/Q424031>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "MVK"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "MVK" ;
         dc:identifier       <https://identifiers.org/wikidata/Q424031> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q424031"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q424031" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5363c00> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8c3d1f0b> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q424031> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/f537e> ;
         foaf:page           <https://scholia.toolforge.org/Q424031> .
 
 <https://identifiers.org/wikidata/Q21132842>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "IDI2"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "IDI2" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21132842> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21132842"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21132842" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21132842> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/c128e> ;
         foaf:page           <https://scholia.toolforge.org/Q21132842> .
 
 <https://identifiers.org/chembl.compound/CHEMBL1160330>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL1160330"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL1160330" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YERUUUBBRAPJND-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL1160330> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL1160330"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL1160330" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25031205> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/YERUUUBBRAPJND-UHFFFAOYSA-N> ;
@@ -226,12 +226,12 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1160330> .
 
 <https://identifiers.org/wikidata/Q28852343>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "zoledronic acid"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "zoledronic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/FUXFIVRTGHOMSO-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q28852343> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q28852343"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q28852343" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/FUXFIVRTGHOMSO-UHFFFAOYSA-N> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q28852343> ;
@@ -239,7 +239,7 @@
         foaf:page           <https://scholia.toolforge.org/Q28852343> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/iddd770f4c>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/iddd770f4c> ;
         wp:participants   <https://identifiers.org/wikidata/Q417403> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> ;
@@ -247,29 +247,29 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> .
 
 <https://identifiers.org/wikidata/Q21106540>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "GGPS1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "GGPS1" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21106540> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21106540"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21106540" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id15efa0e0> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21106540> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/cb5cc> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/b1566> ;
         foaf:page           <https://scholia.toolforge.org/Q21106540> .
 
 <https://identifiers.org/wikidata/Q21108578>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "FDFT1"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "FDFT1" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21108578> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21108578"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21108578" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/b0c1e> , <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id85ef981f> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21108578> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/bf9be> ;
         foaf:page           <https://scholia.toolforge.org/Q21108578> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf9c676ff>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idf9c676ff> ;
         wp:participants   <https://identifiers.org/wikidata/Q27108899> , <https://identifiers.org/wikidata/Q2639429> ;
@@ -277,12 +277,12 @@
         wp:target         <https://identifiers.org/wikidata/Q27108899> .
 
 <https://identifiers.org/chembl.compound/CHEMBL1160328>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL1160328"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL1160328" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YIGLDWRZXXHIGZ-ZCFIWIBFSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL1160328> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL1160328"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL1160328" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25031044> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/YIGLDWRZXXHIGZ-ZCFIWIBFSA-N> ;
@@ -292,7 +292,7 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1160328> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id63ad2963> ;
         wp:participants   <https://identifiers.org/wikidata/Q774795> , <https://identifiers.org/wikidata/Q45416123> ;
@@ -300,7 +300,7 @@
         wp:target         <https://identifiers.org/wikidata/Q774795> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5e812089>
-        a                   wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         dcterms:references  <https://identifiers.org/pubmed/2890166> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id5e812089> ;
@@ -309,12 +309,12 @@
         wp:target           <https://identifiers.org/wikidata/Q21118293> .
 
 <https://identifiers.org/wikidata/Q27075447>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "BPH-628"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "BPH-628" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/MPBUFKZCEBTBSK-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075447> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075447"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075447" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17279473> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/MPBUFKZCEBTBSK-UHFFFAOYSA-N> ;
@@ -324,12 +324,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27075447> .
 
 <https://identifiers.org/chembl.compound/CHEMBL39102>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL39102"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL39102" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XKZCNQAYFRBCKR-HNNXBMFYSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL39102> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL39102"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL39102" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/23134377> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/XKZCNQAYFRBCKR-HNNXBMFYSA-N> ;
@@ -339,12 +339,12 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL39102> .
 
 <https://identifiers.org/wikidata/Q27109878>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "mevalonate"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "mevalonate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/KJTLQQUUPVSXIM-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27109878> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27109878"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27109878" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8f3f314e> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:25350> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/3676240> ;
@@ -355,7 +355,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27109878> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id84fcabc8>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id84fcabc8> ;
         wp:participants   <https://identifiers.org/wikidata/Q418125> , <https://identifiers.org/wikidata/Q417403> ;
@@ -363,7 +363,7 @@
         wp:target         <https://identifiers.org/wikidata/Q418125> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idb30ee13d>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idb30ee13d> ;
         wp:participants   <https://identifiers.org/wikipathways/WP197> , <https://identifiers.org/wikidata/Q407560> ;
@@ -371,18 +371,18 @@
         wp:target         <https://identifiers.org/wikipathways/WP197> .
 
 <https://identifiers.org/wikidata/Q21118293>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "HMGCS1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "HMGCS1" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21118293> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21118293"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21118293" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5e812089> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8950a> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21118293> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/ed3ae> ;
         foaf:page           <https://scholia.toolforge.org/Q21118293> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id93e40410>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id93e40410> ;
         wp:participants   <https://identifiers.org/wikidata/Q21107439> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> ;
@@ -390,17 +390,17 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> .
 
 <https://identifiers.org/wikipathways/WP197>
-        a                   wp:DataNode , wp:Pathway ;
-        rdfs:label          "cholesterol synthesis"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Pathway ;
+        rdfs:label          "cholesterol synthesis" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP197> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP197"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP197" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idb30ee13d> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/f718f> ;
         foaf:page           <https://www.wikipathways.org/instance/WP197> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/dff75>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/dff75> ;
         wp:participants   <https://identifiers.org/wikidata/Q22676988> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9678638b> ;
@@ -408,7 +408,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9678638b> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/b9cf0>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/b9cf0> ;
         wp:participants   <https://identifiers.org/uniprot/P53602> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf0db6c0a> ;
@@ -416,12 +416,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf0db6c0a> .
 
 <https://identifiers.org/pubchem.compound/6440895>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "L-659699"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "L-659699" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ODCZJZWSXPVLAW-KXCGKLMDSA-N> ;
         dc:identifier       <https://identifiers.org/pubchem.compound/6440895> ;
-        dc:source           "PubChem-compound"^^xsd:string ;
-        dcterms:identifier  "6440895"^^xsd:string ;
+        dc:source           "PubChem-compound" ;
+        dcterms:identifier  "6440895" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5e812089> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4945132> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/ODCZJZWSXPVLAW-KXCGKLMDSA-N> ;
@@ -431,7 +431,7 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=6440895> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id85ef981f>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id85ef981f> ;
         wp:participants   <https://identifiers.org/wikidata/Q21108578> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9bf97ba3> ;
@@ -439,12 +439,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9bf97ba3> .
 
 <https://identifiers.org/chembl.compound/CHEMBL1208103>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL1208103"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL1208103" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/HGDWHTASNMRJMP-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL1208103> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL1208103"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL1208103" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25065559> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/HGDWHTASNMRJMP-UHFFFAOYSA-N> ;
@@ -454,7 +454,7 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL1208103> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5b657570>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id5b657570> ;
         wp:participants   <https://identifiers.org/wikidata/Q407560> , <https://identifiers.org/wikidata/Q27088444> ;
@@ -462,7 +462,7 @@
         wp:target         <https://identifiers.org/wikidata/Q407560> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9678638b>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id9678638b> ;
         wp:participants   <https://identifiers.org/wikidata/Q45415198> , <https://identifiers.org/wikidata/Q45414671> ;
@@ -470,12 +470,12 @@
         wp:target         <https://identifiers.org/wikidata/Q45415198> .
 
 <https://identifiers.org/wikidata/Q417740>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "lovastatin"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "lovastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/PCZOHLXUXFIOCF-BXMDZJJMSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q417740> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q417740"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q417740" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:40303> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/48085> ;
@@ -488,12 +488,12 @@
         foaf:page           <https://scholia.toolforge.org/Q417740> .
 
 <https://identifiers.org/wikidata/Q27075459>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "BPH-830"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "BPH-830" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/GNETVUVZFYJATO-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075459> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075459"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075459" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25065269> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/GNETVUVZFYJATO-UHFFFAOYSA-N> ;
@@ -503,12 +503,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27075459> .
 
 <https://identifiers.org/hmdb/HMDB0015022>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Risedronate"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Risedronate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/IIDJRNMFWXDHID-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0015022> ;
-        dc:source           "HMDB"^^xsd:string ;
-        dcterms:identifier  "HMDB0015022"^^xsd:string ;
+        dc:source           "HMDB" ;
+        dcterms:identifier  "HMDB0015022" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:183772> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5055> ;
@@ -521,22 +521,22 @@
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0015022> .
 
 <https://identifiers.org/wikidata/Q22676988>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "PMVK"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "PMVK" ;
         dc:identifier       <https://identifiers.org/wikidata/Q22676988> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q22676988"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q22676988" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/dff75> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q22676988> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/bd1ff> ;
         foaf:page           <https://scholia.toolforge.org/Q22676988> .
 
 <https://identifiers.org/uniprot/P53602>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "MVD"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "MVD" ;
         dc:identifier       <https://identifiers.org/uniprot/P53602> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P53602"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P53602" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/b9cf0> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000167508> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/4597> ;
@@ -546,12 +546,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/P53602> .
 
 <https://identifiers.org/chebi/CHEBI:83934>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "(+)-Zaragozic acid"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "(+)-Zaragozic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/KQMNJFMTGHRJHM-ZFSXNWTMSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:83934> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:83934"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:83934" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:83934> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/8029278> ;
@@ -562,12 +562,12 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:83934> .
 
 <https://identifiers.org/wikidata/Q27075453>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "BPH-676"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "BPH-676" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NWIARQRYIRVYCM-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075453> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075453"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075453" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17279475> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/NWIARQRYIRVYCM-UHFFFAOYSA-N> ;
@@ -577,12 +577,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27075453> .
 
 <https://identifiers.org/wikidata/Q27088444>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "presqualene-PP"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "presqualene-PP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/ATZKAUGGNMSCCY-VYCBRMPGSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27088444> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27088444"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27088444" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5b657570> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9bf97ba3> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15442> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444207> ;
@@ -594,12 +594,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27088444> .
 
 <https://identifiers.org/wikidata/Q407560>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "squalene"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "squalene" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YYGNTYWPHWGJRM-AAJYLUCBSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q407560> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q407560"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q407560" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idb30ee13d> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5b657570> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15440> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/553635> ;
@@ -613,14 +613,14 @@
         foaf:page           <https://scholia.toolforge.org/Q407560> .
 
 <https://identifiers.org/pubmed/2890166>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "2890166" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5e812089> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/2890166> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8c3d1f0b>
-        a                 wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id8c3d1f0b> ;
         wp:participants   <https://identifiers.org/wikidata/Q424031> , <https://identifiers.org/wikidata/Q27077283> ;
@@ -628,12 +628,12 @@
         wp:target         <https://identifiers.org/wikidata/Q424031> .
 
 <https://identifiers.org/wikidata/Q27087889>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "NE58062"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "NE58062" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XUCBNFJYKWKAMN-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27087889> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27087889"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27087889" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/23317001> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/XUCBNFJYKWKAMN-UHFFFAOYSA-N> ;
@@ -643,7 +643,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27087889> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id1a382e3>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id1a382e3> ;
         wp:participants   <https://identifiers.org/wikidata/Q417398> , <https://identifiers.org/wikidata/Q417403> ;
@@ -651,11 +651,11 @@
         wp:target         <https://identifiers.org/wikidata/Q417398> .
 
 <https://identifiers.org/uniprot/P04035>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "HMGCR"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "HMGCR" ;
         dc:identifier       <https://identifiers.org/uniprot/P04035> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P04035"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P04035" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000113161> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3156> ;
@@ -665,12 +665,12 @@
         foaf:page           <http://www.uniprot.org/uniprot/P04035> .
 
 <https://identifiers.org/wikidata/Q418125>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "geranyl-PP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "geranyl-PP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/GVVPGTZRZFNKDS-JXMROGBWSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q418125> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q418125"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q418125" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id28e0714e> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id84fcabc8> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17211> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/393471> ;
@@ -684,12 +684,12 @@
         foaf:page           <https://scholia.toolforge.org/Q418125> .
 
 <https://identifiers.org/wikidata/Q670131>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "simvastatin"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "simvastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/RYMZZMVNJRMUDD-HGQWONQESA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q670131> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q670131"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q670131" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:9150> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/49179> ;
@@ -704,12 +704,12 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4189_r120000> .
 
 <https://identifiers.org/pubchem.compound/44185382>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "[1-(Hydroxycarbamoyl)-4- (3-phenoxyphenyl)butyl]phosphonate"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "[1-(Hydroxycarbamoyl)-4- (3-phenoxyphenyl)butyl]phosphonate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/HGDWHTASNMRJMP-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/pubchem.compound/44185382> ;
-        dc:source           "PubChem-compound"^^xsd:string ;
-        dcterms:identifier  "44185382"^^xsd:string ;
+        dc:source           "PubChem-compound" ;
+        dcterms:identifier  "44185382" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25065559> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/HGDWHTASNMRJMP-UHFFFAOYSA-N> ;
@@ -719,12 +719,12 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=44185382> .
 
 <https://identifiers.org/wikidata/Q27087890>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "NE97220"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "NE97220" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NAIJOBGUXRHQJW-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27087890> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27087890"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27087890" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4440492> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/NAIJOBGUXRHQJW-UHFFFAOYSA-N> ;
@@ -734,19 +734,19 @@
         foaf:page           <https://scholia.toolforge.org/Q27087890> .
 
 <https://identifiers.org/pubmed/19>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "19" ;
         dcterms:isPartOf    <https://identifiers.org/pubchem.compound/44185378> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/19> .
 
 <https://identifiers.org/wikidata/Q423439>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "cerivastatin"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "cerivastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/SEERZIQQUAZTOL-ANMDKAQQSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q423439> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q423439"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q423439" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:3558> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/393588> ;
@@ -758,18 +758,18 @@
         foaf:page           <https://scholia.toolforge.org/Q423439> .
 
 <https://identifiers.org/wikidata/Q21151146>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "IDI1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "IDI1" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21151146> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21151146"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21151146" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21151146> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/f1c29> ;
         foaf:page           <https://scholia.toolforge.org/Q21151146> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8950a>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idf4d8950a> ;
         wp:participants   <https://identifiers.org/wikidata/Q21118293> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8e4c1> ;
@@ -777,12 +777,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8e4c1> .
 
 <https://identifiers.org/wikidata/Q774795>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "geranylgeranyl-PP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "geranylgeranyl-PP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OINNEUNVOZHBOX-QIRCYJPOSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q774795> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q774795"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q774795" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:48861> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/394418> ;
@@ -795,7 +795,7 @@
         foaf:page           <https://scholia.toolforge.org/Q774795> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf4d8e4c1>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idf4d8e4c1> ;
         wp:participants   <https://identifiers.org/wikidata/Q27108899> , <https://identifiers.org/chebi/CHEBI:15351> ;
@@ -803,19 +803,19 @@
         wp:target         <https://identifiers.org/wikidata/Q27108899> .
 
 <https://identifiers.org/pubmed/28910500>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "28910500" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/28910500> .
 
 <https://identifiers.org/wikidata/Q7392720>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "sq-109"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "sq-109" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/JFIBVDBTCDTBRH-REZTVBANSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q7392720> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q7392720"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q7392720" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4438718> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/JFIBVDBTCDTBRH-REZTVBANSA-N> ;
@@ -825,12 +825,12 @@
         foaf:page           <https://scholia.toolforge.org/Q7392720> .
 
 <https://identifiers.org/chembl.compound/CHEMBL39312>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL39312"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL39312" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/VWKZOIOUHUHQKZ-HZPDHXFCSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL39312> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL39312"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL39312" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/23134396> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/VWKZOIOUHUHQKZ-HZPDHXFCSA-N> ;
@@ -840,7 +840,7 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL39312> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9bf97ba3>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id9bf97ba3> ;
         wp:participants   <https://identifiers.org/wikidata/Q27088444> , <https://identifiers.org/wikidata/Q45416123> ;
@@ -848,7 +848,7 @@
         wp:target         <https://identifiers.org/wikidata/Q27088444> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/b0c1e>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/b0c1e> ;
         wp:participants   <https://identifiers.org/wikidata/Q21108578> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5b657570> ;
@@ -856,12 +856,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5b657570> .
 
 <https://identifiers.org/wikidata/Q27077077>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "diphosphoglycolyl proline"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "diphosphoglycolyl proline" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/CDFDGXYBANXCPC-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27077077> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27077077"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27077077" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/34980842> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/CDFDGXYBANXCPC-UHFFFAOYSA-N> ;
@@ -871,7 +871,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27077077> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id5363c00>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id5363c00> ;
         wp:participants   <https://identifiers.org/wikidata/Q424031> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8f3f314e> ;
@@ -879,7 +879,7 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8f3f314e> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf0db6c0a>
-        a                 wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/idf0db6c0a> ;
         wp:participants   <https://identifiers.org/wikidata/Q417403> , <https://identifiers.org/wikidata/Q45415198> ;
@@ -887,12 +887,12 @@
         wp:target         <https://identifiers.org/wikidata/Q417403> .
 
 <https://identifiers.org/wikidata/Q417403>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "isopenthyl-PP"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "isopenthyl-PP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/NUHSROFQTUXZQQ-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q417403> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q417403"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q417403" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/ida18c5874> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id1a382e3> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf0db6c0a> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/iddd770f4c> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id84fcabc8> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16584> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/1158> ;
@@ -906,12 +906,12 @@
         foaf:page           <https://scholia.toolforge.org/Q417403> .
 
 <https://identifiers.org/wikidata/Q415159>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "rosuvastatin"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "rosuvastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/BPRHUIZQVSMCRT-VEUZHWNKSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q415159> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q415159"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q415159" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:38545> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/393589> ;
@@ -923,12 +923,12 @@
         foaf:page           <https://scholia.toolforge.org/Q415159> .
 
 <https://identifiers.org/wikidata/Q668093>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "atorvastatin"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "atorvastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XUKUURHRXDUEBC-KAYWLYCHSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q668093> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q668093"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q668093" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39548> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/54810> ;
@@ -940,12 +940,12 @@
         foaf:page           <https://scholia.toolforge.org/Q668093> .
 
 <https://identifiers.org/wikidata/Q27075451>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "BPH-675"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "BPH-675" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/MZVWVRVNMXTDAK-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075451> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075451"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075451" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17279474> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/MZVWVRVNMXTDAK-UHFFFAOYSA-N> ;
@@ -955,28 +955,28 @@
         foaf:page           <https://scholia.toolforge.org/Q27075451> .
 
 <https://identifiers.org/wikipathways/WP4189_r120000>
-        a                      wp:Pathway , skos:Collection ;
+        rdf:type               wp:Pathway , skos:Collection ;
         dc:identifier          <https://identifiers.org/wikipathways/WP4189> ;
-        dc:source              "WikiPathways"^^xsd:string ;
+        dc:source              "WikiPathways" ;
         dc:title               "Mevalonate arm of cholesterol biosynthesis pathway with inhibitors"@en ;
         dcterms:description    "An analysis of the mevalonate branch of the cholesterol biosynthesis pathway, and a set of inhibitors directed against targets in this pathway. Inhibitors which have been found for Homo Sapiens are coloured red, those found for Rattus norvegicus orange.\n\nView more details on where these reactions in the cell take place at [https://www.wikipathways.org/index.php/Pathway:WP4190]. View the broader scope of cholesterol metabolism at [https://www.wikipathways.org/index.php/Pathway:WP430]." ;
-        dcterms:identifier     "WP4189"^^xsd:string ;
+        dcterms:identifier     "WP4189" ;
         dcterms:references     <https://identifiers.org/pubmed/28910500> ;
         cito:cites             <https://identifiers.org/pubmed/28910500> , <https://identifiers.org/pubmed/19> , <https://identifiers.org/pubmed/2890166> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4189_r120000> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000752> , <http://purl.obolibrary.org/obo/PW_0000454> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:organismName        "Homo sapiens" ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000752> , <http://purl.obolibrary.org/obo/PW_0000454> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4189_r120000> .
 
 <https://identifiers.org/wikidata/Q27075449>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "BPH-629"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "BPH-629" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/BYVXAUZOTGITQZ-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075449> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075449"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075449" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17279472> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/BYVXAUZOTGITQZ-UHFFFAOYSA-N> ;
@@ -986,7 +986,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27075449> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id815a65a9>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id815a65a9> ;
         wp:participants   <https://identifiers.org/wikidata/Q21107439> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id28e0714e> ;
@@ -994,12 +994,12 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id28e0714e> .
 
 <https://identifiers.org/wikidata/Q2639429>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "acetoacetyl-CoA"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "acetoacetyl-CoA" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/OJFDKHTZOUZBOS-CITAKDKDSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q2639429> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q2639429"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q2639429" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf9c676ff> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15345> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/83198> ;
@@ -1013,12 +1013,12 @@
         foaf:page           <https://scholia.toolforge.org/Q2639429> .
 
 <https://identifiers.org/wikidata/Q417398>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "dimethylallyl-PP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "dimethylallyl-PP" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/CBIDRCWHNCKSTO-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q417398> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q417398"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q417398" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id28e0714e> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id1a382e3> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16057> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/627> ;
@@ -1032,12 +1032,12 @@
         foaf:page           <https://scholia.toolforge.org/Q417398> .
 
 <https://identifiers.org/wikidata/Q27073729>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "3-hydroxy-3-methyl-6-phosphohexanoic acid"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "3-hydroxy-3-methyl-6-phosphohexanoic acid" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XRCIRZGXKWCWNQ-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27073729> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27073729"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27073729" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/15200870> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/XRCIRZGXKWCWNQ-UHFFFAOYSA-N> ;
@@ -1047,7 +1047,7 @@
         foaf:page           <https://scholia.toolforge.org/Q27073729> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id15efa0e0>
-        a                 wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4189_r120000/Interaction/id15efa0e0> ;
         wp:participants   <https://identifiers.org/wikidata/Q21106540> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> ;
@@ -1055,23 +1055,23 @@
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> .
 
 <https://identifiers.org/wikidata/Q45416123>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "famesyl-PP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "famesyl-PP" ;
         dc:identifier       <https://identifiers.org/wikidata/Q45416123> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q45416123"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q45416123" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idcc5fc71f> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id63ad2963> , <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9bf97ba3> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q45416123> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/dc94f> ;
         foaf:page           <https://scholia.toolforge.org/Q45416123> .
 
 <https://identifiers.org/wikidata/Q27075443>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "BPH-608"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "BPH-608" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YXQQNSYZOQHKHD-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27075443> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27075443"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27075443" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17245076> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/YXQQNSYZOQHKHD-UHFFFAOYSA-N> ;
@@ -1081,23 +1081,23 @@
         foaf:page           <https://scholia.toolforge.org/Q27075443> .
 
 <https://identifiers.org/wikidata/Q21107439>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "FDPS"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "FDPS" ;
         dc:identifier       <https://identifiers.org/wikidata/Q21107439> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q21107439"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q21107439" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id815a65a9> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id815a65a8> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id93e40410> , <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q21107439> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r120000/DataNode/f9d3e> ;
         foaf:page           <https://scholia.toolforge.org/Q21107439> .
 
 <https://identifiers.org/chembl.compound/CHEMBL24362>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "CHEMBL24362"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "CHEMBL24362" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/FBPJEWKDFUWVKV-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/chembl.compound/CHEMBL24362> ;
-        dc:source           "ChEMBL compound"^^xsd:string ;
-        dcterms:identifier  "CHEMBL24362"^^xsd:string ;
+        dc:source           "ChEMBL compound" ;
+        dcterms:identifier  "CHEMBL24362" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/23122906> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/FBPJEWKDFUWVKV-UHFFFAOYSA-N> ;
@@ -1107,12 +1107,12 @@
         foaf:page           <https://www.ebi.ac.uk/chembl/compound/inspect/CHEMBL24362> .
 
 <https://identifiers.org/wikidata/Q27074009>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "6-fluoromevalonate 5-diphosphate"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "6-fluoromevalonate 5-diphosphate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/YGLNCOGHKIHKSA-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27074009> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27074009"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27074009" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/34980730> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/YGLNCOGHKIHKSA-UHFFFAOYSA-N> ;
@@ -1122,12 +1122,12 @@
         foaf:page           <https://scholia.toolforge.org/Q27074009> .
 
 <https://identifiers.org/wikidata/Q27077283>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "farnesyl thiodiphosphate"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "farnesyl thiodiphosphate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/DRADWUUFBCYMDM-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27077283> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27077283"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27077283" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id8c3d1f0b> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/DRADWUUFBCYMDM-UHFFFAOYSA-L> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID56947069> ;
@@ -1136,11 +1136,11 @@
         foaf:page           <https://scholia.toolforge.org/Q27077283> .
 
 <https://identifiers.org/wikidata/Q45415198>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "mevalonate-PP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "mevalonate-PP" ;
         dc:identifier       <https://identifiers.org/wikidata/Q45415198> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q45415198"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q45415198" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/id9678638b> , <https://identifiers.org/wikipathways/WP4189_r120000> , <http://rdf.wikipathways.org/Pathway/WP4189_r120000/WP/Interaction/idf0db6c0a> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:15899> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q45415198> ;
@@ -1148,12 +1148,12 @@
         foaf:page           <https://scholia.toolforge.org/Q45415198> .
 
 <https://identifiers.org/pubchem.compound/44185378>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Compound 13"^^xsd:string , "(1-Methyl-1-{[3-(3-phenoxyphenyl)propyl] carbamoyl}ethyl)phosphonate"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Compound 13" , "(1-Methyl-1-{[3-(3-phenoxyphenyl)propyl] carbamoyl}ethyl)phosphonate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/AGJZDRXKAQZWEP-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/pubchem.compound/44185378> ;
-        dc:source           "PubChem-compound"^^xsd:string ;
-        dcterms:identifier  "44185378"^^xsd:string ;
+        dc:source           "PubChem-compound" ;
+        dcterms:identifier  "44185378" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         dcterms:references  <https://identifiers.org/pubmed/19> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/25065466> ;
@@ -1164,12 +1164,12 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=44185378> .
 
 <https://identifiers.org/wikidata/Q417942>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Fluvastatin"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Fluvastatin" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/FJLGEFLZQAZZCD-MCBHFWOFSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q417942> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q417942"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q417942" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:38565> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/393587> ;
@@ -1180,12 +1180,12 @@
         foaf:page           <https://scholia.toolforge.org/Q417942> .
 
 <https://identifiers.org/pubchem.compound/405372>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "NE58018"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "NE58018" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/XXNASZAYANFLID-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/pubchem.compound/405372> ;
-        dc:source           "PubChem-compound"^^xsd:string ;
-        dcterms:identifier  "405372"^^xsd:string ;
+        dc:source           "PubChem-compound" ;
+        dcterms:identifier  "405372" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/358909> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/XXNASZAYANFLID-UHFFFAOYSA-N> ;
@@ -1195,12 +1195,12 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=405372> .
 
 <https://identifiers.org/pubchem.compound/11650985>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "P'-geranyl 3,5,9-trihydroxy-3- methylnonanate 9-diphosphate"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "P'-geranyl 3,5,9-trihydroxy-3- methylnonanate 9-diphosphate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/PMUQIJKCGIYWGT-GZTJUZNOSA-N> ;
         dc:identifier       <https://identifiers.org/pubchem.compound/11650985> ;
-        dc:source           "PubChem-compound"^^xsd:string ;
-        dcterms:identifier  "11650985"^^xsd:string ;
+        dc:source           "PubChem-compound" ;
+        dcterms:identifier  "11650985" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/9825724> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/PMUQIJKCGIYWGT-GZTJUZNOSA-N> ;
@@ -1210,12 +1210,12 @@
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=11650985> .
 
 <https://identifiers.org/wikidata/Q27071897>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "2-fluoromevalonate 5-diphosphate"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "2-fluoromevalonate 5-diphosphate" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/WPXHWHACORBSDS-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/wikidata/Q27071897> ;
-        dc:source           "Wikidata"^^xsd:string ;
-        dcterms:identifier  "Q27071897"^^xsd:string ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q27071897" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r120000> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/34980717> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/WPXHWHACORBSDS-UHFFFAOYSA-N> ;

@@ -1,23 +1,23 @@
-@prefix void:  <http://rdfs.org/ns/void#> .
-@prefix pav:   <http://purl.org/pav/> .
-@prefix owl:   <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix freq:  <http://purl.org/cld/freq/> .
-@prefix biopax: <http://www.biopax.org/release/biopax-level3.owl#> .
-@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix cito:  <http://purl.org/spar/cito/> .
-@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix gpml:  <http://vocabularies.wikipathways.org/gpml#> .
-@prefix wp:    <http://vocabularies.wikipathways.org/wp#> .
+@prefix biopax:  <http://www.biopax.org/release/biopax-level3.owl#> .
+@prefix cito:    <http://purl.org/spar/cito/> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix wprdf: <http://rdf.wikipathways.org/> .
-@prefix prov:  <http://www.w3.org/ns/prov#> .
-@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix freq:    <http://purl.org/cld/freq/> .
+@prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix pav:     <http://purl.org/pav/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:    <http://rdfs.org/ns/void#> .
+@prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
+@prefix wprdf:   <http://rdf.wikipathways.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f8ceb>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/18039658> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/f8ceb> ;
@@ -26,11 +26,11 @@
         wp:target           <https://identifiers.org/uniprot/P02652> .
 
 <https://identifiers.org/ensembl/ENSG00000175445>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "LPL"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "LPL" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000175445> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000175445"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000175445" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000175445> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/4023> ;
@@ -40,21 +40,21 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000175445> .
 
 <https://identifiers.org/wikipathways/WP4524>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Alternative steroidogenesis (including diseases)"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Alternative steroidogenesis (including diseases)" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP4524> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP4524"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP4524" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/d862d> ;
         foaf:page           <https://www.wikipathways.org/instance/WP4524> .
 
 <https://identifiers.org/uniprot/A8MUN2>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "B48"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "B48" ;
         dc:identifier       <https://identifiers.org/uniprot/A8MUN2> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "A8MUN2"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "A8MUN2" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000084674> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/338> ;
@@ -64,11 +64,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/A8MUN2> .
 
 <https://identifiers.org/chebi/CHEBI:39026>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "LDL"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "LDL" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:39026> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:39026"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:39026" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39026> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q28749> ;
@@ -76,23 +76,23 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39026> .
 
 <https://identifiers.org/wikipathways/WP4522_r119310>
-        a                      skos:Collection , wp:Pathway ;
+        rdf:type               skos:Collection , wp:Pathway ;
         dc:identifier          <https://identifiers.org/wikipathways/WP4522> ;
-        dc:source              "WikiPathways"^^xsd:string ;
+        dc:source              "WikiPathways" ;
         dc:title               "Metabolic pathway of LDL, HDL and TG, including diseases"@en ;
         dcterms:description    "This pathway shows genetic disorders related to lipoprotein metabolism. Two plasmalipoproteins, LDL and HDL, and one plasma lipid, triglyceride (TG), play an important role in this pathway. Hydrophobic lipids and fat-soluble vitamins are normally transported to the site of their uptake by transporters called lipoproteins, and any deregulation of the plasma concentrations of these proteins can cause dyslipidemias. Disorders resulting from an enzyme deficiency are highlighted in pink. More details on the composition of the various lipoproteins in this pathway are visualised in [https://www.wikipathways.org/index.php/Pathway:WP3601].\n\nThis pathway was inspired by Chapter 43 of the book of Blau (ISBN 3642403360 (978-3642403361)).\n" ;
-        dcterms:identifier     "WP4522"^^xsd:string ;
+        dcterms:identifier     "WP4522" ;
         cito:cites             <https://identifiers.org/pubmed/26965621> , <https://identifiers.org/pubmed/27068984> , <https://identifiers.org/pubmed/24808179> , <https://identifiers.org/pubmed/17215125> , <https://identifiers.org/pubmed/15728179> , <https://identifiers.org/pubmed/18039658> ;
         wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0090105> , <http://purl.obolibrary.org/obo/DOID_1388> , <http://purl.obolibrary.org/obo/DOID_13809> , <http://purl.obolibrary.org/obo/DOID_1390> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4522_r119310> ;
         wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000484> , <http://purl.obolibrary.org/obo/PW_0000153> , <http://purl.obolibrary.org/obo/PW_0000482> , <http://purl.obolibrary.org/obo/DOID_13809> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/DOID_1390> , <http://purl.obolibrary.org/obo/DOID_0090105> , <http://purl.obolibrary.org/obo/DOID_1388> , <http://purl.obolibrary.org/obo/PW_0000175> ;
         wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
-        wp:organismName        "Homo sapiens"^^xsd:string ;
+        wp:organismName        "Homo sapiens" ;
         wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000153> , <http://purl.obolibrary.org/obo/PW_0000482> , <http://purl.obolibrary.org/obo/PW_0000175> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000484> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4522_r119310> .
 
 <https://identifiers.org/pubmed/18039658>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "18039658" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f8ceb> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f1eb8> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idf0c2e3ad> ;
@@ -105,11 +105,11 @@
         dcterms:identifier  "10.1042/BST20150255" .
 
 <https://identifiers.org/uniprot/P02652>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "A-II"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "A-II" ;
         dc:identifier       <https://identifiers.org/uniprot/P02652> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P02652"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P02652" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f8ceb> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000158874> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/336> ;
@@ -119,17 +119,17 @@
         foaf:page           <http://www.uniprot.org/uniprot/P02652> .
 
 <https://identifiers.org/wikipathways/WP4523>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Classical steroidogenesis (including diseases)"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Classical steroidogenesis (including diseases)" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP4523> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP4523"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP4523" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/e10f4> ;
         foaf:page           <https://www.wikipathways.org/instance/WP4523> .
 
 <https://identifiers.org/pubmed/26965621>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "26965621" ;
         dcterms:isPartOf    <https://identifiers.org/uniprot/Q8WTV0> ;
@@ -138,11 +138,11 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/26965621> .
 
 <https://identifiers.org/uniprot/P55157>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "MTP"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "MTP" ;
         dc:identifier       <https://identifiers.org/uniprot/P55157> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P55157"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P55157" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000138823> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/4547> ;
@@ -152,11 +152,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/P55157> .
 
 <https://identifiers.org/ensembl/ENSG00000165029>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "ABCA1"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "ABCA1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000165029> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000165029"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000165029" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000165029> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/19> ;
@@ -166,7 +166,7 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000165029> .
 
 <https://identifiers.org/pubmed/27068984>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "27068984" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4545> ;
@@ -175,22 +175,22 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/27068984> .
 
 <https://identifiers.org/chebi/CHEBI:59238>
-        a                   wp:DataNode , wp:Metabolite ;
-        rdfs:label          "Cyclic fatty acids"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "Cyclic fatty acids" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:59238> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:59238"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:59238" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:59238> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/f6188> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:59238> .
 
 <https://identifiers.org/uniprot/P02649>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "E"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "E" ;
         dc:identifier       <https://identifiers.org/uniprot/P02649> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P02649"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P02649" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f1eb8> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130203> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/348> ;
@@ -204,11 +204,11 @@
         dcterms:identifier  "10.1074/JBC.M708098200" .
 
 <https://identifiers.org/wikipathways/WP496>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Steroid Biosynthesis (general overview)"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Steroid Biosynthesis (general overview)" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP496> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP496"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP496" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/d4389> ;
         foaf:page           <https://www.wikipathways.org/instance/WP496> .
@@ -217,11 +217,11 @@
         pav:hasVersion  <https://identifiers.org/wikipathways/WP4522_r119310> .
 
 <https://identifiers.org/uniprot/Q5SW96>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "LDLRAP1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "LDLRAP1" ;
         dc:identifier       <https://identifiers.org/uniprot/Q5SW96> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q5SW96"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q5SW96" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/id87db2526> , <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/15728179> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000157978> ;
@@ -232,11 +232,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q5SW96> .
 
 <https://identifiers.org/ensembl/ENSG00000169174>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "PCSK9"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "PCSK9" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000169174> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000169174"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000169174" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idd9cbf02b> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idf0c2e3ad> , <https://identifiers.org/wikipathways/WP4522_r119310> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f8ceb> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f1eb8> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/ida765c91> ;
         dcterms:references  <https://identifiers.org/pubmed/17215125> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000169174> ;
@@ -251,22 +251,22 @@
         dcterms:identifier  "10.1126/SCIENCE.AAD3517" .
 
 <https://identifiers.org/wikipathways/WP1531>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Vit. D pathway"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Vit. D pathway" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP1531> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP1531"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP1531" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f16ca> , <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/cf557> ;
         foaf:page           <https://www.wikipathways.org/instance/WP1531> .
 
 <https://identifiers.org/chebi/CHEBI:16113>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "Cholesterol"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "Cholesterol" ;
         rdfs:seeAlso        <https://identifiers.org/inchikey/HVYWMOMLDIMFJA-DPAQBDIFSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:16113> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:16113"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:16113" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f16ca> , <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16113> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5775> ;
@@ -280,7 +280,7 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16113> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f1eb8>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/18039658> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/f1eb8> ;
@@ -293,11 +293,11 @@
         dcterms:identifier  "10.1074/JBC.M501029200" .
 
 <https://identifiers.org/ensembl/ENSG00000213398>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "LCAT"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "LCAT" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000213398> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000213398"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000213398" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000213398> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3931> ;
@@ -307,11 +307,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000213398> .
 
 <https://identifiers.org/uniprot/Q9Y5X9>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "HL"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "HL" ;
         dc:identifier       <https://identifiers.org/uniprot/Q9Y5X9> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q9Y5X9"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q9Y5X9" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000101670> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/9388> ;
@@ -321,7 +321,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/Q9Y5X9> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/f16ca>
-        a                 wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/f16ca> ;
         wp:participants   <https://identifiers.org/wikipathways/WP1531> , <https://identifiers.org/chebi/CHEBI:16113> ;
@@ -329,17 +329,17 @@
         wp:target         <https://identifiers.org/wikipathways/WP1531> .
 
 <https://identifiers.org/wikipathways/WP4389>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Bile Acids"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Bile Acids" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP4389> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP4389"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP4389" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/d0127> ;
         foaf:page           <https://www.wikipathways.org/instance/WP4389> .
 
 <https://identifiers.org/pubmed/17215125>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "17215125" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idd9cbf02b> , <https://identifiers.org/ensembl/ENSG00000169174> ;
@@ -348,11 +348,11 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/17215125> .
 
 <https://identifiers.org/uniprot/H0YKN4>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "Annexin A2"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "Annexin A2" ;
         dc:identifier       <https://identifiers.org/uniprot/H0YKN4> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "H0YKN4"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "H0YKN4" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/ida765c91> , <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/24808179> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000182718> ;
@@ -363,11 +363,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/H0YKN4> .
 
 <https://identifiers.org/uniprot/P04114>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "B100"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "B100" ;
         dc:identifier       <https://identifiers.org/uniprot/P04114> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P04114"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P04114" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000084674> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/338> ;
@@ -377,7 +377,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/P04114> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idd9cbf02b>
-        a                   wp:Interaction , wp:Binding , wp:DirectedInteraction ;
+        rdf:type            wp:Interaction , wp:Binding , wp:DirectedInteraction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/17215125> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/idd9cbf02b> ;
@@ -386,11 +386,11 @@
         wp:target           <https://identifiers.org/ensembl/ENSG00000130164> .
 
 <https://identifiers.org/uniprot/P02655>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "C-II"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "C-II" ;
         dc:identifier       <https://identifiers.org/uniprot/P02655> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P02655"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P02655" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000234906> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/344> ;
@@ -408,11 +408,11 @@
         dcterms:identifier  "10.1074/JBC.M113.541094" .
 
 <https://identifiers.org/chebi/CHEBI:132933>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "IDL"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "IDL" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:132933> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:132933"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:132933" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:132933> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q2619230> ;
@@ -420,11 +420,11 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:132933> .
 
 <https://identifiers.org/uniprot/P01130>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "LDL-receptor"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "LDL-receptor" ;
         dc:identifier       <https://identifiers.org/uniprot/P01130> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P01130"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P01130" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130164> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3949> ;
@@ -434,11 +434,11 @@
         foaf:page           <http://www.uniprot.org/uniprot/P01130> .
 
 <https://identifiers.org/uniprot/P02647>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "A-I"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "A-I" ;
         dc:identifier       <https://identifiers.org/uniprot/P02647> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P02647"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P02647" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000118137> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/335> ;
@@ -448,7 +448,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/P02647> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/id87db2526>
-        a                 wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/id87db2526> ;
         wp:participants   <https://identifiers.org/ensembl/ENSG00000130164> , <https://identifiers.org/uniprot/Q5SW96> ;
@@ -456,7 +456,7 @@
         wp:target         <https://identifiers.org/ensembl/ENSG00000130164> .
 
 <https://identifiers.org/pubmed/24808179>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "24808179" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/ida765c91> , <https://identifiers.org/uniprot/H0YKN4> ;
@@ -465,11 +465,11 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24808179> .
 
 <https://identifiers.org/ensembl/ENSG00000087237>
-        a                   wp:DataNode , wp:GeneProduct ;
-        rdfs:label          "CETP"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdfs:label          "CETP" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000087237> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000087237"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000087237" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000087237> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1071> ;
@@ -479,7 +479,7 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000087237> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/ida765c91>
-        a                   wp:DirectedInteraction , wp:Inhibition , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Inhibition , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/24808179> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/ida765c91> ;
@@ -488,11 +488,11 @@
         wp:target           <https://identifiers.org/ensembl/ENSG00000169174> .
 
 <https://identifiers.org/uniprot/P11150>
-        a                   wp:GeneProduct , wp:DataNode ;
-        rdfs:label          "HL"^^xsd:string ;
+        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdfs:label          "HL" ;
         dc:identifier       <https://identifiers.org/uniprot/P11150> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "P11150"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "P11150" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000166035> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3990> ;
@@ -502,7 +502,7 @@
         foaf:page           <http://www.uniprot.org/uniprot/P11150> .
 
 <https://identifiers.org/pubmed/15728179>
-        a                   wp:PublicationReference ;
+        rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
         dcterms:identifier  "15728179" ;
         dcterms:isPartOf    <https://identifiers.org/uniprot/Q5SW96> ;
@@ -511,11 +511,11 @@
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15728179> .
 
 <https://identifiers.org/ensembl/ENSG00000130164>
-        a                   wp:DataNode , wp:Protein ;
-        rdfs:label          "LDLR"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "LDLR" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000130164> ;
-        dc:source           "Ensembl"^^xsd:string ;
-        dcterms:identifier  "ENSG00000130164"^^xsd:string ;
+        dc:source           "Ensembl" ;
+        dcterms:identifier  "ENSG00000130164" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idd9cbf02b> , <https://identifiers.org/wikipathways/WP4522_r119310> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/id87db2526> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130164> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/3949> ;
@@ -525,11 +525,11 @@
         foaf:page           <https://www.ensembl.org/id/ENSG00000130164> .
 
 <https://identifiers.org/chebi/CHEBI:39027>
-        a                   wp:Metabolite , wp:DataNode ;
-        rdfs:label          "VLDL"^^xsd:string ;
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "VLDL" ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:39027> ;
-        dc:source           "ChEBI"^^xsd:string ;
-        dcterms:identifier  "CHEBI:39027"^^xsd:string ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:39027" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> , <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idf0c2e3ad> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39027> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q419074> ;
@@ -537,28 +537,28 @@
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39027> .
 
 <https://identifiers.org/wikipathways/WP299>
-        a                   wp:Pathway , wp:DataNode ;
-        rdfs:label          "Nuclear hormone receptors (involved in sterol metabolism)"^^xsd:string ;
+        rdf:type            wp:Pathway , wp:DataNode ;
+        rdfs:label          "Nuclear hormone receptors (involved in sterol metabolism)" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP299> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP299"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP299" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/c7e11> ;
         foaf:page           <https://www.wikipathways.org/instance/WP299> .
 
 <https://identifiers.org/wikipathways/WP4545>
-        a                   wp:DataNode , wp:Pathway ;
-        rdfs:label          "Oxysterols"^^xsd:string ;
+        rdf:type            wp:DataNode , wp:Pathway ;
+        rdfs:label          "Oxysterols" ;
         dc:identifier       <https://identifiers.org/wikipathways/WP4545> ;
-        dc:source           "WikiPathways"^^xsd:string ;
-        dcterms:identifier  "WP4545"^^xsd:string ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP4545" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/27068984> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/DataNode/aa2cd> ;
         foaf:page           <https://www.wikipathways.org/instance/WP4545> .
 
 <http://rdf.wikipathways.org/Pathway/WP4522_r119310/WP/Interaction/idf0c2e3ad>
-        a                   wp:DirectedInteraction , wp:Interaction ;
+        rdf:type            wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/18039658> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r119310/Interaction/idf0c2e3ad> ;
@@ -567,11 +567,11 @@
         wp:target           <https://identifiers.org/chebi/CHEBI:39027> .
 
 <https://identifiers.org/uniprot/Q8WTV0>
-        a                   wp:Protein , wp:DataNode ;
-        rdfs:label          "SR-B1"^^xsd:string ;
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "SR-B1" ;
         dc:identifier       <https://identifiers.org/uniprot/Q8WTV0> ;
-        dc:source           "Uniprot-TrEMBL"^^xsd:string ;
-        dcterms:identifier  "Q8WTV0"^^xsd:string ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q8WTV0" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4522_r119310> ;
         dcterms:references  <https://identifiers.org/pubmed/26965621> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000073060> ;
