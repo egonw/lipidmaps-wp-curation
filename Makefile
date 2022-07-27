@@ -5,17 +5,20 @@ REPORTS := ${shell cat pathways.txt | sed -e 's/\(.*\)/reports\/\1.md/' }
 SBMLS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.sbml/' } ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.txt/' }
 SVGS := ${shell cat pathways.txt | sed -e 's/\(.*\)/sbml\/\1.svg/' }
 
-FRAMEWORKVERSION=release-2
+FRAMEWORKVERSION=release-3
+JENAVERSION=4.3.0
+GPMLRDFJAR=GPML2RDF-3.0.0-SNAPSHOT.jar
+WPCURJAR=wikipathways.curator-1-SNAPSHOT.jar
 
 WEBSITE := ${shell cat website.txt }
 
 all: wikipathways-rdf-wp.zip wikipathways-rdf-gpml.zip
 
 install:
-	@wget -O libs/GPML2RDF-3.0.0-SNAPSHOT.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/GPML2RDF-3.0.0-SNAPSHOT.jar
-	@wget -O libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar
+	@wget -O libs/${GPMLRDFJAR} https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/${GPMLRDFJAR}
+	@wget -O libs/${WPCURJAR} https://github.com/wikipathways/wikipathways-curation-template/releases/download/${FRAMEWORKVERSION}/${WPCURJAR}
 	@wget -O libs/slf4j-simple-1.7.32.jar https://search.maven.org/remotecontent?filepath=org/slf4j/slf4j-simple/1.7.32/slf4j-simple-1.7.32.jar
-	@wget -O libs/jena-arq-4.2.0.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/4.2.0/jena-arq-4.2.0.jar
+	@wget -O libs/jena-arq-${JENAVERSION}.jar https://repo1.maven.org/maven2/org/apache/jena/jena-arq/${JENAVERSION}/jena-arq-${JENAVERSION}.jar
 
 sbml: ${SBMLS}
 
@@ -54,32 +57,32 @@ sbml/%.svg: sbml/%.sbml
 	@echo "Fetching SVG for $@ ..."
 	@curl -X POST --data-binary @$< -H "Content-Type: text/plain" https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
 
-wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateRDF.class
+wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateRDF.class
 	@mkdir -p wp/Human
-	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT.jar:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.covid.CreateRDF $< $@
+	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/${GPMLRDFJAR}:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.curator.CreateRDF $< $@
 
-wp/gpml/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/covid/CreateGPMLRDF.class
+wp/gpml/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateGPMLRDF.class
 	@mkdir -p wp/gpml/Human
-	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/GPML2RDF-3.0.0-SNAPSHOT.jar:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.covid.CreateGPMLRDF $< $@
+	@cat "$<.rev" | xargs java -cp src/java/main/.:libs/${GPMLRDFJAR}:libs/derby-10.14.2.0.jar:libs/slf4j-simple-1.7.32.jar org.wikipathways.curator.CreateGPMLRDF $< $@
 
-src/java/main/org/wikipathways/covid/CreateRDF.class: src/java/main/org/wikipathways/covid/CreateRDF.java
+src/java/main/org/wikipathways/curator/CreateRDF.class: src/java/main/org/wikipathways/curator/CreateRDF.java
 	@echo "Compiling $@ ..."
-	@javac -cp libs/GPML2RDF-3.0.0-SNAPSHOT.jar src/java/main/org/wikipathways/covid/CreateRDF.java
+	@javac -cp libs/${GPMLRDFJAR} src/java/main/org/wikipathways/curator/CreateRDF.java
 
-src/java/main/org/wikipathways/covid/CreateGPMLRDF.class: src/java/main/org/wikipathways/covid/CreateGPMLRDF.java
+src/java/main/org/wikipathways/curator/CreateGPMLRDF.class: src/java/main/org/wikipathways/curator/CreateGPMLRDF.java
 	@echo "Compiling $@ ..."
-	@javac -cp libs/GPML2RDF-3.0.0-SNAPSHOT.jar src/java/main/org/wikipathways/covid/CreateGPMLRDF.java
+	@javac -cp libs/${GPMLRDFJAR} src/java/main/org/wikipathways/curator/CreateGPMLRDF.java
 
-src/java/main/org/wikipathways/covid/CheckRDF.class: src/java/main/org/wikipathways/covid/CheckRDF.java libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar
+src/java/main/org/wikipathways/curator/CheckRDF.class: src/java/main/org/wikipathways/curator/CheckRDF.java libs/${WPCURJAR}
 	@echo "Compiling $@ ..."
-	@javac -cp libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar src/java/main/org/wikipathways/covid/CheckRDF.java
+	@javac -cp libs/${WPCURJAR} src/java/main/org/wikipathways/curator/CheckRDF.java
 
 check: ${REPORTS} index.md
 
-reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/covid/CheckRDF.class tests.txt
+reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/curator/CheckRDF.class tests.txt
 	@echo "Detection curation events for $@ ..."
 	@mkdir -p reports
-	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-4.2.0.jar:src/java/main/:libs/wikipathways.curator-1-SNAPSHOT-jar-with-dependencies.jar org.wikipathways.covid.CheckRDF $< $@
+	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-${JENAVERSION}.jar:src/java/main/:libs/${WPCURJAR} org.wikipathways.curator.CheckRDF $< $@
 
 index.md: ${REPORTS}
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md
@@ -93,6 +96,6 @@ index.md: ${REPORTS}
 
 update: install
 	@wget -O Makefile https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/Makefile
-	@wget -O src/java/main/org/wikipathways/covid/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CheckRDF.java
-	@wget -O src/java/main/org/wikipathways/covid/CreateRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CreateRDF.java
-	@wget -O src/java/main/org/wikipathways/covid/CreateGPMLRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/covid/CreateGPMLRDF.java
+	@wget -O src/java/main/org/wikipathways/curator/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CheckRDF.java
+	@wget -O src/java/main/org/wikipathways/curator/CreateRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CreateRDF.java
+	@wget -O src/java/main/org/wikipathways/curator/CreateGPMLRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CreateGPMLRDF.java

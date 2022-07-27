@@ -1,4 +1,4 @@
-package org.wikipathways.covid;
+package org.wikipathways.curator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -24,11 +24,11 @@ public class CreateRDF {
 
     public static void main(String[] args) throws Exception {
         String gpmlFile = args[0];
-        String wpid     = gpmlFile.substring(5,11);
+        String wpid     = gpmlFile.substring(5,gpmlFile.indexOf("."));
         String rev      = args[2];
         String outFile  = args[1];
 
-        DataSourceTxt.init();
+        // DataSourceTxt.init();
         InputStream input = new FileInputStream(gpmlFile);
         Pathway pathway = PathwayReader.readPathway(input);
         input.close();

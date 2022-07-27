@@ -1,4 +1,4 @@
-package org.wikipathways.covid;
+package org.wikipathways.curator;
 
 import java.io.File;
 import java.io.FileInputStream;
