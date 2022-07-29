@@ -203,7 +203,8 @@ public class CheckRDF {
         reportJSON.println("  \"label\": \"curation\",");
         if (anyTestClassHasFails) {
           reportStatus.println("status=⨯");
-          reportJSON.println("  \"message\": \"" + failedAssertions.size() + " errors\",");
+          reportJSON.println("  \"message\": \"" + failedAssertions.size() +
+            (failedAssertions.size() == 1 ? " issue" : " issues") + "\",");
           reportJSON.println("  \"color\": \"red\"");
         } else {
           reportStatus.println("status=✓");
