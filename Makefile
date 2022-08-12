@@ -96,6 +96,15 @@ index.md: ${REPORTS}
 
 update: install
 	@wget -O Makefile https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/Makefile
+	@wget -O extractTests.groovy https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/extractTests.groovy
 	@wget -O src/java/main/org/wikipathways/curator/CheckRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CheckRDF.java
 	@wget -O src/java/main/org/wikipathways/curator/CreateRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CreateRDF.java
 	@wget -O src/java/main/org/wikipathways/curator/CreateGPMLRDF.java https://raw.githubusercontent.com/wikipathways/wikipathways-curation-template/main/src/java/main/org/wikipathways/curator/CreateGPMLRDF.java
+
+updateTests:
+	@jar tf libs/wikipathways.curator-1-SNAPSHOT.jar | grep '.class' \
+	  | grep 'nl.unimaas.bigcat.wikipathways.curator.tests' | tr / . \
+	  | sed 's/\.class//' | xargs javap -public -cp libs/wikipathways.curator-1-SNAPSHOT.jar \
+	  > tests.tmp
+	@groovy extractTests.groovy > tests.tmp2
+	@mv tests.tmp2 tests.txt
