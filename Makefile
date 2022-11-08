@@ -47,7 +47,7 @@ wikipathways-rdf-gpml.zip: ${GPMLRDFS}
 sbml/%.sbml: gpml/%.gpml
 	@echo "Fetching SBML for $< ..."
 	@mkdir -p sbml
-	curl -H "Content-Type: application/octet-stream" -X POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
+	@curl -H "Content-Type: application/octet-stream" -X POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/GPML:SBML > $@
 
 sbml/%.txt: sbml/%.sbml
 	@echo "Extracting notes for $@ ..."
@@ -55,7 +55,7 @@ sbml/%.txt: sbml/%.sbml
 
 sbml/%.svg: sbml/%.sbml
 	@echo "Fetching SVG for $@ ..."
-	@curl -X -H "Content-Type: application/octet-stream" POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
+	@curl -H "Content-Type: application/octet-stream" -X POST --data-binary @$< https://minerva-service.lcsb.uni.lu/minerva/api/convert/image/SBML:svg > $@
 
 wp/Human/%.ttl: gpml/%.gpml src/java/main/org/wikipathways/curator/CreateRDF.class
 	@mkdir -p wp/Human
