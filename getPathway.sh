@@ -1,8 +1,8 @@
 #!/bin/bash
 
 wpid=$1
-revision=`curl -s https://www.wikipathways.org/index.php/Pathway:$wpid | grep "wgCurRevisionId" | cut -d"\"" -f2`
-url="https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=gpml&pwTitle=Pathway:$wpid&oldid=$revision"
+revision=`curl -s https://classic.wikipathways.org/index.php/Pathway:$wpid | grep "wgCurRevisionId" | cut -d"\"" -f2`
+url="https://classic.wikipathways.org//wpi/wpi.php?action=downloadFile&type=gpml&pwTitle=Pathway:$wpid&oldid=$revision"
 
 curl -s -o gpml/$wpid.gpml $url
 
