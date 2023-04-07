@@ -229,6 +229,10 @@
     <Graphics CenterX="1062.2235609103082" CenterY="521.2605485232064" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="LIPID MAPS" ID="LMFA02000038" />
   </DataNode>
+  <DataNode TextLabel="Unidentified&#xA;dehydrogenase(s)" GraphId="f58ce" Type="GeneProduct">
+    <Graphics CenterX="294.0" CenterY="568.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <DataNode TextLabel="18-HODE" GraphId="fb6fd" Type="Metabolite">
     <Graphics CenterX="1287.5011914993886" CenterY="193.19101821868938" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="LIPID MAPS" ID="LMFA02000398" />
@@ -266,7 +270,7 @@
     <Xref Database="Uniprot-TrEMBL" ID="G9MAP1" />
   </DataNode>
   <DataNode TextLabel="EPHX3" GraphId="a78aa" Type="GeneProduct">
-    <Graphics CenterX="1149.9323962516733" CenterY="409.82781759951183" Width="61.06425702811248" Height="25.0" ZOrder="32777" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="1129.9323962516733" CenterY="479.82781759951183" Width="61.06425702811248" Height="25.0" ZOrder="32777" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q9H6B9" />
   </DataNode>
   <DataNode TextLabel="ALOXE3" GraphId="fd4be" Type="GeneProduct">
@@ -291,10 +295,67 @@
     <Graphics CenterX="1042.197609001412" CenterY="150.17580872011274" Width="73.12939521800202" Height="25.00000000000001" ZOrder="32782" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P11712" />
   </DataNode>
+  <DataNode TextLabel="Unidentified&#xA;dehydrogenase(s)" GraphId="b0c96" Type="GeneProduct">
+    <Graphics CenterX="405.0" CenterY="719.0" Width="90.0" Height="25.0" ZOrder="32783" FontSize="12" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
+  <DataNode TextLabel="Unidentified&#xA;dehydrogenase(s)" GraphId="e3683" Type="GeneProduct">
+    <Graphics CenterX="1051.0" CenterY="646.0" Width="90.0" Height="25.0" ZOrder="32784" FontSize="12" Valign="Middle" />
+    <Xref Database="" ID="" />
+  </DataNode>
   <Interaction>
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="1147.6793248945155" Y="223.470464135021" GraphRef="e57f1" RelX="0.0" RelY="1.0" />
-      <Point X="1158.2611479303994" Y="252.20430364753537" GraphRef="e81cb" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="294.0" Y="555.5" GraphRef="f58ce" RelX="0.0" RelY="-1.0" />
+      <Point X="295.62478203823014" Y="523.7816979051812" GraphRef="f2a53" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="294.0" Y="580.5" GraphRef="f58ce" RelX="0.0" RelY="1.0" />
+      <Point X="294.36427783654943" Y="630.6473276651043" GraphRef="b1d3d" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="450.0" Y="712.75" GraphRef="b0c96" RelX="1.0" RelY="-0.5" />
+      <Point X="524.4574125083441" Y="712.5604093374473" GraphRef="c3f70" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="450.0" Y="712.75" GraphRef="b0c96" RelX="1.0" RelY="-0.5" />
+      <Point X="654.1077946479046" Y="712.5604093374473" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="450.0" Y="712.75" GraphRef="b0c96" RelX="1.0" RelY="-0.5" />
+      <Point X="775.7976349843822" Y="712.5604093374473" GraphRef="d5e3e" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="1051.0" Y="633.5" GraphRef="e3683" RelX="0.0" RelY="-1.0" />
+      <Point X="1048.8117509567167" Y="584.3516941088933" GraphRef="b36b7" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="1051.0" Y="658.5" GraphRef="e3683" RelX="0.0" RelY="1.0" />
+      <Point X="1048.8117509567167" Y="708.6602204004229" GraphRef="c4ab9" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="1129.9323962516733" Y="492.32781759951183" GraphRef="a78aa" RelX="0.0" RelY="1.0" />
+      <Point X="1130.023560910308" Y="521.2605485232064" GraphRef="dbd2f" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -350,6 +411,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="775.7976349843822" Y="690.3038085777313" GraphRef="ffadc" RelX="0.0" RelY="1.0" />
       <Point X="775.7976349843821" Y="745.9453104770212" GraphRef="be30d" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="d5e3e" />
     </Graphics>
     <Xref Database="Rhea" ID="48717" />
   </Interaction>
@@ -367,6 +429,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="654.1077946479046" Y="690.3038085777313" GraphRef="a250c" RelX="0.0" RelY="1.0" />
       <Point X="654.1077946479046" Y="745.9453104770212" GraphRef="f0f19" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -410,6 +473,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1018.5372109876557" Y="708.6026176039137" GraphRef="c9fa4" RelX="1.0" RelY="0.0" />
       <Point X="1094.2235609103082" Y="708.7466245951865" GraphRef="c5d1f" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="c4ab9" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -569,6 +633,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="319.24510205157173" Y="630.2271595978774" GraphRef="c5a98" RelX="-1.0" RelY="0.0" />
       <Point X="257.04304151401595" Y="631.2775797659446" GraphRef="a53c3" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="b1d3d" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -612,6 +677,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="319.24510205157173" Y="523.7816979051812" GraphRef="d10d0" RelX="-1.0" RelY="0.0" />
       <Point X="260.1943020182177" Y="523.7816979051811" GraphRef="bb0dd" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="f2a53" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -647,7 +713,7 @@
   </Interaction>
   <Interaction GraphId="id6e9279f7">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="1149.9323962516733" Y="422.32781759951183" GraphRef="a78aa" RelX="0.0" RelY="1.0" />
+      <Point X="1129.9323962516733" Y="492.32781759951183" GraphRef="a78aa" RelX="0.0" RelY="1.0" />
       <Point X="1130.023560910308" Y="444.5105485232066" GraphRef="e4824" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -672,6 +738,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1107.2235609103082" Y="521.2605485232064" GraphRef="f4cdf" RelX="1.0" RelY="0.0" />
       <Point X="1164.2235609103082" Y="521.2605485232064" GraphRef="d185b" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="dbd2f" />
     </Graphics>
     <Xref Database="Rhea" ID="44037" />
   </Interaction>
@@ -703,6 +770,13 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="450.09333917809994" Y="565.6948061413262" GraphRef="da032" RelX="1.0" RelY="-0.5" />
       <Point X="497.6324727877885" Y="583.5531976648525" GraphRef="c1913" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id8dbab71e">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="1147.6793248945155" Y="223.470464135021" GraphRef="e57f1" RelX="0.0" RelY="1.0" />
+      <Point X="1158.2611479303994" Y="252.20430364753537" GraphRef="e81cb" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -827,6 +901,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="524.4574125083441" Y="690.3038085777313" GraphRef="e0572" RelX="0.0" RelY="1.0" />
       <Point X="524.4574125083441" Y="745.9453104770213" GraphRef="b5c43" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="c3f70" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -890,6 +965,7 @@
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1018.5372109876557" Y="584.3516941088933" GraphRef="cb450" RelX="1.0" RelY="0.0" />
       <Point X="1094.2235609103082" Y="584.3516941088932" GraphRef="d7299" RelX="-1.0" RelY="0.0" ArrowHead="Arrow" />
+      <Anchor Position="0.4" Shape="None" GraphId="b36b7" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -903,36 +979,11 @@
   <Group GroupId="b5b38" GraphId="d833a" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b03">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22798687</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EH3 (ABHD9): the first member of a new epoxide hydrolase family with high activity for fatty acid epoxides.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Lipid Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decker M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adamska M</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cronin A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Di Giallonardo F</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burgener J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marowsky A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Falck JR</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morisseau C</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hammock BD</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gruzdev A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zeldin DC</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arand M</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e50">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9435160</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytochromes P450 with bisallylic hydroxylation activity on arachidonic and linoleic acids studied with human recombinant enzymes and with human and rat liver microsomes.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Pharmacol Exp Ther</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bylund J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunz T</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valmsen K</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliw EH</bp:AUTHORS>
-    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b9c">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">28831021</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -959,29 +1010,6 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mannes AJ</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iadarola MJ</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ee0">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36454542</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The octadecanoids: an emerging class of lipid mediators.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochem Soc Trans</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quaranta A</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revol-Cavalier J</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheelock CE</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d3b">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9448728</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stereochemistry of oxygenation of linoleic acid catalyzed by prostaglandin-endoperoxide H synthase-2.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arch Biochem Biophys</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamberg M</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e17">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">24127592</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -1005,6 +1033,66 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yokozeki K</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shimizu S</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ogawa J</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linoleic acid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000523</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ee0">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">36454542</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The octadecanoids: an emerging class of lipid mediators.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biochem Soc Trans</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quaranta A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Revol-Cavalier J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wheelock CE</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e33">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10553002</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requirement for omega and (omega;-1)-hydroxylations of fatty acids by human cytochromes P450 2E1 and 4A11.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Lipid Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adas F</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salaün JP</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berthou F</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picart D</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simon B</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amet Y</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b03">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">22798687</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EH3 (ABHD9): the first member of a new epoxide hydrolase family with high activity for fatty acid epoxides.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Lipid Res</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decker M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adamska M</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cronin A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Di Giallonardo F</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burgener J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marowsky A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Falck JR</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Morisseau C</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hammock BD</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gruzdev A</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zeldin DC</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arand M</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid signaling pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000959</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d3b">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9448728</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stereochemistry of oxygenation of linoleic acid catalyzed by prostaglandin-endoperoxide H synthase-2.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arch Biochem Biophys</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hamberg M</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="ab4">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9866708</bp:ID>
@@ -1030,28 +1118,16 @@
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beier DR</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brash AR</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linoleic acid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000523</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid signaling pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000959</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e33">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10553002</bp:ID>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e50">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9435160</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Requirement for omega and (omega;-1)-hydroxylations of fatty acids by human cytochromes P450 2E1 and 4A11.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Lipid Res</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adas F</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salaün JP</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berthou F</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Picart D</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Simon B</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amet Y</bp:AUTHORS>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cytochromes P450 with bisallylic hydroxylation activity on arachidonic and linoleic acids studied with human recombinant enzymes and with human and rat liver microsomes.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Pharmacol Exp Ther</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1998</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bylund J</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kunz T</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Valmsen K</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oliw EH</bp:AUTHORS>
     </bp:PublicationXref>
   </Biopax>
 </Pathway>
