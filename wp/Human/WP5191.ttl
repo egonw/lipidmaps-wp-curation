@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -59,6 +60,10 @@
         wp:participants   <https://identifiers.org/ensembl/ENSG00000171049> , <https://identifiers.org/chebi/CHEBI:81564> ;
         wp:source         <https://identifiers.org/chebi/CHEBI:81564> ;
         wp:target         <https://identifiers.org/ensembl/ENSG00000171049> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5191&oldid=125329>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP5191_r125329/WP/Interaction/ida5578f28>
         rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
@@ -155,6 +160,10 @@
         wp:source         <https://identifiers.org/ensembl/ENSG00000171049> ;
         wp:target         <https://identifiers.org/ec-code/2.7.1.137> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5191&oldid=125329>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/chebi/CHEBI:30616>
         rdf:type            wp:Metabolite , wp:DataNode ;
         rdfs:label          "ATP" ;
@@ -232,6 +241,8 @@
 
 <https://identifiers.org/wikipathways/WP5191>
         pav:hasVersion  <https://identifiers.org/wikipathways/WP5191_r125329> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <http://rdf.wikipathways.org/Pathway/WP5191_r125329/WP/Interaction/id91a2c5fc>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;
@@ -349,12 +360,13 @@
         dcterms:identifier      "WP5191" ;
         dcterms:references      <https://identifiers.org/pubmed/23528855> ;
         cito:cites              <https://identifiers.org/pubmed/23528855> , <https://identifiers.org/pubmed/17339491> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000096> ;
+        wp:cellTypeOntologyTag  obo:CL_0000096 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP5191_r125329> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0000096> , <http://purl.obolibrary.org/obo/PW_0000959> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:CL_0000096 , obo:PW_0000959 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000959> ;
+        wp:pathwayOntologyTag   obo:PW_0000959 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5191&oldid=125329> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5191&oldid=125329> ;
         foaf:page               <http://www.wikipathways.org/instance/WP5191_r125329> .
 
 <http://rdf.wikipathways.org/Pathway/WP5191_r125329/WP/Interaction/idb5a18be2>

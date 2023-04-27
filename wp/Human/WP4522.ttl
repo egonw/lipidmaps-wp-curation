@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -61,6 +62,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r126061/DataNode/f04bd> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39026> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4522&oldid=126061>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/pubmed/18039658>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
@@ -96,12 +101,13 @@
         dcterms:description    "This pathway shows genetic disorders related to lipoprotein metabolism. Two plasmalipoproteins, LDL and HDL, and one plasma lipid, triglyceride (TG), play an important role in this pathway. Hydrophobic lipids and fat-soluble vitamins are normally transported to the site of their uptake by transporters called lipoproteins, and any deregulation of the plasma concentrations of these proteins can cause dyslipidemias. Disorders resulting from an enzyme deficiency are highlighted in pink. More details on the composition of the various lipoproteins in this pathway are visualised in [https://www.wikipathways.org/index.php/Pathway:WP3601].\n\nThis pathway was inspired by Chapter 43 of the book of Blau (ISBN 3642403360 (978-3642403361)).\n" ;
         dcterms:identifier     "WP4522" ;
         cito:cites             <https://identifiers.org/pubmed/26965621> , <https://identifiers.org/pubmed/17215125> , <https://identifiers.org/pubmed/24808179> , <https://identifiers.org/pubmed/27068984> , <https://identifiers.org/pubmed/15728179> , <https://identifiers.org/pubmed/18039658> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0090105> , <http://purl.obolibrary.org/obo/DOID_1390> , <http://purl.obolibrary.org/obo/DOID_13809> , <http://purl.obolibrary.org/obo/DOID_1388> ;
+        wp:diseaseOntologyTag  obo:DOID_0090105 , obo:DOID_1390 , obo:DOID_13809 , obo:DOID_1388 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4522_r126061> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000484> , <http://purl.obolibrary.org/obo/DOID_13809> , <http://purl.obolibrary.org/obo/DOID_1388> , <http://purl.obolibrary.org/obo/PW_0000482> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000175> , <http://purl.obolibrary.org/obo/DOID_1390> , <http://purl.obolibrary.org/obo/PW_0000153> , <http://purl.obolibrary.org/obo/DOID_0090105> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000484 , obo:DOID_13809 , obo:DOID_1388 , obo:PW_0000482 , obo:PW_0000013 , obo:PW_0000175 , obo:DOID_1390 , obo:PW_0000153 , obo:DOID_0090105 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000482> , <http://purl.obolibrary.org/obo/PW_0000175> , <http://purl.obolibrary.org/obo/PW_0000153> , <http://purl.obolibrary.org/obo/PW_0000484> ;
+        wp:pathwayOntologyTag  obo:PW_0000013 , obo:PW_0000482 , obo:PW_0000175 , obo:PW_0000153 , obo:PW_0000484 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4522&oldid=126061> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4522&oldid=126061> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4522_r126061> .
 
 <https://identifiers.org/wikipathways/WP4523>
@@ -301,6 +307,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4522_r126061/DataNode/cd187> , <http://rdf.wikipathways.org/Pathway/WP4522_r126061/DataNode/f8747> , <http://rdf.wikipathways.org/Pathway/WP4522_r126061/DataNode/db79a> , <http://rdf.wikipathways.org/Pathway/WP4522_r126061/DataNode/a7196> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16113> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://doi.org/10.1074%2FJBC.M501029200>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1074/JBC.M501029200" .
@@ -456,6 +464,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q41020560> ;
         owl:sameAs          <https://doi.org/10.1074%2FJBC.M113.541094> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24808179> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4522&oldid=126061>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000087237>
         rdf:type            wp:DataNode , wp:GeneProduct ;

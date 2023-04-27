@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -387,6 +388,10 @@
         wp:source           <https://identifiers.org/lipidmaps/LMSP0501AB00> ;
         wp:target           <https://identifiers.org/lipidmaps/LMSP0602AA00> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5292&oldid=125119>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/uniprot/Q00973>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "B4GALNT1" ;
@@ -463,6 +468,8 @@
         wp:participants   <https://identifiers.org/uniprot/Q9UNP4> , <http://rdf.wikipathways.org/Pathway/WP5292_r125119/WP/Interaction/id73ac7e66> ;
         wp:source         <https://identifiers.org/uniprot/Q9UNP4> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP5292_r125119/WP/Interaction/id73ac7e66> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/uniprot/P15289>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -567,6 +574,10 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMSP0501AA00> , <https://identifiers.org/lipidmaps/LMSP0501AB00> ;
         wp:source           <https://identifiers.org/lipidmaps/LMSP0501AB00> ;
         wp:target           <https://identifiers.org/lipidmaps/LMSP0501AA00> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5292&oldid=125119>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/uniprot/Q9UBX8>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -853,10 +864,11 @@
         dcterms:references     <https://identifiers.org/pubmed/15938018> ;
         cito:cites             <https://identifiers.org/pubmed/10838196> , <https://identifiers.org/pubmed/10854427> , <https://identifiers.org/pubmed/15938018> , <https://identifiers.org/pubmed/8830034> , <https://identifiers.org/pubmed/4522795> , <https://identifiers.org/pubmed/7890749> , <https://identifiers.org/pubmed/15847605> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5292_r125119> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000164> , <http://purl.obolibrary.org/obo/PW_0000162> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000164 , obo:PW_0000162 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000164> , <http://purl.obolibrary.org/obo/PW_0000162> ;
+        wp:pathwayOntologyTag  obo:PW_0000164 , obo:PW_0000162 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5292&oldid=125119> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5292&oldid=125119> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5292_r125119> .
 
 <https://identifiers.org/uniprot/U3KPV4>

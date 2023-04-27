@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -63,6 +64,10 @@
         wp:source           <https://identifiers.org/lipidmaps/LMSP02080000> ;
         wp:target           <https://identifiers.org/lipidmaps/LMSP02020000> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5271&oldid=125877>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/pubmed/29863195>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
@@ -81,6 +86,23 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5271_r125877/DataNode/bef5d> ;
         foaf:page           <http://www.uniprot.org/uniprot/A0A0H3C6D9> .
 
+<https://identifiers.org/wikipathways/WP5271_r125877>
+        rdf:type               skos:Collection , wp:Pathway ;
+        dc:identifier          <https://identifiers.org/wikipathways/WP5271> ;
+        dc:source              "WikiPathways" ;
+        dc:title               "Bacterial ceramide synthesis"@en ;
+        dcterms:description    "This pathway depicts the bacterial ceramide synthesis; bacteria are known to produces various groups of sphingolipids. This lipid class holds several physiological functions. In the human microbiome, commensal and pathogenic bacteria use sphingolipids to mimic the inflammatory system of the host.\n\nSeveral key eukaryotic ceramide synthesis enzymes have no bacterial homologue, which creates a challenge in understanding their biosynthetic pathway(s).\n\nSphingolipids have only been measured in a few bacterial taxa (e.g. Saccharomyces cerevisiae, Pichia pastoris)[PMID:29863195] and with great variety of acyl chain length and hydroxylation, headgroups, and the saturation degree. All of these variables influence the role of a sphingolipid on the host system and are therefore important to study in different bacteria.\n\nThis pathway uses the example of C. Vibriodes (supported by BridgeDb and Ensembl); the publication describing this pathway was originally written for C. crescentus [PMID:34969973]; identifiers for data analysis might be found through the CauloBrowser tool [PMID:26476443]." ;
+        dcterms:identifier     "WP5271" ;
+        dcterms:references     <https://identifiers.org/pubmed/34969973> , <https://identifiers.org/pubmed/29863195> ;
+        cito:cites             <https://identifiers.org/pubmed/29863195> , <https://identifiers.org/pubmed/34969973> ;
+        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5271_r125877> ;
+        wp:ontologyTag         obo:PW_0000162 , obo:PW_0000010 ;
+        wp:organism            obo:NCBITaxon_155892 ;
+        wp:organismName        "Caulobacter vibrioides" ;
+        wp:pathwayOntologyTag  obo:PW_0000162 , obo:PW_0000010 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5271&oldid=125877> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5271&oldid=125877> ;
+        foaf:page              <http://www.wikipathways.org/instance/WP5271_r125877> .
+
 <https://identifiers.org/uniprot/A0A0H3C8X7>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "CerR" ;
@@ -93,21 +115,7 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5271_r125877/DataNode/e223d> ;
         foaf:page           <http://www.uniprot.org/uniprot/A0A0H3C8X7> .
 
-<https://identifiers.org/wikipathways/WP5271_r125877>
-        rdf:type               skos:Collection , wp:Pathway ;
-        dc:identifier          <https://identifiers.org/wikipathways/WP5271> ;
-        dc:source              "WikiPathways" ;
-        dc:title               "Bacterial ceramide synthesis"@en ;
-        dcterms:description    "This pathway depicts the bacterial ceramide synthesis; bacteria are known to produces various groups of sphingolipids. This lipid class holds several physiological functions. In the human microbiome, commensal and pathogenic bacteria use sphingolipids to mimic the inflammatory system of the host.\n\nSeveral key eukaryotic ceramide synthesis enzymes have no bacterial homologue, which creates a challenge in understanding their biosynthetic pathway(s).\n\nSphingolipids have only been measured in a few bacterial taxa (e.g. Saccharomyces cerevisiae, Pichia pastoris)[PMID:29863195] and with great variety of acyl chain length and hydroxylation, headgroups, and the saturation degree. All of these variables influence the role of a sphingolipid on the host system and are therefore important to study in different bacteria.\n\nThis pathway uses the example of C. Vibriodes (supported by BridgeDb and Ensembl); the publication describing this pathway was originally written for C. crescentus [PMID:34969973]; identifiers for data analysis might be found through the CauloBrowser tool [PMID:26476443]." ;
-        dcterms:identifier     "WP5271" ;
-        dcterms:references     <https://identifiers.org/pubmed/34969973> , <https://identifiers.org/pubmed/29863195> ;
-        cito:cites             <https://identifiers.org/pubmed/29863195> , <https://identifiers.org/pubmed/34969973> ;
-        wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5271_r125877> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000010> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_155892> ;
-        wp:organismName        "Caulobacter vibrioides" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000010> ;
-        foaf:page              <http://www.wikipathways.org/instance/WP5271_r125877> .
+obo:NCBITaxon_155892  obo:NCIT_C179773  "155892" .
 
 <http://rdf.wikipathways.org/Pathway/WP5271_r125877/WP/Interaction/id514f2216>
         rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
@@ -240,6 +248,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q60560163> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5271_r125877/DataNode/ce121> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMSP02020000> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5271&oldid=125877>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/lipidmaps/LMSP01020002>
         rdf:type            wp:DataNode , wp:Metabolite ;

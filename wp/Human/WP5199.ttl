@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -158,6 +159,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5199_r125330/DataNode/eba55> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q9H0H5> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5199&oldid=125330>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <http://rdf.wikipathways.org/Pathway/WP5199_r125330/WP/Interaction/id2007bced>
         rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5199_r125330> ;
@@ -199,6 +204,8 @@
         wp:source         <https://identifiers.org/uniprot/Q6IB42> ;
         wp:target         <https://identifiers.org/uniprot/Q8N556> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <http://rdf.wikipathways.org/Pathway/WP5199_r125330/WP/Interaction/idd293027c>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Binding ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5199_r125330> ;
@@ -221,7 +228,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5199_r125330> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5199_r125330/Group/e1ed5> ;
-        wp:participants   <https://identifiers.org/uniprot/Q9H0H5> , <https://identifiers.org/uniprot/Q02241> , <http://rdf.wikipathways.org/Pathway/WP5199_r125330/Complex/e1ed5> .
+        wp:participants   <https://identifiers.org/uniprot/Q02241> , <https://identifiers.org/uniprot/Q9H0H5> , <http://rdf.wikipathways.org/Pathway/WP5199_r125330/Complex/e1ed5> .
 
 <https://identifiers.org/chebi/CHEBI:53200>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -309,7 +316,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5199_r125330> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5199_r125330/Group/e1ed5> ;
-        wp:participants   <https://identifiers.org/uniprot/Q9H0H5> , <https://identifiers.org/uniprot/Q02241> .
+        wp:participants   <https://identifiers.org/uniprot/Q02241> , <https://identifiers.org/uniprot/Q9H0H5> .
 
 <https://identifiers.org/pubmed/22197245>
         rdf:type            wp:PublicationReference ;
@@ -325,6 +332,10 @@
         wp:participants   <https://identifiers.org/uniprot/Q15019> , <https://identifiers.org/uniprot/Q8N556> ;
         wp:source         <https://identifiers.org/uniprot/Q8N556> ;
         wp:target         <https://identifiers.org/uniprot/Q15019> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5199&oldid=125330>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP5199_r125330/ComplexBinding/f9e28>
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
@@ -392,10 +403,11 @@
         dcterms:identifier     "WP5199" ;
         cito:cites             <https://identifiers.org/pubmed/20178751> , <https://identifiers.org/pubmed/21971085> , <https://identifiers.org/pubmed/22197245> , <https://identifiers.org/pubmed/24914539> , <https://identifiers.org/pubmed/25748412> , <https://identifiers.org/pubmed/23012232> , <https://identifiers.org/pubmed/20308985> , <https://identifiers.org/pubmed/21706022> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5199_r125330> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0002417> , <http://purl.obolibrary.org/obo/PW_0000959> , <http://purl.obolibrary.org/obo/PW_0001317> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000003 , obo:PW_0002417 , obo:PW_0000959 , obo:PW_0001317 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0001317> , <http://purl.obolibrary.org/obo/PW_0000003> , <http://purl.obolibrary.org/obo/PW_0000959> , <http://purl.obolibrary.org/obo/PW_0002417> ;
+        wp:pathwayOntologyTag  obo:PW_0001317 , obo:PW_0000003 , obo:PW_0000959 , obo:PW_0002417 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5199&oldid=125330> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5199&oldid=125330> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5199_r125330> .
 
 <https://identifiers.org/uniprot/Q15019>

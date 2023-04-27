@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -74,6 +75,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4726_r124753/DataNode/aacd8> , <http://rdf.wikipathways.org/Pathway/WP4726_r124753/DataNode/e9c81> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000166224> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4726&oldid=124753>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/lipidmaps/LMSP0501AA04>
         rdf:type            wp:Metabolite , wp:DataNode ;
         rdfs:label          "C16DH GlcCer" ;
@@ -127,6 +132,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27161682> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4726_r124753/DataNode/b8d18> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMSP03010022> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4726&oldid=124753>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/lipidmaps/LMSP03010001>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -412,10 +421,11 @@
         dcterms:references     <https://identifiers.org/pubmed/20923771> ;
         cito:cites             <https://identifiers.org/pubmed/17977534> , <https://identifiers.org/pubmed/12011104> , <https://identifiers.org/pubmed/15823095> , <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/16100120> , <https://identifiers.org/pubmed/26853464> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4726_r124753> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0000197> , wp:Curation:Homology_Converted , <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000745> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000454 , obo:PW_0000197 , wp:Curation:Homology_Converted , obo:PW_0000162 , obo:PW_0000745 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0000745> ;
+        wp:pathwayOntologyTag  obo:PW_0000197 , obo:PW_0000162 , obo:PW_0000454 , obo:PW_0000745 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4726&oldid=124753> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4726&oldid=124753> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4726_r124753> .
 
 <https://identifiers.org/pubmed/15823095>
@@ -515,6 +525,14 @@
         wp:source         <https://identifiers.org/lipidmaps/LMSP02020013> ;
         wp:target         <https://identifiers.org/lipidmaps/LMSP0501AA24> .
 
+<http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/ec597>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4726_r124753> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4726_r124753/Interaction/ec597> ;
+        wp:participants   <https://identifiers.org/lipidmaps/LMSP02010007> , <https://identifiers.org/lipidmaps/LMSP03010005> ;
+        wp:source         <https://identifiers.org/lipidmaps/LMSP03010005> ;
+        wp:target         <https://identifiers.org/lipidmaps/LMSP02010007> .
+
 <http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/d2fdc>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4726_r124753> ;
@@ -530,14 +548,6 @@
         wp:participants   <https://identifiers.org/lipidmaps/LMSP01010001> , <https://identifiers.org/lipidmaps/LMSP02010008> ;
         wp:source         <https://identifiers.org/lipidmaps/LMSP02010008> ;
         wp:target         <https://identifiers.org/lipidmaps/LMSP01010001> .
-
-<http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/ec597>
-        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4726_r124753> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4726_r124753/Interaction/ec597> ;
-        wp:participants   <https://identifiers.org/lipidmaps/LMSP02010007> , <https://identifiers.org/lipidmaps/LMSP03010005> ;
-        wp:source         <https://identifiers.org/lipidmaps/LMSP03010005> ;
-        wp:target         <https://identifiers.org/lipidmaps/LMSP02010007> .
 
 <https://identifiers.org/lipidmaps/LMSP03010025>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -1349,6 +1359,8 @@
         wp:participants   <https://identifiers.org/chebi/CHEBI:30616> , <http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/fb44f> ;
         wp:source         <https://identifiers.org/chebi/CHEBI:30616> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/fb44f> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <http://rdf.wikipathways.org/Pathway/WP4726_r124753/WP/Interaction/d90eb>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;

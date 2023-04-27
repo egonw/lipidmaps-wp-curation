@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -32,6 +33,10 @@
         wp:participants   <https://identifiers.org/uniprot/P38435> , <http://rdf.wikipathways.org/Pathway/WP5186_r123700/WP/Interaction/id136d1678> ;
         wp:source         <https://identifiers.org/uniprot/P38435> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP5186_r123700/WP/Interaction/id136d1678> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5186&oldid=123700>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP5186_r123700/WP/Interaction/idf5ba4b4a>
         rdf:type          wp:Interaction ;
@@ -162,6 +167,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5186_r123700/DataNode/eb076> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q9BQB6> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5186&oldid=123700>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <http://rdf.wikipathways.org/Pathway/WP5186_r123700/WP/Interaction/b932d>
         rdf:type          wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5186_r123700> ;
@@ -233,6 +242,8 @@
         dcterms:identifier  "27437760" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5186_r123700> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/27437760> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/wikidata/Q76617139>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -429,21 +440,22 @@
         foaf:page           <http://www.uniprot.org/uniprot/P15559> .
 
 <https://identifiers.org/wikipathways/WP5186_r123700>
-        rdf:type                wp:Pathway , skos:Collection ;
+        rdf:type                skos:Collection , wp:Pathway ;
         dc:identifier           <https://identifiers.org/wikipathways/WP5186> ;
         dc:source               "WikiPathways" ;
         dc:title                "Vitamin K metabolism and activation of dependent proteins"@en ;
         dcterms:description     "Vitamin K is recycled in the liver in order to maintain sufficient levels for activating vitamin K-dependent proteins (VKDP), including certain coagulation factors. In this process, vitamin K1 (taken up from the diet) is converted to vitamin K hydroquinone (KH2), either by the dithiol-dependent vitamin K-epoxide reductase (VKOR) or by NAD(P)H dehydrogenase quinone 1. KH2 is in turn oxidized to vitamin K epoxide (KO) by the enzyme gamma-glutamyl carboxylase (GGCX). During this conversion, GGCX activates the VKDPs by converting glutamate (Glu) to gamma-carboxyglutamate (Gla). Lastly, KO is converted back into vitamin K quinone by VKOR. \n\nWarfarin, a drug commonly used as a anticoagulant, inhibits VKOR, thus reducing the levels of VKH2 in the bloodstream.\nA too high dosage of warfarin can lead to heavy bleeding, a life-threatening condition.\nThreatment of this condition is a high dosis of Vitamine K, which is reduced to VHK2 by FSP1, a warfarin resistant reductase.\nThe influence of FSP1 on this process, as well as its potential to eliminate lipid perozyl radicals, has been recently described in [https://doi.org/10.1038/s41586-022-05022-3 Nature(2022)] by Mishima et al.: A non-canonical vitamin K cycle is a potent ferroptosis suppressor. \n\n" ;
         dcterms:identifier      "WP5186" ;
-        dcterms:references      <https://identifiers.org/pubmed/35922487> , <https://identifiers.org/pubmed/27437760> , <https://identifiers.org/pubmed/25079019> ;
-        cito:cites              <https://identifiers.org/pubmed/35510250> , <https://identifiers.org/pubmed/25079019> , <https://identifiers.org/pubmed/35922487> , <https://identifiers.org/pubmed/27437760> , <https://identifiers.org/pubmed/35922516> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000182> ;
-        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_11249> ;
+        dcterms:references      <https://identifiers.org/pubmed/27437760> , <https://identifiers.org/pubmed/35922487> , <https://identifiers.org/pubmed/25079019> ;
+        cito:cites              <https://identifiers.org/pubmed/35922487> , <https://identifiers.org/pubmed/25079019> , <https://identifiers.org/pubmed/35510250> , <https://identifiers.org/pubmed/35922516> , <https://identifiers.org/pubmed/27437760> ;
+        wp:cellTypeOntologyTag  obo:CL_0000182 ;
+        wp:diseaseOntologyTag   obo:DOID_11249 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP5186_r123700> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/DOID_11249> , <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0000475> , <http://purl.obolibrary.org/obo/PW_0001016> , <http://purl.obolibrary.org/obo/PW_0002325> , <http://purl.obolibrary.org/obo/CL_0000182> , <http://purl.obolibrary.org/obo/PW_0001012> , <http://purl.obolibrary.org/obo/PW_0002626> , <http://purl.obolibrary.org/obo/PW_0002592> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:PW_0000475 , obo:PW_0002592 , obo:PW_0000002 , obo:PW_0002325 , obo:PW_0000010 , obo:PW_0001012 , obo:PW_0002626 , obo:CL_0000182 , obo:DOID_11249 , obo:PW_0001016 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0001016> , <http://purl.obolibrary.org/obo/PW_0002325> , <http://purl.obolibrary.org/obo/PW_0000475> , <http://purl.obolibrary.org/obo/PW_0001012> , <http://purl.obolibrary.org/obo/PW_0002592> , <http://purl.obolibrary.org/obo/PW_0002626> , <http://purl.obolibrary.org/obo/PW_0000010> ;
+        wp:pathwayOntologyTag   obo:PW_0002626 , obo:PW_0000002 , obo:PW_0001012 , obo:PW_0002325 , obo:PW_0000010 , obo:PW_0000475 , obo:PW_0002592 , obo:PW_0001016 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5186&oldid=123700> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5186&oldid=123700> ;
         foaf:page               <http://www.wikipathways.org/instance/WP5186_r123700> .
 
 <https://identifiers.org/ensembl/ENSG00000180210>

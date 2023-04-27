@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -157,6 +158,10 @@
         wp:participants   <https://identifiers.org/chebi/CHEBI:15351> , <https://identifiers.org/chebi/CHEBI:35804> ;
         wp:source         <https://identifiers.org/chebi/CHEBI:35804> ;
         wp:target         <https://identifiers.org/chebi/CHEBI:15351> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3965&oldid=117154>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id8d0bd92d>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -371,6 +376,8 @@
         wp:source           <https://identifiers.org/ensembl/ENSG00000135245> ;
         wp:target           <https://identifiers.org/ensembl/ENSG00000177666> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/chebi/CHEBI:35804>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "Citrate" ;
@@ -453,13 +460,14 @@
         dcterms:identifier      "WP3965" ;
         dcterms:references      <https://identifiers.org/pubmed/27180971> ;
         cito:cites              <https://identifiers.org/pubmed/29256392> , <https://identifiers.org/pubmed/23399566> , <https://identifiers.org/pubmed/27180971> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000448> ;
-        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_9970> ;
+        wp:cellTypeOntologyTag  obo:CL_0000448 ;
+        wp:diseaseOntologyTag   obo:DOID_9970 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP3965_r117154> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/DOID_9970> , <http://purl.obolibrary.org/obo/CL_0000448> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:PW_0000010 , obo:DOID_9970 , obo:CL_0000448 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000010> ;
+        wp:pathwayOntologyTag   obo:PW_0000010 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP3965&oldid=117154> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3965&oldid=117154> ;
         foaf:page               <http://www.wikipathways.org/instance/WP3965_r117154> .
 
 <https://identifiers.org/chebi/CHEBI:35366>
@@ -699,6 +707,19 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3965_r117154/DataNode/null> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000117020> .
 
+<https://identifiers.org/chebi/CHEBI:17408>
+        rdf:type            wp:DataNode , wp:Metabolite ;
+        rdfs:label          "MAG" ;
+        dc:identifier       <https://identifiers.org/chebi/CHEBI:17408> ;
+        dc:source           "ChEBI" ;
+        dcterms:identifier  "CHEBI:17408" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id8d0bd92d> , <https://identifiers.org/wikipathways/WP3965_r117154> , <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id709a5644> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17408> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C15590> , <https://identifiers.org/kegg.compound/C01885> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q662225> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3965_r117154/DataNode/e292a> ;
+        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17408> .
+
 <https://identifiers.org/ensembl/ENSG00000106617>
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "PRKAG2" ;
@@ -713,19 +734,6 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18040277> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3965_r117154/DataNode/null> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000106617> .
-
-<https://identifiers.org/chebi/CHEBI:17408>
-        rdf:type            wp:DataNode , wp:Metabolite ;
-        rdfs:label          "MAG" ;
-        dc:identifier       <https://identifiers.org/chebi/CHEBI:17408> ;
-        dc:source           "ChEBI" ;
-        dcterms:identifier  "CHEBI:17408" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id8d0bd92d> , <https://identifiers.org/wikipathways/WP3965_r117154> , <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id709a5644> ;
-        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17408> ;
-        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C15590> , <https://identifiers.org/kegg.compound/C01885> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q662225> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3965_r117154/DataNode/e292a> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17408> .
 
 <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/ida75df963>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -795,6 +803,15 @@
         wp:source         <https://identifiers.org/ensembl/ENSG00000103740> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id740fc43e> .
 
+<https://identifiers.org/pubmed/23399566>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "23399566" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id6681b274> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q41227900> ;
+        owl:sameAs          <https://doi.org/10.1016%2FJ.BBRC.2013.01.113> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/23399566> .
+
 <https://identifiers.org/ensembl/ENSG00000142875>
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "PRKACB" ;
@@ -810,14 +827,9 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3965_r117154/DataNode/null> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000142875> .
 
-<https://identifiers.org/pubmed/23399566>
-        rdf:type            wp:PublicationReference ;
-        dc:source           "PubMed" ;
-        dcterms:identifier  "23399566" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3965_r117154/WP/Interaction/id6681b274> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q41227900> ;
-        owl:sameAs          <https://doi.org/10.1016%2FJ.BBRC.2013.01.113> ;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/23399566> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP3965&oldid=117154>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000072062>
         rdf:type            wp:DataNode , wp:GeneProduct ;

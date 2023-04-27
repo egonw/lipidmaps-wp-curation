@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -30,6 +31,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27088347> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/cd316> ;
         foaf:page           <https://scholia.toolforge.org/Q27088347> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4189&oldid=124610>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/wikidata/Q27096447>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -552,6 +557,8 @@
         wp:source         <https://identifiers.org/wikidata/Q21108578> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4189_r124610/WP/Interaction/id9bf97ba3> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/uniprot/P53602>
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "MVD" ;
@@ -672,6 +679,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27087889> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/a3864> ;
         foaf:page           <https://scholia.toolforge.org/Q27087889> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4189&oldid=124610>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/uniprot/P04035>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -874,10 +885,11 @@
         dcterms:references     <https://identifiers.org/pubmed/28910500> ;
         cito:cites             <https://identifiers.org/pubmed/2890166> , <https://identifiers.org/pubmed/28910500> , <https://identifiers.org/pubmed/19> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4189_r124610> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0000752> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000454 , obo:PW_0000752 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000752> , <http://purl.obolibrary.org/obo/PW_0000454> ;
+        wp:pathwayOntologyTag  obo:PW_0000752 , obo:PW_0000454 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4189&oldid=124610> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4189&oldid=124610> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4189_r124610> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r124610/WP/Interaction/idf4d8950a>
@@ -930,23 +942,6 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/aa64f> ;
         foaf:page           <https://scholia.toolforge.org/Q417403> .
 
-<https://identifiers.org/wikidata/Q415159>
-        rdf:type            wp:Metabolite , wp:DataNode ;
-        rdfs:label          "rosuvastatin" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/BPRHUIZQVSMCRT-VEUZHWNKSA-N> ;
-        dc:identifier       <https://identifiers.org/wikidata/Q415159> ;
-        dc:source           "Wikidata" ;
-        dcterms:identifier  "Q415159" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r124610> ;
-        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:38545> ;
-        wp:bdbChemspider    <https://identifiers.org/chemspider/393589> ;
-        wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0015230> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/BPRHUIZQVSMCRT-VEUZHWNKSA-N> ;
-        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID446157> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q415159> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/bff2e> ;
-        foaf:page           <https://scholia.toolforge.org/Q415159> .
-
 <https://identifiers.org/wikidata/Q668093>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "atorvastatin" ;
@@ -963,6 +958,23 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q668093> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/f7b59> ;
         foaf:page           <https://scholia.toolforge.org/Q668093> .
+
+<https://identifiers.org/wikidata/Q415159>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "rosuvastatin" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/BPRHUIZQVSMCRT-VEUZHWNKSA-N> ;
+        dc:identifier       <https://identifiers.org/wikidata/Q415159> ;
+        dc:source           "Wikidata" ;
+        dcterms:identifier  "Q415159" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4189_r124610> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:38545> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/393589> ;
+        wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0015230> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/BPRHUIZQVSMCRT-VEUZHWNKSA-N> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID446157> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q415159> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4189_r124610/DataNode/bff2e> ;
+        foaf:page           <https://scholia.toolforge.org/Q415159> .
 
 <http://rdf.wikipathways.org/Pathway/WP4189_r124610/WP/Interaction/id9bf97ba3>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;

@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -45,31 +46,6 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/a42f5> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q9BWD1> .
 
-<http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/idf2adae01>
-        rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
-        dc:source           "Rhea" ;
-        dcterms:identifier  "24405" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4190_r124024> ;
-        wp:bdbRhea          <https://identifiers.org/rhea/24405> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/Interaction/id9fa83493> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/Interaction/idf2adae01> ;
-        wp:participants     <https://identifiers.org/chebi/CHEBI:43074> , <https://identifiers.org/chebi/CHEBI:13705> , <https://identifiers.org/chebi/CHEBI:57288> ;
-        wp:source           <https://identifiers.org/chebi/CHEBI:43074> ;
-        wp:target           <https://identifiers.org/chebi/CHEBI:57288> , <https://identifiers.org/chebi/CHEBI:13705> .
-
-<https://identifiers.org/uniprot/O95749>
-        rdf:type            wp:Protein , wp:DataNode ;
-        rdfs:label          "GGPS1" ;
-        dc:identifier       <https://identifiers.org/uniprot/O95749> ;
-        dc:source           "Uniprot-TrEMBL" ;
-        dcterms:identifier  "O95749" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/id15efa0e0> , <https://identifiers.org/wikipathways/WP4190_r124024> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000152904> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/9453> ;
-        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/GGPS1> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/O95749> , <https://identifiers.org/uniprot/C9J6G3> , <https://identifiers.org/uniprot/A0A024R3R2> , <https://identifiers.org/uniprot/C9J7M1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/b1566> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/cb5cc> ;
-        foaf:page           <http://www.uniprot.org/uniprot/O95749> .
-
 <https://identifiers.org/chebi/CHEBI:57783>
         rdf:type            wp:Metabolite , wp:DataNode ;
         rdfs:label          "NAD(P)H" ;
@@ -85,6 +61,24 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27124944> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/f11bc> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57783> .
+
+<https://identifiers.org/uniprot/O95749>
+        rdf:type            wp:Protein , wp:DataNode ;
+        rdfs:label          "GGPS1" ;
+        dc:identifier       <https://identifiers.org/uniprot/O95749> ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "O95749" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/id15efa0e0> , <https://identifiers.org/wikipathways/WP4190_r124024> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000152904> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/9453> ;
+        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/GGPS1> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/O95749> , <https://identifiers.org/uniprot/C9J6G3> , <https://identifiers.org/uniprot/A0A024R3R2> , <https://identifiers.org/uniprot/C9J7M1> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/b1566> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/DataNode/cb5cc> ;
+        foaf:page           <http://www.uniprot.org/uniprot/O95749> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4190&oldid=124024>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/id4cb00282>
         rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
@@ -239,6 +233,10 @@
         wp:participants   <https://identifiers.org/uniprot/P14324> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/id28e0714e> ;
         wp:source         <https://identifiers.org/uniprot/P14324> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/id28e0714e> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4190&oldid=124024>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/wikipathways/WP197>
         rdf:type            wp:DataNode , wp:Pathway ;
@@ -480,6 +478,8 @@
         wp:participants     <https://identifiers.org/chebi/CHEBI:43074> , <https://identifiers.org/chebi/CHEBI:36464> ;
         wp:source           <https://identifiers.org/chebi/CHEBI:43074> ;
         wp:target           <https://identifiers.org/chebi/CHEBI:36464> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/uniprot/P53602>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -1163,12 +1163,13 @@
         dcterms:identifier      "WP4190" ;
         dcterms:references      <https://identifiers.org/pubmed/28910500> , <https://identifiers.org/pubmed/23583456> ;
         cito:cites              <https://identifiers.org/pubmed/28910500> , <https://identifiers.org/pubmed/23898905> , <https://identifiers.org/pubmed/23583456> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000181> , <http://purl.obolibrary.org/obo/CL_0000000> ;
+        wp:cellTypeOntologyTag  obo:CL_0000181 , obo:CL_0000000 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP4190_r124024> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000453> , <http://purl.obolibrary.org/obo/PW_0002061> , <http://purl.obolibrary.org/obo/CL_0000181> , <http://purl.obolibrary.org/obo/CL_0000000> , <http://purl.obolibrary.org/obo/PW_0000752> , <http://purl.obolibrary.org/obo/PW_0000454> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:PW_0000453 , obo:PW_0002061 , obo:CL_0000181 , obo:CL_0000000 , obo:PW_0000752 , obo:PW_0000454 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0000453> , <http://purl.obolibrary.org/obo/PW_0002061> , <http://purl.obolibrary.org/obo/PW_0000752> ;
+        wp:pathwayOntologyTag   obo:PW_0000454 , obo:PW_0000453 , obo:PW_0002061 , obo:PW_0000752 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4190&oldid=124024> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4190&oldid=124024> ;
         foaf:page               <http://www.wikipathways.org/instance/WP4190_r124024> .
 
 <https://identifiers.org/uniprot/Q15126>
@@ -1225,3 +1226,14 @@
         wp:participants   <https://identifiers.org/uniprot/P04035> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/b85ea> ;
         wp:source         <https://identifiers.org/uniprot/P04035> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/b85ea> .
+
+<http://rdf.wikipathways.org/Pathway/WP4190_r124024/WP/Interaction/idf2adae01>
+        rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
+        dc:source           "Rhea" ;
+        dcterms:identifier  "24405" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4190_r124024> ;
+        wp:bdbRhea          <https://identifiers.org/rhea/24405> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4190_r124024/Interaction/id9fa83493> , <http://rdf.wikipathways.org/Pathway/WP4190_r124024/Interaction/idf2adae01> ;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:43074> , <https://identifiers.org/chebi/CHEBI:13705> , <https://identifiers.org/chebi/CHEBI:57288> ;
+        wp:source           <https://identifiers.org/chebi/CHEBI:43074> ;
+        wp:target           <https://identifiers.org/chebi/CHEBI:57288> , <https://identifiers.org/chebi/CHEBI:13705> .

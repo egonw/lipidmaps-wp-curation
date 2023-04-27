@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -190,13 +191,14 @@
         dcterms:identifier      "WP1531" ;
         dcterms:references      <https://identifiers.org/pubmed/18689389> ;
         cito:cites              <https://identifiers.org/pubmed/15128933> , <https://identifiers.org/pubmed/18689389> , <https://identifiers.org/pubmed/7690968> , <https://identifiers.org/pubmed/20418485> , <https://identifiers.org/pubmed/11111101> , <https://identifiers.org/pubmed/20541252> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000182> , <http://purl.obolibrary.org/obo/CL_1000497> , <http://purl.obolibrary.org/obo/CL_0002620> ;
-        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_10573> , <http://purl.obolibrary.org/obo/DOID_10609> ;
+        wp:cellTypeOntologyTag  obo:CL_0000182 , obo:CL_1000497 , obo:CL_0002620 ;
+        wp:diseaseOntologyTag   obo:DOID_10573 , obo:DOID_10609 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP1531_r118354> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/CL_0002620> , <http://purl.obolibrary.org/obo/PW_0001011> , <http://purl.obolibrary.org/obo/DOID_10573> , <http://purl.obolibrary.org/obo/CL_1000497> , <http://purl.obolibrary.org/obo/DOID_10609> , <http://purl.obolibrary.org/obo/CL_0000182> , <http://purl.obolibrary.org/obo/PW_0000135> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:CL_0002620 , obo:PW_0001011 , obo:DOID_10573 , obo:CL_1000497 , obo:DOID_10609 , obo:CL_0000182 , obo:PW_0000135 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0001011> , <http://purl.obolibrary.org/obo/PW_0000135> ;
+        wp:pathwayOntologyTag   obo:PW_0001011 , obo:PW_0000135 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=118354> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=118354> ;
         foaf:page               <http://www.wikipathways.org/instance/WP1531_r118354> .
 
 <http://rdf.wikipathways.org/Pathway/WP1531_r118354/WP/Interaction/id646fbe27>
@@ -225,6 +227,10 @@
         dcterms:identifier  "18689389" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r118354> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18689389> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=118354>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/hmdb/HMDB0003550>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -306,6 +312,12 @@
 
 <https://identifiers.org/wikipathways/WP1531>
         pav:hasVersion  <https://identifiers.org/wikipathways/WP1531_r118354> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=118354>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://doi.org/10.1093%2FHMG%2FDDQ155>
         dc:source           "DOI" ;

@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -82,12 +83,13 @@
         dcterms:identifier     "WP4153" ;
         dcterms:references     <https://identifiers.org/pubmed/12011101> , <https://identifiers.org/pubmed/19014978> , <https://identifiers.org/pubmed/16854371> ;
         cito:cites             <https://doi.org/10.1021/ja960826u> , <https://identifiers.org/pubmed/16854371> , <https://identifiers.org/pubmed/22652185> , <https://identifiers.org/pubmed/19014978> , <https://identifiers.org/pubmed/12011101> , <https://identifiers.org/pubmed/9582303> , <https://identifiers.org/pubmed/8672428> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_3322> , <http://purl.obolibrary.org/obo/DOID_0070112> , <http://purl.obolibrary.org/obo/DOID_10581> , <http://purl.obolibrary.org/obo/DOID_14499> , <http://purl.obolibrary.org/obo/DOID_0050464> , <http://purl.obolibrary.org/obo/DOID_4795> , <http://purl.obolibrary.org/obo/DOID_14504> , <http://purl.obolibrary.org/obo/DOID_3323> , <http://purl.obolibrary.org/obo/DOID_4> , <http://purl.obolibrary.org/obo/DOID_10587> , <http://purl.obolibrary.org/obo/DOID_2368> , <http://purl.obolibrary.org/obo/DOID_1926> , <http://purl.obolibrary.org/obo/DOID_0070111> , <http://purl.obolibrary.org/obo/DOID_3320> , <http://purl.obolibrary.org/obo/DOID_3321> ;
+        wp:diseaseOntologyTag  obo:DOID_3322 , obo:DOID_0070112 , obo:DOID_10581 , obo:DOID_14499 , obo:DOID_0050464 , obo:DOID_4795 , obo:DOID_14504 , obo:DOID_3323 , obo:DOID_4 , obo:DOID_10587 , obo:DOID_2368 , obo:DOID_1926 , obo:DOID_0070111 , obo:DOID_3320 , obo:DOID_3321 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4153_r124950> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_10587> , <http://purl.obolibrary.org/obo/DOID_3320> , <http://purl.obolibrary.org/obo/DOID_14499> , <http://purl.obolibrary.org/obo/PW_0000733> , <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0001062> , <http://purl.obolibrary.org/obo/DOID_0070111> , <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/DOID_3322> , <http://purl.obolibrary.org/obo/DOID_0050464> , <http://purl.obolibrary.org/obo/DOID_1926> , <http://purl.obolibrary.org/obo/PW_0000735> , <http://purl.obolibrary.org/obo/DOID_4795> , <http://purl.obolibrary.org/obo/DOID_10581> , <http://purl.obolibrary.org/obo/DOID_14504> , <http://purl.obolibrary.org/obo/DOID_0070112> , <http://purl.obolibrary.org/obo/DOID_3321> , <http://purl.obolibrary.org/obo/PW_0000163> , <http://purl.obolibrary.org/obo/DOID_3323> , <http://purl.obolibrary.org/obo/DOID_4> , <http://purl.obolibrary.org/obo/DOID_2368> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_10587 , obo:DOID_3320 , obo:DOID_14499 , obo:PW_0000733 , obo:PW_0000197 , obo:PW_0001062 , obo:DOID_0070111 , obo:PW_0000162 , obo:DOID_3322 , obo:DOID_0050464 , obo:DOID_1926 , obo:PW_0000735 , obo:DOID_4795 , obo:DOID_10581 , obo:DOID_14504 , obo:DOID_0070112 , obo:DOID_3321 , obo:PW_0000163 , obo:DOID_3323 , obo:DOID_4 , obo:DOID_2368 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000163> , <http://purl.obolibrary.org/obo/PW_0000733> , <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0001062> , <http://purl.obolibrary.org/obo/PW_0000735> , <http://purl.obolibrary.org/obo/PW_0000197> ;
+        wp:pathwayOntologyTag  obo:PW_0000163 , obo:PW_0000733 , obo:PW_0000162 , obo:PW_0001062 , obo:PW_0000735 , obo:PW_0000197 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4153&oldid=124950> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4153&oldid=124950> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4153_r124950> .
 
 <https://identifiers.org/uniprot/P54803>
@@ -373,6 +375,10 @@
         dcterms:isPartOf  <https://identifiers.org/uniprot/P06865> ;
         foaf:page         <https://doi.org/10.1021/ja960826u> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4153&oldid=124950>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <http://rdf.wikipathways.org/Pathway/WP4153_r124950/WP/Interaction/e5db2>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4153_r124950> ;
@@ -427,6 +433,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4153_r124950/DataNode/fe1b0> , <http://rdf.wikipathways.org/Pathway/WP4153_r124950/DataNode/ddec4> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:134506> , <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=134506> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/interpro/IPR003119>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "Sap-A" ;
@@ -441,7 +449,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4153_r124950> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4153_r124950/Group/f8336> ;
-        wp:participants   <https://identifiers.org/ncbigene/2760> , <https://identifiers.org/uniprot/P06865> , <http://rdf.wikipathways.org/Pathway/WP4153_r124950/Complex/f8336> .
+        wp:participants   <https://identifiers.org/uniprot/P06865> , <https://identifiers.org/ncbigene/2760> , <http://rdf.wikipathways.org/Pathway/WP4153_r124950/Complex/f8336> .
 
 <https://identifiers.org/ncbigene/10577>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -469,7 +477,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4153_r124950/WP/Interaction/ed96a> , <https://identifiers.org/wikipathways/WP4153_r124950> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4153_r124950/Group/f8336> ;
-        wp:participants   <https://identifiers.org/ncbigene/2760> , <https://identifiers.org/uniprot/P06865> .
+        wp:participants   <https://identifiers.org/uniprot/P06865> , <https://identifiers.org/ncbigene/2760> .
 
 <https://identifiers.org/ensembl/ENSG00000170266>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -505,6 +513,10 @@
         wp:participants   <https://identifiers.org/chebi/CHEBI:17761> , <https://identifiers.org/wikidata/Q35662896> ;
         wp:source         <https://identifiers.org/wikidata/Q35662896> ;
         wp:target         <https://identifiers.org/chebi/CHEBI:17761> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4153&oldid=124950>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ec-code/3.2.1.23>
         rdf:type            wp:Protein , wp:DataNode ;

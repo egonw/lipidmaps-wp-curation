@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -79,6 +80,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q283> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5179_r121899/DataNode/d0e4b> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5179&oldid=121899>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/lipidmaps/LMFA07050098>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -307,12 +312,13 @@
         dcterms:identifier     "WP5179" ;
         dcterms:references     <https://identifiers.org/pubmed/25947379> , <https://identifiers.org/pubmed/30625374> , <https://identifiers.org/pubmed/31132366> , <https://identifiers.org/pubmed/30790665> , <https://identifiers.org/pubmed/34563520> ;
         cito:cites             <https://identifiers.org/pubmed/31132366> , <https://identifiers.org/pubmed/34563520> , <https://identifiers.org/pubmed/30790665> , <https://identifiers.org/pubmed/25947379> , <https://identifiers.org/pubmed/9068972> , <https://identifiers.org/pubmed/30625374> , <https://identifiers.org/pubmed/24816681> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0070162> , <http://purl.obolibrary.org/obo/DOID_9351> ;
+        wp:diseaseOntologyTag  obo:DOID_0070162 , obo:DOID_9351 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5179_r121899> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/DOID_0070162> , <http://purl.obolibrary.org/obo/PW_0002301> , <http://purl.obolibrary.org/obo/DOID_9351> , <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0000002> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000162 , obo:DOID_0070162 , obo:PW_0002301 , obo:DOID_9351 , obo:PW_0000197 , obo:PW_0000002 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0002301> , <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000162> ;
+        wp:pathwayOntologyTag  obo:PW_0002301 , obo:PW_0000197 , obo:PW_0000002 , obo:PW_0000162 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5179&oldid=121899> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5179&oldid=121899> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5179_r121899> .
 
 <https://identifiers.org/ec-code/1.14.14.94>
@@ -355,6 +361,8 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q17832193> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5179_r121899/DataNode/b6ac6> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000104763> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <http://rdf.wikipathways.org/Pathway/WP5179_r121899/WP/Interaction/idd80cfc2d>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -446,6 +454,10 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:67111> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5179_r121899/DataNode/e111d> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:67111> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5179&oldid=121899>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP5179_r121899/WP/Interaction/id5f939074>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;

@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -65,6 +66,10 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMSP0502AB00> , <https://identifiers.org/lipidmaps/LMSP0502AC00> ;
         wp:source           <https://identifiers.org/lipidmaps/LMSP0502AB00> ;
         wp:target           <https://identifiers.org/lipidmaps/LMSP0502AC00> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5305&oldid=125906>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP5305_r125906/WP/Interaction/idd4aaa3a>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -329,6 +334,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5305_r125906/DataNode/fe46b> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMSP0601AE00> .
 
+obo:NCBITaxon_10090  obo:NCIT_C179773  "10090" .
+
 <http://rdf.wikipathways.org/Pathway/WP5305_r125906/WP/Interaction/id39baf8c9>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5305_r125906> ;
@@ -375,10 +382,11 @@
         dcterms:references     <https://identifiers.org/pubmed/15938018> , <https://doi.org/10.1007/978-4-431-67877-9> ;
         cito:cites             <https://doi.org/10.1007/978-4-431-67877-9> , <https://identifiers.org/pubmed/15938018> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5305_r125906> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000196> , <http://purl.obolibrary.org/obo/PW_0000010> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
+        wp:ontologyTag         obo:PW_0000196 , obo:PW_0000010 ;
+        wp:organism            obo:NCBITaxon_10090 ;
         wp:organismName        "Mus musculus" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0000196> ;
+        wp:pathwayOntologyTag  obo:PW_0000010 , obo:PW_0000196 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5305&oldid=125906> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5305&oldid=125906> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5305_r125906> .
 
 <https://identifiers.org/lipidmaps/LMSP0502BN00>
@@ -502,6 +510,10 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMSP0502BK00> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5305_r125906/DataNode/b5a1d> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMSP0502BK00> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5305&oldid=125906>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/lipidmaps/LMSP0502BJ00>
         rdf:type            wp:DataNode , wp:Metabolite ;

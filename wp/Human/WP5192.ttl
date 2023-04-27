@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -70,7 +71,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Group/b5da2> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:26523> , <https://identifiers.org/chebi/CHEBI:62764> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:62764> , <https://identifiers.org/chebi/CHEBI:26523> .
 
 <http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/ida446de13>
         rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
@@ -79,6 +80,10 @@
         wp:participants   <https://identifiers.org/ensembl/ENSG00000198793> , <https://identifiers.org/chebi/CHEBI:77113> ;
         wp:source         <https://identifiers.org/chebi/CHEBI:77113> ;
         wp:target         <https://identifiers.org/ensembl/ENSG00000198793> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5192&oldid=122557>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/ensembl/ENSG00000121879>
         rdf:type            wp:Protein , wp:DataNode ;
@@ -261,7 +266,11 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Group/cda34> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:17234> , <https://identifiers.org/chebi/CHEBI:62764> , <https://identifiers.org/chebi/CHEBI:26523> , <https://identifiers.org/chebi/CHEBI:29016> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:26523> , <https://identifiers.org/chebi/CHEBI:17234> , <https://identifiers.org/chebi/CHEBI:62764> , <https://identifiers.org/chebi/CHEBI:29016> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5192&oldid=122557>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ensembl/ENSG00000109320>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -278,6 +287,12 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5192_r122557/DataNode/dcc0e> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000109320> .
 
+<http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/id65ab5422>
+        rdf:type          wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Interaction/id65ab5422> ;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:52639> .
+
 <http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/id58e4ed41>
         rdf:type          wp:Inhibition , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
@@ -285,12 +300,6 @@
         wp:participants   <https://identifiers.org/ensembl/ENSG00000142208> , <https://identifiers.org/hmdb/HMDB0000277> ;
         wp:source         <https://identifiers.org/hmdb/HMDB0000277> ;
         wp:target         <https://identifiers.org/ensembl/ENSG00000142208> .
-
-<http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/id65ab5422>
-        rdf:type          wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Interaction/id65ab5422> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:52639> .
 
 <http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/idebb69829>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -308,6 +317,8 @@
         wp:source         <https://identifiers.org/chebi/CHEBI:52639> ;
         wp:target         <https://identifiers.org/chebi/CHEBI:45719> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/wikipathways/WP5192_r122557>
         rdf:type               skos:Collection , wp:Pathway ;
         dc:identifier          <https://identifiers.org/wikipathways/WP5192> ;
@@ -317,11 +328,12 @@
         dcterms:identifier     "WP5192" ;
         dcterms:references     <https://identifiers.org/pubmed/30140974> ;
         cito:cites             <https://identifiers.org/pubmed/30140974> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_14524> ;
+        wp:diseaseOntologyTag  obo:DOID_14524 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5192_r122557> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_14524> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_14524 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5192&oldid=122557> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5192&oldid=122557> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5192_r122557> .
 
 <https://identifiers.org/pubmed/30140974>
@@ -538,7 +550,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5192_r122557> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Group/b5da2> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:26523> , <https://identifiers.org/chebi/CHEBI:62764> , <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Complex/b5da2> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:62764> , <https://identifiers.org/chebi/CHEBI:26523> , <http://rdf.wikipathways.org/Pathway/WP5192_r122557/Complex/b5da2> .
 
 <http://rdf.wikipathways.org/Pathway/WP5192_r122557/WP/Interaction/id6d1f11f1>
         rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;

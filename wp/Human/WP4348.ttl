@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -15,6 +16,10 @@
 @prefix wp:      <http://vocabularies.wikipathways.org/wp#> .
 @prefix wprdf:   <http://rdf.wikipathways.org/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4348&oldid=126096>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP4348_r126096/WP/Interaction/ec042>
         rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -360,6 +365,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/bf562> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q8C255> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4348&oldid=126096>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/lipidmaps/LMFA03060006>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "8S-HETE" ;
@@ -379,24 +388,6 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/b6dd3> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060006> .
 
-<https://identifiers.org/lipidmaps/LMFA03060075>
-        rdf:type            wp:Metabolite , wp:DataNode ;
-        rdfs:label          "5,6-Ep-15S-HETE" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/YNHSGCYEQVDEOY-UZDWIPAXSA-N> ;
-        dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060075> ;
-        dc:source           "LIPID MAPS" ;
-        dcterms:identifier  "LMFA03060075" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r126096> , <http://rdf.wikipathways.org/Pathway/WP4348_r126096/WP/Interaction/ba206> , <http://rdf.wikipathways.org/Pathway/WP4348_r126096/WP/Interaction/dccf1> ;
-        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:64095> ;
-        wp:bdbChemspider    <https://identifiers.org/chemspider/10128355> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/YNHSGCYEQVDEOY-UZDWIPAXSA-N> ;
-        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C14815> ;
-        wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMFA03060075> ;
-        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID11954060> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q27133027> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/ceab3> ;
-        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060075> .
-
 <https://identifiers.org/lipidmaps/LMFA03020013>
         rdf:type            wp:Metabolite , wp:DataNode ;
         rdfs:label          "6-trans-delta-LTB4" ;
@@ -414,6 +405,24 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27132947> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/db0e0> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03020013> .
+
+<https://identifiers.org/lipidmaps/LMFA03060075>
+        rdf:type            wp:Metabolite , wp:DataNode ;
+        rdfs:label          "5,6-Ep-15S-HETE" ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/YNHSGCYEQVDEOY-UZDWIPAXSA-N> ;
+        dc:identifier       <https://identifiers.org/lipidmaps/LMFA03060075> ;
+        dc:source           "LIPID MAPS" ;
+        dcterms:identifier  "LMFA03060075" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4348_r126096> , <http://rdf.wikipathways.org/Pathway/WP4348_r126096/WP/Interaction/ba206> , <http://rdf.wikipathways.org/Pathway/WP4348_r126096/WP/Interaction/dccf1> ;
+        wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:64095> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/10128355> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/YNHSGCYEQVDEOY-UZDWIPAXSA-N> ;
+        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C14815> ;
+        wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMFA03060075> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID11954060> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q27133027> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/ceab3> ;
+        foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA03060075> .
 
 <https://identifiers.org/uniprot/Q9R0H0>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -658,6 +667,8 @@
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q60860> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4348_r126096/DataNode/f38bc> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q60860> .
+
+obo:NCBITaxon_10090  obo:NCIT_C179773  "10090" .
 
 <https://identifiers.org/uniprot/P48999>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -1373,10 +1384,11 @@
         dcterms:references     <https://identifiers.org/pubmed/19244215> ;
         cito:cites             <https://identifiers.org/pubmed/19244215> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4348_r126096> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000462> , <http://purl.obolibrary.org/obo/PW_0000485> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
+        wp:ontologyTag         obo:PW_0000462 , obo:PW_0000485 ;
+        wp:organism            obo:NCBITaxon_10090 ;
         wp:organismName        "Mus musculus" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000485> , <http://purl.obolibrary.org/obo/PW_0000462> ;
+        wp:pathwayOntologyTag  obo:PW_0000485 , obo:PW_0000462 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4348&oldid=126096> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4348&oldid=126096> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4348_r126096> .
 
 <https://identifiers.org/lipidmaps/LMFA03060051>

@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -28,6 +29,10 @@
 
 <https://identifiers.org/wikipathways/WP5274>
         pav:hasVersion  <https://identifiers.org/wikipathways/WP5274_r123603> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5274&oldid=123603>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/idd869d17f>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;
@@ -188,6 +193,15 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/DataNode/c7efb> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:46245> .
 
+<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id62cdbd26>
+        rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> ;
+        dcterms:references  <https://identifiers.org/pubmed/12803831> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/id62cdbd26> ;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000755> , <https://identifiers.org/pubchem.compound/637542> ;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000755> ;
+        wp:target           <https://identifiers.org/pubchem.compound/637542> .
+
 <https://identifiers.org/wikipathways/WP5274_r123603>
         rdf:type               skos:Collection , wp:Pathway ;
         dc:identifier          <https://identifiers.org/wikipathways/WP5274> ;
@@ -198,20 +212,12 @@
         dcterms:references     <https://identifiers.org/pubmed/31379988> , <https://identifiers.org/pubmed/12803831> ;
         cito:cites             <https://identifiers.org/pubmed/31379988> , <https://identifiers.org/pubmed/12803831> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5274_r123603> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000453> , <http://purl.obolibrary.org/obo/PW_0000135> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000002 , obo:PW_0000453 , obo:PW_0000135 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000453> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0000135> ;
+        wp:pathwayOntologyTag  obo:PW_0000453 , obo:PW_0000002 , obo:PW_0000135 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5274&oldid=123603> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5274&oldid=123603> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5274_r123603> .
-
-<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id62cdbd26>
-        rdf:type            wp:DirectedInteraction , wp:Conversion , wp:Interaction ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> ;
-        dcterms:references  <https://identifiers.org/pubmed/12803831> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/id62cdbd26> ;
-        wp:participants     <https://identifiers.org/hmdb/HMDB0000755> , <https://identifiers.org/pubchem.compound/637542> ;
-        wp:source           <https://identifiers.org/hmdb/HMDB0000755> ;
-        wp:target           <https://identifiers.org/pubchem.compound/637542> .
 
 <http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/a9eab>
         rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -222,6 +228,8 @@
         wp:source           <https://identifiers.org/chebi/CHEBI:15999> ;
         wp:target           <https://identifiers.org/hmdb/HMDB0000755> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id8e250093>
         rdf:type            wp:Conversion , wp:Interaction , wp:DirectedInteraction ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> ;
@@ -230,6 +238,23 @@
         wp:participants     <https://identifiers.org/pubchem.compound/46173330> , <https://identifiers.org/pubchem.compound/135> , <https://identifiers.org/pubchem.compound/6454686> ;
         wp:source           <https://identifiers.org/pubchem.compound/46173330> , <https://identifiers.org/pubchem.compound/135> ;
         wp:target           <https://identifiers.org/pubchem.compound/6454686> .
+
+<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/idbc75dd2b>
+        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5274_r123603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/idbc75dd2b> ;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:46245> , <https://identifiers.org/pubchem.compound/6454686> ;
+        wp:source         <https://identifiers.org/pubchem.compound/6454686> ;
+        wp:target         <https://identifiers.org/chebi/CHEBI:46245> .
+
+<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id4c9a697a>
+        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> ;
+        dcterms:references  <https://identifiers.org/pubmed/12803831> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/id4c9a697a> ;
+        wp:participants     <https://identifiers.org/chebi/CHEBI:15999> , <https://identifiers.org/chebi/CHEBI:18186> ;
+        wp:source           <https://identifiers.org/chebi/CHEBI:18186> ;
+        wp:target           <https://identifiers.org/chebi/CHEBI:15999> .
 
 <https://identifiers.org/ec-code/2.5.1.->
         rdf:type            wp:Protein , wp:DataNode ;
@@ -240,15 +265,6 @@
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> , <http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id9bc3f515> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/DataNode/c8213> ;
         foaf:page           <http://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=2.5.1.-> .
-
-<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id4c9a697a>
-        rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5274_r123603> ;
-        dcterms:references  <https://identifiers.org/pubmed/12803831> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/id4c9a697a> ;
-        wp:participants     <https://identifiers.org/chebi/CHEBI:15999> , <https://identifiers.org/chebi/CHEBI:18186> ;
-        wp:source           <https://identifiers.org/chebi/CHEBI:18186> ;
-        wp:target           <https://identifiers.org/chebi/CHEBI:15999> .
 
 <https://identifiers.org/pubmed/12803831>
         rdf:type            wp:PublicationReference ;
@@ -294,13 +310,9 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5274_r123603/DataNode/a89e0> ;
         foaf:page           <http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=6454686> .
 
-<http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/idbc75dd2b>
-        rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5274_r123603> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5274_r123603/Interaction/idbc75dd2b> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:46245> , <https://identifiers.org/pubchem.compound/6454686> ;
-        wp:source         <https://identifiers.org/pubchem.compound/6454686> ;
-        wp:target         <https://identifiers.org/chebi/CHEBI:46245> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5274&oldid=123603>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP5274_r123603/WP/Interaction/id9bc3f515>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;

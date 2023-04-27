@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -437,6 +438,15 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4347_r124982/DataNode/b3e81> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/113868> .
 
+<http://rdf.wikipathways.org/Pathway/WP4347_r124982/WP/Interaction/c5e68>
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4347_r124982> ;
+        dcterms:references  <https://identifiers.org/pubmed/18761324> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4347_r124982/Interaction/c5e68> ;
+        wp:participants     <https://identifiers.org/lipidmaps/LMFA01030001> , <https://identifiers.org/lipidmaps/LMFA03060001> ;
+        wp:source           <https://identifiers.org/lipidmaps/LMFA01030001> ;
+        wp:target           <https://identifiers.org/lipidmaps/LMFA03060001> .
+
 <https://doi.org/10.1038%2FNRI3859>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1038/NRI3859" .
@@ -460,14 +470,9 @@
         wp:source         <https://identifiers.org/lipidmaps/LMFA03010002> ;
         wp:target         <https://identifiers.org/lipidmaps/LMFA03010029> .
 
-<http://rdf.wikipathways.org/Pathway/WP4347_r124982/WP/Interaction/c5e68>
-        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4347_r124982> ;
-        dcterms:references  <https://identifiers.org/pubmed/18761324> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4347_r124982/Interaction/c5e68> ;
-        wp:participants     <https://identifiers.org/lipidmaps/LMFA01030001> , <https://identifiers.org/lipidmaps/LMFA03060001> ;
-        wp:source           <https://identifiers.org/lipidmaps/LMFA01030001> ;
-        wp:target           <https://identifiers.org/lipidmaps/LMFA03060001> .
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4347&oldid=124982>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/lipidmaps/LMFA03010212>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -634,10 +639,11 @@
         dcterms:references     <https://identifiers.org/pubmed/20923771> ;
         cito:cites             <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/18761324> , <https://identifiers.org/pubmed/234423> , <https://identifiers.org/pubmed/26139350> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4347_r124982> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000024> , <http://purl.obolibrary.org/obo/PW_0001239> , <http://purl.obolibrary.org/obo/PW_0000460> , <http://purl.obolibrary.org/obo/PW_0000485> , <http://purl.obolibrary.org/obo/PW_0000565> , <http://purl.obolibrary.org/obo/PW_0000461> , <http://purl.obolibrary.org/obo/PW_0001147> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
+        wp:ontologyTag         obo:PW_0000024 , obo:PW_0001239 , obo:PW_0000460 , obo:PW_0000485 , obo:PW_0000565 , obo:PW_0000461 , obo:PW_0001147 ;
+        wp:organism            obo:NCBITaxon_10090 ;
         wp:organismName        "Mus musculus" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000485> , <http://purl.obolibrary.org/obo/PW_0000565> , <http://purl.obolibrary.org/obo/PW_0001239> , <http://purl.obolibrary.org/obo/PW_0000461> , <http://purl.obolibrary.org/obo/PW_0000024> , <http://purl.obolibrary.org/obo/PW_0001147> , <http://purl.obolibrary.org/obo/PW_0000460> ;
+        wp:pathwayOntologyTag  obo:PW_0000485 , obo:PW_0000565 , obo:PW_0001239 , obo:PW_0000461 , obo:PW_0000024 , obo:PW_0001147 , obo:PW_0000460 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4347&oldid=124982> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4347&oldid=124982> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4347_r124982> .
 
 <https://doi.org/10.1016%2FJ.BCP.2008.07.033>
@@ -651,6 +657,8 @@
         wp:participants   <https://identifiers.org/lipidmaps/LMFA03010210> , <https://identifiers.org/lipidmaps/LMFA03010003> ;
         wp:source         <https://identifiers.org/lipidmaps/LMFA03010003> ;
         wp:target         <https://identifiers.org/lipidmaps/LMFA03010210> .
+
+obo:NCBITaxon_10090  obo:NCIT_C179773  "10090" .
 
 <http://rdf.wikipathways.org/Pathway/WP4347_r124982/WP/Interaction/idbc642d05>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Stimulation ;
@@ -821,6 +829,10 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMFA03010021> , <https://identifiers.org/lipidmaps/LMFA03010004> ;
         wp:source           <https://identifiers.org/lipidmaps/LMFA03010004> ;
         wp:target           <https://identifiers.org/lipidmaps/LMFA03010021> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4347&oldid=124982>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/ncbigene/11430>
         rdf:type            wp:DataNode , wp:Protein ;

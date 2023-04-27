@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -39,6 +40,10 @@
         wp:participants   <https://identifiers.org/hmdb/HMDB0004925> , <https://identifiers.org/hmdb/HMDB0004913> ;
         wp:source         <https://identifiers.org/hmdb/HMDB0004913> ;
         wp:target         <https://identifiers.org/hmdb/HMDB0004925> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1423&oldid=124472>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP1423_r124472/WP/Interaction/idca754cb6>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;
@@ -287,6 +292,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1423_r124472/DataNode/c0235> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0004927> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1423&oldid=124472>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/ensembl/ENSG00000101638>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "ST8SIA5" ;
@@ -349,10 +358,11 @@
         dcterms:references     <https://identifiers.org/pubmed/21942574> ;
         cito:cites             <https://identifiers.org/pubmed/21942574> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP1423_r124472> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0000164> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000162 , obo:PW_0000197 , obo:PW_0000164 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000162> , <http://purl.obolibrary.org/obo/PW_0000197> , <http://purl.obolibrary.org/obo/PW_0000164> ;
+        wp:pathwayOntologyTag  obo:PW_0000162 , obo:PW_0000197 , obo:PW_0000164 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1423&oldid=124472> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1423&oldid=124472> ;
         foaf:page              <http://www.wikipathways.org/instance/WP1423_r124472> .
 
 <http://rdf.wikipathways.org/Pathway/WP1423_r124472/WP/Interaction/id2afba2e8>
@@ -560,6 +570,8 @@
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A1W2PQ01> , <https://identifiers.org/uniprot/F8WEA8> , <https://identifiers.org/uniprot/A0A1W2PRP8> , <https://identifiers.org/uniprot/Q9UNP4> , <https://identifiers.org/uniprot/A0A1W2PRC6> , <https://identifiers.org/uniprot/A0A1W2PQR0> , <https://identifiers.org/uniprot/A0A1W2PPQ6> , <https://identifiers.org/uniprot/A0A1W2PP90> , <https://identifiers.org/uniprot/A0A1W2PP82> , <https://identifiers.org/uniprot/A0A1W2PNZ0> , <https://identifiers.org/uniprot/A0A1W2PPB0> , <https://identifiers.org/uniprot/A0A1W2PNV2> , <https://identifiers.org/uniprot/A0A0S2Z4Q7> , <https://identifiers.org/uniprot/A0A1W2PPG4> , <https://identifiers.org/uniprot/A0A1W2PP52> , <https://identifiers.org/uniprot/A0A1W2PR69> , <https://identifiers.org/uniprot/A0A1W2PRD9> , <https://identifiers.org/uniprot/A0A1W2PR43> , <https://identifiers.org/uniprot/A0A1W2PPT1> , <https://identifiers.org/uniprot/E7EPY0> , <https://identifiers.org/uniprot/A0A0S2Z4S6> , <https://identifiers.org/uniprot/C9JYS9> , <https://identifiers.org/uniprot/A0A1W2PQB4> , <https://identifiers.org/uniprot/A0A1W2PR24> , <https://identifiers.org/uniprot/A0A1W2PQQ6> , <https://identifiers.org/uniprot/A0A1W2PQT6> , <https://identifiers.org/uniprot/A0A1W2PQM6> , <https://identifiers.org/uniprot/A0A1W2PNR4> , <https://identifiers.org/uniprot/A0A1W2PPF6> , <https://identifiers.org/uniprot/A0A1W2PQ08> , <https://identifiers.org/uniprot/A0A1W2PRY1> , <https://identifiers.org/uniprot/A0A1W2PQ40> , <https://identifiers.org/uniprot/A0A1W2PQ22> , <https://identifiers.org/uniprot/A0A1W2PR45> , <https://identifiers.org/uniprot/A0A1W2PRT0> , <https://identifiers.org/uniprot/A0A1X7SBT2> , <https://identifiers.org/uniprot/A0A1W2PQH5> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1423_r124472/DataNode/b3d19> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/8869> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/hmdb/HMDB0011777>
         rdf:type            wp:DataNode , wp:Metabolite ;

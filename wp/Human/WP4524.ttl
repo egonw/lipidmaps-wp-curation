@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -545,6 +546,10 @@
         owl:sameAs          <https://doi.org/10.1074%2FJBC.M102076200> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/11294878> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4524&oldid=119308>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/chebi/CHEBI:57945>
         rdf:type            wp:Metabolite , wp:DataNode ;
         rdfs:label          "NADH" ;
@@ -597,6 +602,15 @@
         wp:source           <http://rdf.wikipathways.org/Pathway/WP4524_r119308/Complex/c7e2a> ;
         wp:target           <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/iddad61340> .
 
+<https://identifiers.org/pubmed/2339109>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "2339109" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/ided05a70c> , <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/id90bf9399> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q24558620> ;
+        owl:sameAs          <https://doi.org/10.1073%2FPNAS.87.10.3640> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/2339109> .
+
 <https://identifiers.org/ensembl/ENSG00000140459>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "P450scc" ;
@@ -639,14 +653,7 @@
         wp:source         <https://identifiers.org/chebi/CHEBI:58349> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/id7a4e6b0d> .
 
-<https://identifiers.org/pubmed/2339109>
-        rdf:type            wp:PublicationReference ;
-        dc:source           "PubMed" ;
-        dcterms:identifier  "2339109" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/ided05a70c> , <http://rdf.wikipathways.org/Pathway/WP4524_r119308/WP/Interaction/id90bf9399> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q24558620> ;
-        owl:sameAs          <https://doi.org/10.1073%2FPNAS.87.10.3640> ;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/2339109> .
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://doi.org/10.1210%2FEN.2011-0230>
         dc:source           "DOI" ;
@@ -712,12 +719,13 @@
         dcterms:identifier     "WP4524" ;
         dcterms:references     <https://identifiers.org/pubmed/21802064> ;
         cito:cites             <https://identifiers.org/pubmed/11294878> , <https://identifiers.org/pubmed/21159775> , <https://identifiers.org/pubmed/26976652> , <https://identifiers.org/pubmed/23800242> , <https://identifiers.org/pubmed/21586563> , <https://identifiers.org/pubmed/10998348> , <https://identifiers.org/pubmed/21636783> , <https://identifiers.org/pubmed/164477> , <https://identifiers.org/pubmed/19661994> , <https://identifiers.org/pubmed/26668369> , <https://identifiers.org/pubmed/26855069> , <https://identifiers.org/pubmed/11329262> , <https://identifiers.org/pubmed/2339109> , <https://identifiers.org/pubmed/18707589> , <https://identifiers.org/pubmed/9452426> , <https://identifiers.org/pubmed/26587646> , <https://identifiers.org/pubmed/7217084> , <https://identifiers.org/pubmed/11360992> , <https://identifiers.org/pubmed/12917011> , <https://identifiers.org/pubmed/25577493> , <https://identifiers.org/pubmed/1238395> , <https://identifiers.org/pubmed/14640697> , <https://identifiers.org/pubmed/17386955> , <https://identifiers.org/pubmed/16216911> , <https://identifiers.org/pubmed/21802064> , <https://identifiers.org/pubmed/27339894> , <https://identifiers.org/pubmed/10898110> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_1701> ;
+        wp:diseaseOntologyTag  obo:DOID_1701 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4524_r119308> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0001306> , <http://purl.obolibrary.org/obo/DOID_1701> , <http://purl.obolibrary.org/obo/PW_0001305> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000778> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0000040> , <http://purl.obolibrary.org/obo/PW_0001303> , <http://purl.obolibrary.org/obo/PW_0000751> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0001306 , obo:DOID_1701 , obo:PW_0001305 , obo:PW_0001304 , obo:PW_0000778 , obo:PW_0000013 , obo:PW_0000040 , obo:PW_0001303 , obo:PW_0000751 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000040> , <http://purl.obolibrary.org/obo/PW_0000751> , <http://purl.obolibrary.org/obo/PW_0001306> , <http://purl.obolibrary.org/obo/PW_0001303> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000013> , <http://purl.obolibrary.org/obo/PW_0001305> , <http://purl.obolibrary.org/obo/PW_0000778> ;
+        wp:pathwayOntologyTag  obo:PW_0000040 , obo:PW_0000751 , obo:PW_0001306 , obo:PW_0001303 , obo:PW_0001304 , obo:PW_0000013 , obo:PW_0001305 , obo:PW_0000778 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4524&oldid=119308> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4524&oldid=119308> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4524_r119308> .
 
 <https://doi.org/10.1074%2FJBC.M110.188433>
@@ -1232,6 +1240,10 @@
         wp:bdbUniprot       <https://identifiers.org/uniprot/S4R3P0> , <https://identifiers.org/uniprot/P52895> , <https://identifiers.org/uniprot/B4DK69> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r119308/DataNode/b9463> , <http://rdf.wikipathways.org/Pathway/WP4524_r119308/DataNode/fd06e> ;
         foaf:page           <http://www.uniprot.org/uniprot/P52895> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4524&oldid=119308>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/chebi/CHEBI:28689>
         rdf:type            wp:Metabolite , wp:DataNode ;

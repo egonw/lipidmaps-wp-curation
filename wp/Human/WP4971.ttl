@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -311,12 +312,13 @@
         dcterms:identifier     "WP4971" ;
         dcterms:references     <https://identifiers.org/pubmed/16554828> ;
         cito:cites             <https://identifiers.org/pubmed/16554828> , <https://identifiers.org/pubmed/29056325> , <https://identifiers.org/pubmed/9367159> , <https://identifiers.org/pubmed/18215151> , <https://identifiers.org/pubmed/10716940> , <https://identifiers.org/pubmed/16365287> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_1056> , <http://purl.obolibrary.org/obo/DOID_0060448> , <http://purl.obolibrary.org/obo/DOID_14717> , <http://purl.obolibrary.org/obo/DOID_0110191> ;
+        wp:diseaseOntologyTag  obo:DOID_1056 , obo:DOID_0060448 , obo:DOID_14717 , obo:DOID_0110191 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4971_r122106> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_14717> , <http://purl.obolibrary.org/obo/DOID_0060448> , <http://purl.obolibrary.org/obo/DOID_0110191> , <http://purl.obolibrary.org/obo/PW_0002417> , <http://purl.obolibrary.org/obo/DOID_1056> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_14717 , obo:DOID_0060448 , obo:DOID_0110191 , obo:PW_0002417 , obo:DOID_1056 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0002417> ;
+        wp:pathwayOntologyTag  obo:PW_0002417 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4971&oldid=122106> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4971&oldid=122106> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4971_r122106> .
 
 <https://identifiers.org/chebi/CHEBI:58088>
@@ -479,6 +481,12 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4971_r122106/DataNode/e95dc> ;
         foaf:page           <http://www.uniprot.org/uniprot/P19174> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4971&oldid=122106>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://doi.org/10.1016%2FJ.MOLCEL.2017.09.024>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1016/J.MOLCEL.2017.09.024" .
@@ -603,7 +611,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4971_r122106> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4971_r122106/Group/d01f4> ;
-        wp:participants   <https://identifiers.org/uniprot/Q99570> , <https://identifiers.org/uniprot/Q8NEB9> , <https://identifiers.org/ec-code/2.7.1.137> .
+        wp:participants   <https://identifiers.org/ec-code/2.7.1.137> , <https://identifiers.org/uniprot/Q8NEB9> , <https://identifiers.org/uniprot/Q99570> .
 
 <https://identifiers.org/ec-code/2.7.1.149>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -1163,7 +1171,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4971_r122106> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4971_r122106/Group/d01f4> ;
-        wp:participants   <https://identifiers.org/uniprot/Q99570> , <https://identifiers.org/uniprot/Q8NEB9> , <https://identifiers.org/ec-code/2.7.1.137> , <http://rdf.wikipathways.org/Pathway/WP4971_r122106/Complex/d01f4> .
+        wp:participants   <https://identifiers.org/ec-code/2.7.1.137> , <https://identifiers.org/uniprot/Q8NEB9> , <https://identifiers.org/uniprot/Q99570> , <http://rdf.wikipathways.org/Pathway/WP4971_r122106/Complex/d01f4> .
 
 <https://identifiers.org/chebi/CHEBI:58456>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -1292,6 +1300,10 @@
         wp:participants     <https://identifiers.org/chebi/CHEBI:58456> , <https://identifiers.org/chebi/CHEBI:57836> ;
         wp:source           <https://identifiers.org/chebi/CHEBI:57836> ;
         wp:target           <https://identifiers.org/chebi/CHEBI:58456> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4971&oldid=122106>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <https://identifiers.org/uniprot/P78356>
         rdf:type            wp:DataNode , wp:Protein ;

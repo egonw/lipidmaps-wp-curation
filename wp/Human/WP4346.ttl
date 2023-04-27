@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -704,10 +705,11 @@
         dcterms:references     <https://identifiers.org/pubmed/23558541> , <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/23583456> ;
         cito:cites             <https://identifiers.org/pubmed/23583456> , <https://identifiers.org/pubmed/23558541> , <https://identifiers.org/pubmed/9291139> , <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/22156476> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4346_r125078> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000959> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000454> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_10090> ;
+        wp:ontologyTag         obo:PW_0000959 , obo:PW_0001304 , obo:PW_0000454 ;
+        wp:organism            obo:NCBITaxon_10090 ;
         wp:organismName        "Mus musculus" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000959> ;
+        wp:pathwayOntologyTag  obo:PW_0000454 , obo:PW_0001304 , obo:PW_0000959 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4346&oldid=125078> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4346&oldid=125078> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4346_r125078> .
 
 <http://rdf.wikipathways.org/Pathway/WP4346_r125078/WP/Interaction/idcb91214>
@@ -1191,6 +1193,10 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMST01010388> , <https://identifiers.org/lipidmaps/LMST01010229> ;
         wp:source           <https://identifiers.org/lipidmaps/LMST01010229> ;
         wp:target           <https://identifiers.org/lipidmaps/LMST01010388> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4346&oldid=125078>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP4346_r125078/WP/Interaction/bbadb>
         rdf:type            wp:Catalysis , wp:Interaction , wp:DirectedInteraction ;
@@ -2487,6 +2493,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4346_r125078/DataNode/efca4> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/104086> .
 
+obo:NCBITaxon_10090  obo:NCIT_C179773  "10090" .
+
 <https://doi.org/10.1095%2FBIOLREPROD.111.096347>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1095/BIOLREPROD.111.096347" .
@@ -2982,6 +2990,10 @@
 <https://doi.org/10.1016%2FJ.BCP.2013.03.021>
         dc:source           "DOI" ;
         dcterms:identifier  "10.1016/J.BCP.2013.03.021" .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4346&oldid=125078>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP4346_r125078/WP/Interaction/idacd166aa>
         rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;

@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -265,7 +266,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5037_r123599/WP/Interaction/id712285a9> , <https://identifiers.org/wikipathways/WP5037_r123599> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Group/b4594> ;
-        wp:participants   <https://identifiers.org/uniprot/Q9Y2Z9> , <https://identifiers.org/chebi/CHEBI:16238> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16238> , <https://identifiers.org/uniprot/Q9Y2Z9> .
 
 <https://doi.org/10.1212%2F01.WNL.0000252366.10731.43>
         dc:source           "DOI" ;
@@ -275,13 +276,13 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5037_r123599> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Group/adee8> ;
-        wp:participants   <https://identifiers.org/uniprot/38117> , <https://identifiers.org/chebi/CHEBI:57692> , <https://identifiers.org/uniprot/P13804> , <https://identifiers.org/chebi/CHEBI:16027> , <https://identifiers.org/interpro/IPR014730> .
+        wp:participants   <https://identifiers.org/uniprot/38117> , <https://identifiers.org/uniprot/P13804> , <https://identifiers.org/interpro/IPR014730> , <https://identifiers.org/chebi/CHEBI:16027> , <https://identifiers.org/chebi/CHEBI:57692> .
 
 <http://rdf.wikipathways.org/Pathway/WP5037_r123599/ComplexBinding/ff05f>
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5037_r123599> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Group/ff05f> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:29033> , <https://identifiers.org/uniprot/Q99807> , <https://identifiers.org/uniprot/O75208> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/ff05f> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:29033> , <https://identifiers.org/uniprot/O75208> , <https://identifiers.org/uniprot/Q99807> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/ff05f> .
 
 <https://identifiers.org/uniprot/Q7Z2E3>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -332,12 +333,13 @@
         dcterms:description    "Riboflavin (aka Vitamin B2) is used as molecular precursor for the formation of FAD and FMN, which are both essential cofactors in beta-oxidation, branched-chain-amino-acid catabolism and the mitochondrial electron transport of the TCA cycle.\n\nCoenzyme Q10 (aka ubiquinone or CoQ10) functions as a electron carrier, antioxidant and influences pyrimidine metabolism directly.\n\nThis pathway was inspired by Chapter 16 (ed. 4) from the book of Blau (ISBN 3642403360 (978-3642403361))." ;
         dcterms:identifier     "WP5037" ;
         cito:cites             <https://identifiers.org/pubmed/24264046> , <https://identifiers.org/pubmed/20463145> , <https://identifiers.org/pubmed/25498144> , <https://identifiers.org/pubmed/17242337> , <https://identifiers.org/pubmed/18632736> , <https://identifiers.org/pubmed/18319072> , <https://identifiers.org/pubmed/20206331> , <https://identifiers.org/pubmed/16400613> , <https://identifiers.org/pubmed/23116402> , <https://identifiers.org/pubmed/21110228> , <https://identifiers.org/pubmed/15699391> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0080785> , <http://purl.obolibrary.org/obo/DOID_0070242> , <http://purl.obolibrary.org/obo/DOID_8454> , <http://purl.obolibrary.org/obo/DOID_0070239> , <http://purl.obolibrary.org/obo/DOID_0070243> , <http://purl.obolibrary.org/obo/DOID_0080786> , <http://purl.obolibrary.org/obo/DOID_0070238> , <http://purl.obolibrary.org/obo/DOID_0080632> , <http://purl.obolibrary.org/obo/DOID_0050694> , <http://purl.obolibrary.org/obo/DOID_0070241> , <http://purl.obolibrary.org/obo/DOID_0070240> , <http://purl.obolibrary.org/obo/DOID_0050730> ;
+        wp:diseaseOntologyTag  obo:DOID_0080785 , obo:DOID_0070242 , obo:DOID_8454 , obo:DOID_0070239 , obo:DOID_0070243 , obo:DOID_0080786 , obo:DOID_0070238 , obo:DOID_0080632 , obo:DOID_0050694 , obo:DOID_0070241 , obo:DOID_0070240 , obo:DOID_0050730 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5037_r123599> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_0050694> , <http://purl.obolibrary.org/obo/DOID_8454> , <http://purl.obolibrary.org/obo/PW_0000137> , <http://purl.obolibrary.org/obo/DOID_0080785> , <http://purl.obolibrary.org/obo/PW_0000142> , <http://purl.obolibrary.org/obo/DOID_0070238> , <http://purl.obolibrary.org/obo/DOID_0070241> , <http://purl.obolibrary.org/obo/DOID_0080632> , <http://purl.obolibrary.org/obo/DOID_0050730> , <http://purl.obolibrary.org/obo/DOID_0070239> , <http://purl.obolibrary.org/obo/DOID_0070243> , <http://purl.obolibrary.org/obo/DOID_0080786> , <http://purl.obolibrary.org/obo/DOID_0070242> , <http://purl.obolibrary.org/obo/DOID_0070240> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_0050694 , obo:DOID_8454 , obo:PW_0000137 , obo:DOID_0080785 , obo:PW_0000142 , obo:DOID_0070238 , obo:DOID_0070241 , obo:DOID_0080632 , obo:DOID_0050730 , obo:DOID_0070239 , obo:DOID_0070243 , obo:DOID_0080786 , obo:DOID_0070242 , obo:DOID_0070240 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000142> , <http://purl.obolibrary.org/obo/PW_0000137> ;
+        wp:pathwayOntologyTag  obo:PW_0000142 , obo:PW_0000137 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5037&oldid=123599> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5037&oldid=123599> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5037_r123599> .
 
 <https://identifiers.org/uniprot/O75208>
@@ -473,6 +475,10 @@
         wp:source         <https://identifiers.org/chebi/CHEBI:50774> ;
         wp:target         <https://identifiers.org/chebi/CHEBI:64180> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5037&oldid=123599>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/pubmed/23116402>
         rdf:type            wp:PublicationReference ;
         dc:source           "PubMed" ;
@@ -539,6 +545,8 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q24540570> ;
         owl:sameAs          <https://doi.org/10.1086%2F500092> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/16400613> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/pubmed/21110228>
         rdf:type            wp:PublicationReference ;
@@ -707,6 +715,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5037_r123599/DataNode/a01da> ;
         foaf:page           <https://www.wikipathways.org/instance/WP241> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5037&oldid=123599>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <https://identifiers.org/ensembl/ENSG00000171503>
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "ETFDH gene" ;
@@ -798,7 +810,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP5037_r123599/WP/Interaction/id3343dfba> , <https://identifiers.org/wikipathways/WP5037_r123599> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Group/ff05f> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:29033> , <https://identifiers.org/uniprot/Q99807> , <https://identifiers.org/uniprot/O75208> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:29033> , <https://identifiers.org/uniprot/O75208> , <https://identifiers.org/uniprot/Q99807> .
 
 <https://identifiers.org/uniprot/Q9Y2Z9>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -813,6 +825,29 @@
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q9Y2Z9> , <https://identifiers.org/uniprot/G3V2L5> , <https://identifiers.org/uniprot/G3V4A6> , <https://identifiers.org/uniprot/G3V3A1> , <https://identifiers.org/uniprot/G3V3L0> , <https://identifiers.org/uniprot/A0A0D9SFJ1> , <https://identifiers.org/uniprot/G3V434> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5037_r123599/DataNode/bb28f> ;
         foaf:page           <http://www.uniprot.org/uniprot/Q9Y2Z9> .
+
+<https://identifiers.org/uniprot/Q9HAB3>
+        rdf:type            wp:DataNode , wp:Protein ;
+        rdfs:label          "SLC52A2" ;
+        dc:identifier       <https://identifiers.org/uniprot/Q9HAB3> ;
+        dc:source           "Uniprot-TrEMBL" ;
+        dcterms:identifier  "Q9HAB3" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5037_r123599> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/df411> ;
+        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000185803> ;
+        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/79581> ;
+        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/SLC52A2> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/E9PRC3> , <https://identifiers.org/uniprot/E9PIX2> , <https://identifiers.org/uniprot/A0A6Q8PGB9> , <https://identifiers.org/uniprot/A0A6Q8PHF8> , <https://identifiers.org/uniprot/A0A6Q8PG35> , <https://identifiers.org/uniprot/E9PPS0> , <https://identifiers.org/uniprot/A0A6Q8PFQ5> , <https://identifiers.org/uniprot/A0A6Q8PGE2> , <https://identifiers.org/uniprot/E9PKE4> , <https://identifiers.org/uniprot/A0A6Q8PFH5> , <https://identifiers.org/uniprot/Q9HAB3> , <https://identifiers.org/uniprot/E9PJC1> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5037_r123599/DataNode/f4ae6> ;
+        foaf:page           <http://www.uniprot.org/uniprot/Q9HAB3> .
+
+<https://identifiers.org/pubmed/18319072>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "18319072" ;
+        dcterms:isPartOf    <https://identifiers.org/uniprot/Q8NI60> ;
+        wp:bdbWikidata      <http://www.wikidata.org/entity/Q24655437> ;
+        owl:sameAs          <https://doi.org/10.1016%2FJ.AJHG.2007.12.022> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18319072> .
 
 <https://identifiers.org/chebi/CHEBI:46245>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -832,29 +867,6 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q321285> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5037_r123599/DataNode/e286c> ;
         foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:46245> .
-
-<https://identifiers.org/pubmed/18319072>
-        rdf:type            wp:PublicationReference ;
-        dc:source           "PubMed" ;
-        dcterms:identifier  "18319072" ;
-        dcterms:isPartOf    <https://identifiers.org/uniprot/Q8NI60> ;
-        wp:bdbWikidata      <http://www.wikidata.org/entity/Q24655437> ;
-        owl:sameAs          <https://doi.org/10.1016%2FJ.AJHG.2007.12.022> ;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18319072> .
-
-<https://identifiers.org/uniprot/Q9HAB3>
-        rdf:type            wp:DataNode , wp:Protein ;
-        rdfs:label          "SLC52A2" ;
-        dc:identifier       <https://identifiers.org/uniprot/Q9HAB3> ;
-        dc:source           "Uniprot-TrEMBL" ;
-        dcterms:identifier  "Q9HAB3" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5037_r123599> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/df411> ;
-        wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000185803> ;
-        wp:bdbEntrezGene    <https://identifiers.org/ncbigene/79581> ;
-        wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/SLC52A2> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/E9PRC3> , <https://identifiers.org/uniprot/E9PIX2> , <https://identifiers.org/uniprot/A0A6Q8PGB9> , <https://identifiers.org/uniprot/A0A6Q8PHF8> , <https://identifiers.org/uniprot/A0A6Q8PG35> , <https://identifiers.org/uniprot/E9PPS0> , <https://identifiers.org/uniprot/A0A6Q8PFQ5> , <https://identifiers.org/uniprot/A0A6Q8PGE2> , <https://identifiers.org/uniprot/E9PKE4> , <https://identifiers.org/uniprot/A0A6Q8PFH5> , <https://identifiers.org/uniprot/Q9HAB3> , <https://identifiers.org/uniprot/E9PJC1> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5037_r123599/DataNode/f4ae6> ;
-        foaf:page           <http://www.uniprot.org/uniprot/Q9HAB3> .
 
 <https://identifiers.org/chebi/CHEBI:60721>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -1254,7 +1266,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5037_r123599> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Group/b4594> ;
-        wp:participants   <https://identifiers.org/uniprot/Q9Y2Z9> , <https://identifiers.org/chebi/CHEBI:16238> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/b4594> .
+        wp:participants   <https://identifiers.org/chebi/CHEBI:16238> , <https://identifiers.org/uniprot/Q9Y2Z9> , <http://rdf.wikipathways.org/Pathway/WP5037_r123599/Complex/b4594> .
 
 <https://identifiers.org/wikipathways/WP111>
         rdf:type            wp:Pathway , wp:DataNode ;

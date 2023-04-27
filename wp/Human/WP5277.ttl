@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -238,6 +239,10 @@
         wp:source         <https://identifiers.org/lipidmaps/LMST02030088> ;
         wp:target         <https://identifiers.org/lipidmaps/LMST02030205> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5277&oldid=125493>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <http://rdf.wikipathways.org/Pathway/WP5277_r125493/WP/Interaction/a6b74>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5277_r125493> ;
@@ -360,6 +365,8 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMST02030087> , <https://identifiers.org/lipidmaps/LMST02030159> ;
         wp:source           <https://identifiers.org/lipidmaps/LMST02030159> ;
         wp:target           <https://identifiers.org/lipidmaps/LMST02030087> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/uniprot/P51857>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -627,6 +634,10 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5277_r125493/DataNode/f4277> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMST02030161> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5277&oldid=125493>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
 <http://rdf.wikipathways.org/Pathway/WP5277_r125493/WP/Interaction/b5fe1>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5277_r125493> ;
@@ -785,10 +796,11 @@
         dcterms:references     <https://identifiers.org/pubmed/16807284> , <https://identifiers.org/pubmed/31362062> ;
         cito:cites             <https://identifiers.org/pubmed/16807284> , <https://identifiers.org/pubmed/31362062> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5277_r125493> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000070> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000040> , <http://purl.obolibrary.org/obo/PW_0001152> , <http://purl.obolibrary.org/obo/PW_0000010> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000070 , obo:PW_0000002 , obo:PW_0001304 , obo:PW_0000040 , obo:PW_0001152 , obo:PW_0000010 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000070> , <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0001304> , <http://purl.obolibrary.org/obo/PW_0000040> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0001152> ;
+        wp:pathwayOntologyTag  obo:PW_0000070 , obo:PW_0000010 , obo:PW_0001304 , obo:PW_0000040 , obo:PW_0000002 , obo:PW_0001152 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5277&oldid=125493> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5277&oldid=125493> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5277_r125493> .
 
 <https://identifiers.org/lipidmaps/LMST02030299>

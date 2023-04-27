@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -23,6 +24,10 @@
         wp:participants   <https://identifiers.org/lipidmaps/LMPR0102010001> , <https://identifiers.org/lipidmaps/LMPR01010001> ;
         wp:source         <https://identifiers.org/lipidmaps/LMPR01010001> ;
         wp:target         <https://identifiers.org/lipidmaps/LMPR0102010001> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4718&oldid=125822>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP4718_r125822/WP/Interaction/bdcc7>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -815,10 +820,11 @@
         dcterms:references     <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/23558541> ;
         cito:cites             <https://identifiers.org/pubmed/23558541> , <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/22156476> , <https://identifiers.org/pubmed/9291139> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4718_r125822> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/PW_0000959> , <http://purl.obolibrary.org/obo/PW_0001304> , wp:Curation:Homology_Converted , <http://purl.obolibrary.org/obo/PW_0000454> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:PW_0000959 , obo:PW_0001304 , wp:Curation:Homology_Converted , obo:PW_0000454 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000454> , <http://purl.obolibrary.org/obo/PW_0000959> , <http://purl.obolibrary.org/obo/PW_0001304> ;
+        wp:pathwayOntologyTag  obo:PW_0000454 , obo:PW_0000959 , obo:PW_0001304 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4718&oldid=125822> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4718&oldid=125822> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4718_r125822> .
 
 <http://rdf.wikipathways.org/Pathway/WP4718_r125822/WP/Interaction/id10e71238>
@@ -1094,6 +1100,8 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/ba146> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000151726> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <http://rdf.wikipathways.org/Pathway/WP4718_r125822/WP/Interaction/id115479da>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4718_r125822> ;
@@ -1188,6 +1196,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q17927124> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/cd78e> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000123983> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4718&oldid=125822>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP4718_r125822/WP/Interaction/id749202e1>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;

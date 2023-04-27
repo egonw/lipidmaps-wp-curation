@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -175,12 +176,13 @@
         dcterms:identifier     "WP5275" ;
         dcterms:references     <https://identifiers.org/pubmed/28523433> ;
         cito:cites             <https://identifiers.org/pubmed/32209662> , <https://identifiers.org/pubmed/22863804> , <https://identifiers.org/pubmed/8830034> , <https://identifiers.org/pubmed/28523433> , <https://identifiers.org/pubmed/10801776> , <https://identifiers.org/pubmed/237979> , <https://identifiers.org/pubmed/10191259> ;
-        wp:diseaseOntologyTag  <http://purl.obolibrary.org/obo/DOID_0110852> , <http://purl.obolibrary.org/obo/DOID_0110854> , <http://purl.obolibrary.org/obo/DOID_905> , <http://purl.obolibrary.org/obo/DOID_0110851> , <http://purl.obolibrary.org/obo/DOID_2580> , <http://purl.obolibrary.org/obo/DOID_0080476> , <http://purl.obolibrary.org/obo/DOID_0110853> ;
+        wp:diseaseOntologyTag  obo:DOID_0110852 , obo:DOID_0110854 , obo:DOID_905 , obo:DOID_0110851 , obo:DOID_2580 , obo:DOID_0080476 , obo:DOID_0110853 ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5275_r125918> ;
-        wp:ontologyTag         <http://purl.obolibrary.org/obo/DOID_2580> , <http://purl.obolibrary.org/obo/DOID_0110853> , <http://purl.obolibrary.org/obo/DOID_0110852> , <http://purl.obolibrary.org/obo/PW_0001415> , <http://purl.obolibrary.org/obo/DOID_905> , <http://purl.obolibrary.org/obo/DOID_0110851> , <http://purl.obolibrary.org/obo/DOID_0080476> , <http://purl.obolibrary.org/obo/DOID_0110854> , <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0001138> , <http://purl.obolibrary.org/obo/PW_0000002> ;
-        wp:organism            <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag         obo:DOID_2580 , obo:DOID_0110853 , obo:DOID_0110852 , obo:PW_0001415 , obo:DOID_905 , obo:DOID_0110851 , obo:DOID_0080476 , obo:DOID_0110854 , obo:PW_0000010 , obo:PW_0001138 , obo:PW_0000002 ;
+        wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  <http://purl.obolibrary.org/obo/PW_0000010> , <http://purl.obolibrary.org/obo/PW_0000002> , <http://purl.obolibrary.org/obo/PW_0001415> , <http://purl.obolibrary.org/obo/PW_0001138> ;
+        wp:pathwayOntologyTag  obo:PW_0000010 , obo:PW_0000002 , obo:PW_0001415 , obo:PW_0001138 ;
+        foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5275&oldid=125918> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5275&oldid=125918> ;
         foaf:page              <http://www.wikipathways.org/instance/WP5275_r125918> .
 
 <http://rdf.wikipathways.org/Pathway/WP5275_r125918/WP/Interaction/idc1dbdfbf>
@@ -232,6 +234,10 @@
         wp:participants     <https://identifiers.org/lipidmaps/LMGP22020000> , <https://identifiers.org/lipidmaps/LMGP10060000> ;
         wp:source           <https://identifiers.org/lipidmaps/LMGP22020000> ;
         wp:target           <https://identifiers.org/lipidmaps/LMGP10060000> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP5275&oldid=125918>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
 
 <http://rdf.wikipathways.org/Pathway/WP5275_r125918/WP/Interaction/id3d7742d1>
         rdf:type          wp:Translocation , wp:DirectedInteraction , wp:Interaction ;
@@ -370,6 +376,8 @@
         owl:sameAs          <https://doi.org/10.1016%2FJ.CMET.2012.06.013> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/22863804> .
 
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
+
 <https://identifiers.org/uniprot/P15289>
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "ARSA" ;
@@ -405,6 +413,10 @@
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q61476> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5275_r125918/DataNode/b8d8b> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMFA01010000> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP5275&oldid=125918>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <https://identifiers.org/lipidmaps/LMGP10050000>
         rdf:type            wp:Metabolite , wp:DataNode ;

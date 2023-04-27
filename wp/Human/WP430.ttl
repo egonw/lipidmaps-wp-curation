@@ -5,6 +5,7 @@
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix freq:    <http://purl.org/cld/freq/> .
 @prefix gpml:    <http://vocabularies.wikipathways.org/gpml#> .
+@prefix obo:     <http://purl.obolibrary.org/obo/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix pav:     <http://purl.org/pav/> .
 @prefix prov:    <http://www.w3.org/ns/prov#> .
@@ -40,6 +41,10 @@
         wp:source         <https://identifiers.org/chebi/CHEBI:132933> ;
         wp:target         <https://identifiers.org/chebi/CHEBI:132933> .
 
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP430&oldid=122069>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
 <https://identifiers.org/ncbigene/6713>
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "SQLE" ;
@@ -63,13 +68,14 @@
         dcterms:identifier      "WP430" ;
         dcterms:references      <https://identifiers.org/pubmed/10770267> ;
         cito:cites              <https://identifiers.org/pubmed/9106493> , <https://identifiers.org/pubmed/10770267> ;
-        wp:cellTypeOntologyTag  <http://purl.obolibrary.org/obo/CL_0000584> , <http://purl.obolibrary.org/obo/CL_0000182> ;
-        wp:diseaseOntologyTag   <http://purl.obolibrary.org/obo/DOID_1287> ;
+        wp:cellTypeOntologyTag  obo:CL_0000584 , obo:CL_0000182 ;
+        wp:diseaseOntologyTag   obo:DOID_1287 ;
         wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP430_r122069> ;
-        wp:ontologyTag          <http://purl.obolibrary.org/obo/PW_0000724> , <http://purl.obolibrary.org/obo/CL_0000584> , <http://purl.obolibrary.org/obo/CL_0000182> , <http://purl.obolibrary.org/obo/DOID_1287> ;
-        wp:organism             <http://purl.obolibrary.org/obo/NCBITaxon_9606> ;
+        wp:ontologyTag          obo:PW_0000724 , obo:CL_0000584 , obo:CL_0000182 , obo:DOID_1287 ;
+        wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
-        wp:pathwayOntologyTag   <http://purl.obolibrary.org/obo/PW_0000724> ;
+        wp:pathwayOntologyTag   obo:PW_0000724 ;
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP430&oldid=122069> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP430&oldid=122069> ;
         foaf:page               <http://www.wikipathways.org/instance/WP430_r122069> .
 
 <https://identifiers.org/chebi/CHEBI:25350>
@@ -192,7 +198,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/id7a2680f1> , <https://identifiers.org/wikipathways/WP430_r122069> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP430_r122069/Group/e12d0> ;
-        wp:participants   <https://identifiers.org/ncbigene/336> , <https://identifiers.org/ncbigene/5360> , <https://identifiers.org/ncbigene/335> .
+        wp:participants   <https://identifiers.org/ncbigene/335> , <https://identifiers.org/ncbigene/5360> , <https://identifiers.org/ncbigene/336> .
 
 <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/id561097a3>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -468,6 +474,8 @@
         wp:bdbUniprot       <https://identifiers.org/uniprot/H0Y4J5> , <https://identifiers.org/uniprot/Q4TT65> , <https://identifiers.org/uniprot/Q13087> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP430_r122069/DataNode/ea69f> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/64714> .
+
+obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
 <https://identifiers.org/pubmed/10770267>
         rdf:type            wp:PublicationReference ;
@@ -905,7 +913,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP430_r122069> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP430_r122069/Group/e12d0> ;
-        wp:participants   <https://identifiers.org/ncbigene/336> , <https://identifiers.org/ncbigene/5360> , <https://identifiers.org/ncbigene/335> , <http://rdf.wikipathways.org/Pathway/WP430_r122069/Complex/e12d0> .
+        wp:participants   <https://identifiers.org/ncbigene/335> , <https://identifiers.org/ncbigene/5360> , <https://identifiers.org/ncbigene/336> , <http://rdf.wikipathways.org/Pathway/WP430_r122069/Complex/e12d0> .
 
 <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/f0964>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -1149,6 +1157,10 @@
         wp:participants   <https://identifiers.org/ncbigene/4035> , <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/b5c90> ;
         wp:source         <https://identifiers.org/ncbigene/4035> ;
         wp:target         <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/b5c90> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP430&oldid=122069>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
 
 <http://rdf.wikipathways.org/Pathway/WP430_r122069/WP/Interaction/id7e3de2b>
         rdf:type          wp:Interaction ;
