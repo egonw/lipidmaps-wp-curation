@@ -3,7 +3,10 @@
   <Comment Source="WikiPathways-description">Glucocorticoid biosynthesis; a very complex multistep process starting from cholesterol in the inner mitochondrial membrane through StAR and StAR-related proteins. Glucocorticoid metabolites are essential in immune system regulation through the glucocorticoid receptor. Most of these compounds are produces in the adrenal gland, however can also be produced in other tissues, e.g. skin, brain, intestine [PMID:32203088].
 
 
-The pathway knowledge depicted in this model stems from William Griffths.</Comment>
+The pathway knowledge depicted in this model stems from William Griffths.
+
+Metabolic reactions currently without a Rhea ID have been added in bold to the pathway model.
+</Comment>
   <BiopaxRef>e7f</BiopaxRef>
   <BiopaxRef>c34</BiopaxRef>
   <Graphics BoardWidth="2334.7074847141093" BoardHeight="1498.5649449407044" />
@@ -316,20 +319,6 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
     <Graphics CenterX="798.9397023247222" CenterY="517.0462134338248" Width="90.0" Height="25.0" ZOrder="32797" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P51857" />
   </DataNode>
-  <Interaction>
-    <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
-      <Point X="1619.8718957547308" Y="1268.1793774715316" GraphRef="eb2c2" RelX="0.0" RelY="1.0" />
-      <Point X="1480.456026058632" Y="1411.146063292064" GraphRef="e13ee" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
-      <Point X="1619.8718957547308" Y="1268.1793774715316" GraphRef="eb2c2" RelX="0.0" RelY="1.0" />
-      <Point X="1614.5708469055373" Y="1411.1460632920637" GraphRef="a3f64" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="id142adb59">
     <Graphics ZOrder="12288" LineThickness="1.0">
       <Point X="1328.431188903085" Y="824.4721428504132" GraphRef="b9cde" RelX="0.0" RelY="1.0" />
@@ -340,7 +329,7 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
   <Interaction GraphId="id144d10e8">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="719.2377341955867" Y="1268.1793774715318" GraphRef="a0b91" RelX="-0.5" RelY="1.0" />
-      <Point X="499.0" Y="1397.0" ArrowHead="mim-conversion" />
+      <Point X="488.125" Y="1395.25" GraphRef="c0638" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -528,6 +517,13 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
     <Graphics ZOrder="12288" LineThickness="2.0">
       <Point X="1661.7859310091808" Y="878.7733875180771" GraphRef="e6e40" RelX="0.0" RelY="1.0" />
       <Point X="1783.2460024863794" Y="1051.5806101659593" GraphRef="e9da3" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction GraphId="id5c9d786b">
+    <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
+      <Point X="1619.8718957547308" Y="1268.1793774715316" GraphRef="eb2c2" RelX="0.0" RelY="1.0" />
+      <Point X="1614.5708469055373" Y="1411.1460632920637" GraphRef="a3f64" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -760,6 +756,13 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="idc95c2729">
+    <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
+      <Point X="1619.8718957547308" Y="1268.1793774715316" GraphRef="eb2c2" RelX="0.0" RelY="1.0" />
+      <Point X="1480.456026058632" Y="1411.146063292064" GraphRef="e13ee" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Interaction GraphId="idc99739f">
     <Graphics ZOrder="12288" LineThickness="2.0">
       <Point X="708.6065863651183" Y="443.2507237094223" GraphRef="e5e94" RelX="0.0" RelY="-1.0" />
@@ -888,6 +891,21 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
   <Group GroupId="cf9dc" GraphId="ee21e" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortisol biosynthetic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000774</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e7f">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">31362062</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -903,11 +921,6 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shackleton CHL</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Storbeck KH</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucocorticoid biosynthetic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000772</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="c34">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">32203088</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -923,18 +936,8 @@ The pathway knowledge depicted in this model stems from William Griffths.</Comme
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andrzej T Slominski</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cortisol biosynthetic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000774</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glucocorticoid biosynthetic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000772</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
   </Biopax>
