@@ -11,7 +11,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   <BiopaxRef>bbe</BiopaxRef>
   <BiopaxRef>fca</BiopaxRef>
   <BiopaxRef>a8c</BiopaxRef>
-  <Graphics BoardWidth="965.7429718875502" BoardHeight="956.0" />
+  <Graphics BoardWidth="969.2429718875502" BoardHeight="956.0" />
   <DataNode TextLabel="vitamin K2" GraphId="a2f65" Type="Metabolite">
     <Comment>AKA menaquinone, VK2</Comment>
     <Comment>Natural vitamer</Comment>
@@ -40,11 +40,19 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Graphics CenterX="348.10583458586683" CenterY="648.2354606628214" Width="61.43213904897924" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q9BRQ8" />
   </DataNode>
+  <DataNode TextLabel="UBIAD1" GraphId="b9708" Type="GeneProduct">
+    <Graphics CenterX="58.0" CenterY="428.0" Width="64.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Xref Database="Entrez Gene" ID="29914" />
+  </DataNode>
+  <DataNode TextLabel="geranylgeranyl&#xA;diphosphate" GraphId="c01bc" Type="Metabolite">
+    <Graphics CenterX="168.0" CenterY="457.25" Width="86.0" Height="27.5" ZOrder="32768" FontSize="10" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="chebi:58756" />
+  </DataNode>
   <DataNode TextLabel="Vitamin K3" GraphId="c0d8d" Type="Metabolite">
     <Comment>menadione, synthetic form of vitamin K; interferes with glutathione function.</Comment>
     <Comment>"NQO1 competes with enzymes that redox cycle vitamin K and catalyzes two-electron reduction of vitamin K3 to hydroquinone. This skips formation of semiquinone and ROS. Therefore, NQO1 metabolically detoxifies vitamin K3 and protects cells against oxidative stress and other adverse effects." [PMID:18374191]</Comment>
     <Comment>This reaction has been described in more detail in a mouse study [PMID:24015818]</Comment>
-    <Graphics CenterX="89.0" CenterY="512.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="86.0" CenterY="608.0" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:28869" />
   </DataNode>
   <DataNode TextLabel="Vitamin K1" GraphId="c1b43" Type="Metabolite">
@@ -80,7 +88,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Xref Database="" ID="" />
   </DataNode>
   <DataNode TextLabel="NADPH" GraphId="cce0d" Type="Metabolite">
-    <Graphics CenterX="68.08238064048794" CenterY="426.1927829500173" Width="41.38994309621074" Height="17.873765191953023" ZOrder="32768" FontSize="8" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="56.08238064048794" CenterY="555.1927829500173" Width="41.38994309621074" Height="17.873765191953023" ZOrder="32768" FontSize="8" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB00221" />
   </DataNode>
   <DataNode TextLabel="gamma-carboxyglutamate" GraphId="cd034" Type="Metabolite" GroupRef="db2f9">
@@ -89,7 +97,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </DataNode>
   <DataNode TextLabel="Ferroptosis" GraphId="d161d" Type="Pathway">
     <BiopaxRef>d9e</BiopaxRef>
-    <Graphics CenterX="209.05263175485157" CenterY="638.5294369149948" Width="90.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" Color="14961e" />
+    <Graphics CenterX="224.05263175485157" CenterY="626.5294369149948" Width="90.0" Height="25.0" ZOrder="32768" FontWeight="Bold" FontSize="12" Valign="Middle" Color="14961e" />
     <Xref Database="WikiPathways" ID="WP4313" />
   </DataNode>
   <DataNode TextLabel="Vitamin K-dependent protein S" GraphId="d241b" Type="Protein" GroupRef="f5cb5">
@@ -101,11 +109,11 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Xref Database="ChEBI" ID="CHEBI:23853" />
   </DataNode>
   <DataNode TextLabel="Warfarin" GraphId="d3828" Type="Metabolite">
-    <Graphics CenterX="557.0218526781556" CenterY="437.58281387533026" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="391.0218526781556" CenterY="440.58281387533026" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="HMDB" ID="HMDB0001935" />
   </DataNode>
   <DataNode TextLabel="NADP+" GraphId="d47ab" Type="Metabolite">
-    <Graphics CenterX="80.16280780541533" CenterY="383.9520062929125" Width="41.389943096210736" Height="17.873765191952998" ZOrder="32768" FontSize="8" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="50.162807805415326" CenterY="524.9520062929125" Width="41.389943096210736" Height="17.873765191952998" ZOrder="32768" FontSize="8" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:18009" />
   </DataNode>
   <DataNode TextLabel="Coagulation factor IX" GraphId="d61f9" Type="Protein" GroupRef="f5cb5">
@@ -127,19 +135,27 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </DataNode>
   <DataNode TextLabel="VKORC1" GraphId="eb076" Type="Protein" GroupRef="d63fe">
     <Comment>"Catalytic subunit of the vitamin K epoxide reductase (VKOR) complex which reduces inactive vitamin K 2,3-epoxide to active vitamin K" Source: https://www.uniprot.org/uniprotkb/Q9BQB6/entry</Comment>
-    <Graphics CenterX="376.87582421750034" CenterY="428.3810769955949" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="546.8758242175004" CenterY="421.38107699559487" Width="90.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q9BQB6" />
   </DataNode>
   <DataNode TextLabel="NQO1" GraphId="f4e1c" Type="Protein">
     <Comment>AKA NAD(P)H dehydrogenase [quinone] 1</Comment>
-    <Graphics CenterX="166.8628979156342" CenterY="451.4520957739229" Width="60.23311752332621" Height="24.999999999999986" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="158.8628979156342" CenterY="541.4520957739229" Width="60.23311752332621" Height="24.999999999999986" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="P15559" />
+  </DataNode>
+  <DataNode TextLabel="Menadiol" GraphId="f8072" Type="Metabolite">
+    <Graphics CenterX="94.0" CenterY="491.0" Width="74.0" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="chebi:6746" />
   </DataNode>
   <DataNode TextLabel="Vitamin K hydroquinone&#xA;(VKH2)" GraphId="fb891" Type="Metabolite">
     <Comment>AKA phyllohydroquinone,  phylloquinol, VKH2</Comment>
     <Comment>cofactor for the enzyme γ-glutamyl carboxylase (GGCX)</Comment>
     <Graphics CenterX="219.99859031878043" CenterY="389.13744746106664" Width="171.99718063756086" Height="37.32251396975231" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="ChEBI" ID="CHEBI:28433" />
+  </DataNode>
+  <DataNode TextLabel="Dietary &#xA;Vitamin K1" GraphId="fc293" Type="Metabolite">
+    <Graphics CenterX="95.0" CenterY="707.25" Width="90.0" Height="33.5" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Xref Database="ChEBI" ID="chebi:18067" />
   </DataNode>
   <DataNode TextLabel="Vitamin K-dependent protein Z" GraphId="fd3af" Type="Protein" GroupRef="f5cb5">
     <Graphics CenterX="158.10086188727539" CenterY="340.2789281364189" Width="210.20172377455077" Height="25.0" ZOrder="32768" FontSize="12" Valign="Middle" />
@@ -233,7 +249,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </DataNode>
   <DataNode TextLabel="VKORC1L1" GraphId="fe331" Type="Protein" GroupRef="d63fe">
     <Comment>"Can reduce inactive vitamin K 2,3-epoxide to active vitamin K (in vitro)" Source: https://www.uniprot.org/uniprotkb/Q8N0U8/entry</Comment>
-    <Graphics CenterX="376.87582421750034" CenterY="453.3810769955949" Width="90.0" Height="25.0" ZOrder="32797" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="546.8758242175004" CenterY="454.38107699559487" Width="90.0" Height="25.0" ZOrder="32797" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q8N0U8" />
   </DataNode>
   <DataNode TextLabel="VKOR" GraphId="b5c12" Type="Protein">
@@ -248,13 +264,13 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Graphics CenterX="364.02118308598807" CenterY="860.3258145363407" Width="50.144440047487095" Height="25.0" ZOrder="32799" FontWeight="Bold" FontSize="12" Valign="Middle" Color="14961e" />
     <Xref Database="" ID="" />
   </DataNode>
-  <DataNode TextLabel="Vitamin K1" GraphId="b817f" Type="Metabolite">
+  <DataNode TextLabel="Vitamin K" GraphId="b817f" Type="Metabolite">
     <Comment>AKA phylloquinone, VK</Comment>
     <Comment>Natural vitamer</Comment>
     <Comment>Made in plants (with high concentrations in green leafy vegetables).</Comment>
     <Comment>Converted by bacteria in gut microbiome to MK-4.</Comment>
     <Graphics CenterX="461.9949738415153" CenterY="634.1826769023518" Width="90.0" Height="25.0" ZOrder="32805" FontSize="12" Valign="Middle" Color="0000ff" />
-    <Xref Database="ChEBI" ID="CHEBI:18067" />
+    <Xref Database="ChEBI" ID="CHEBI:28384" />
   </DataNode>
   <DataNode TextLabel="LOOH" GraphId="d994c" Type="Metabolite">
     <Comment>lipid hydroperoxides (LOOH)</Comment>
@@ -271,8 +287,8 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </Interaction>
   <Interaction GraphId="idea307b2a">
     <Graphics ZOrder="-4" LineThickness="1.0">
-      <Point X="151.80461853480264" Y="438.9520957739229" GraphRef="f4e1c" RelX="-0.5" RelY="-1.0" />
-      <Point X="116.89778665484667" Y="431.080645657434" GraphRef="ad691" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+      <Point X="128.7463391539711" Y="541.4520957739229" GraphRef="f4e1c" RelX="-1.0" RelY="0.0" />
+      <Point X="90.95960651641718" Y="538.4645250612024" GraphRef="ad691" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -280,6 +296,50 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Graphics ZOrder="-2" LineThickness="1.0">
       <Point X="466.9820872731531" Y="503.1471525342086" GraphRef="b5c12" RelX="0.0" RelY="1.0" />
       <Point X="588.9567014777498" Y="531.077894707893" GraphRef="fce24" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="346.0218526781556" Y="440.58281387533026" GraphRef="d3828" RelX="-1.0" RelY="0.0" />
+      <Point X="188.9794566772973" Y="541.4520957739229" GraphRef="f4e1c" RelX="1.0" RelY="0.0" ArrowHead="mim-inhibition" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="94.0" Y="478.5" GraphRef="f8072" RelX="0.0" RelY="-1.0" />
+      <Point X="134.0" Y="389.13744746106664" GraphRef="fb891" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.5576865201184176" Shape="None" GraphId="c89c4" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="90.0" Y="428.0" GraphRef="b9708" RelX="1.0" RelY="0.0" />
+      <Point X="116.3074608047367" Y="428.663709045663" GraphRef="c89c4" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="95.0" Y="690.5" GraphRef="fc293" RelX="0.0" RelY="-1.0" />
+      <Point X="86.0" Y="620.5" GraphRef="c0d8d" RelX="0.0" RelY="1.0" ArrowHead="mim-conversion" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ConnectorType="Curved" ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
+      <Point X="140.0" Y="698.875" GraphRef="fc293" RelX="1.0" RelY="-0.5" />
+      <Point X="416.0" Y="734.3859813083192" />
+      <Point X="448.7892079761766" Y="769.8969626166383" GraphRef="c1b43" RelX="-1.0" RelY="0.0" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
+  <Interaction>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="125.0" Y="457.25" GraphRef="c01bc" RelX="-1.0" RelY="0.0" />
+      <Point X="116.3074608047367" Y="428.663709045663" GraphRef="c89c4" RelX="0.0" RelY="0.0" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -362,7 +422,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   <Interaction GraphId="id82e38e2c">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="253.1180777038447" Y="574.0663210411649" GraphRef="cc54d" RelX="0.0" RelY="1.0" />
-      <Point X="209.05263175485157" Y="626.0294369149948" GraphRef="d161d" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
+      <Point X="224.05263175485157" Y="614.0294369149948" GraphRef="d161d" RelX="0.0" RelY="-1.0" ArrowHead="Arrow" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -383,15 +443,15 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </Interaction>
   <Interaction GraphId="id9d2540ae">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="557.0218526781556" Y="450.08281387533026" GraphRef="d3828" RelX="0.0" RelY="1.0" />
-      <Point X="497.0986460348162" Y="484.3971525342086" GraphRef="b5c12" RelX="1.0" RelY="-0.5" ArrowHead="mim-inhibition" />
+      <Point X="391.0218526781556" Y="453.08281387533026" GraphRef="d3828" RelX="0.0" RelY="1.0" />
+      <Point X="436.86552851149" Y="484.3971525342086" GraphRef="b5c12" RelX="-1.0" RelY="-0.5" ArrowHead="mim-inhibition" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idb963a51d">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="89.0" Y="499.5" GraphRef="c0d8d" RelX="0.0" RelY="-1.0" />
-      <Point X="134.0" Y="389.13744746106664" GraphRef="fb891" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="86.0" Y="595.5" GraphRef="c0d8d" RelX="0.0" RelY="-1.0" />
+      <Point X="94.0" Y="503.5" GraphRef="f8072" RelX="0.0" RelY="1.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.6199508145521483" Shape="None" GraphId="ad691" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -405,8 +465,8 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   </Interaction>
   <Interaction GraphId="ided4bc3d3">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="88.77735218859331" Y="426.1927829500173" GraphRef="cce0d" RelX="1.0" RelY="0.0" />
-      <Point X="116.89778665484667" Y="431.080645657434" GraphRef="ad691" RelX="0.0" RelY="0.0" />
+      <Point X="76.77735218859331" Y="555.1927829500173" GraphRef="cce0d" RelX="1.0" RelY="0.0" />
+      <Point X="90.95960651641718" Y="538.4645250612024" GraphRef="ad691" RelX="0.0" RelY="0.0" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -428,14 +488,14 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   <Interaction GraphId="idf5ba4b4a">
     <Graphics ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="436.86552851149" Y="484.3971525342086" GraphRef="b5c12" RelX="-1.0" RelY="-0.5" />
-      <Point X="405.37582421750034" Y="477.8810769955949" GraphRef="c52e4" RelX="0.5" RelY="1.0" />
+      <Point X="518.3758242175004" Y="478.88107699559487" GraphRef="c52e4" RelX="-0.5" RelY="1.0" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="idffd0ae9">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="116.89778665484667" Y="431.080645657434" GraphRef="ad691" RelX="0.0" RelY="0.0" />
-      <Point X="100.8577793535207" Y="383.9520062929125" GraphRef="d47ab" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Point X="90.95960651641718" Y="538.4645250612024" GraphRef="ad691" RelX="0.0" RelY="0.0" />
+      <Point X="70.8577793535207" Y="524.9520062929125" GraphRef="d47ab" RelX="1.0" RelY="0.0" ArrowHead="mim-conversion" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
@@ -494,7 +554,7 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   <GraphicalLine GraphId="c2514">
     <Graphics ConnectorType="Curved" ZOrder="12288" LineStyle="Broken" LineThickness="1.0">
       <Point X="461.9949738415153" Y="646.6826769023518" GraphRef="b817f" RelX="0.0" RelY="1.0" />
-      <Point X="448.7892079761766" Y="763.6469626166383" GraphRef="c1b43" RelX="-1.0" RelY="-0.5" />
+      <Point X="493.98471032513413" Y="694.9933166248961" GraphRef="dd705" RelX="-1.0" RelY="0.0" />
     </Graphics>
   </GraphicalLine>
   <GraphicalLine GraphId="aec13">
@@ -522,12 +582,12 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
     <Graphics CenterX="252.0790160095732" CenterY="851.1143149078822" Width="125.40715561960315" Height="25.0" ZOrder="32803" FillColor="ffffff" FontSize="12" Valign="Middle" Color="404040" />
   </Label>
   <Label TextLabel="Synthetic Vitamin K:" GraphId="ff4d9">
-    <Graphics CenterX="96.62198479219651" CenterY="486.19050150629187" Width="138.75603041560697" Height="25.0" ZOrder="32809" FillColor="ffffff" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="93.62198479219651" CenterY="582.1905015062919" Width="138.75603041560697" Height="25.0" ZOrder="32809" FillColor="ffffff" FontSize="12" Valign="Middle" />
   </Label>
   <Shape TextLabel="   Hepatocyte" GraphId="cf21f">
     <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Cell" />
     <Attribute Key="org.pathvisio.DoubleLineProperty" Value="Double" />
-    <Graphics CenterX="483.0968209011441" CenterY="499.5" Width="905.2923019728122" Height="853.0" ZOrder="16384" FontSize="12" Align="Left" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
+    <Graphics CenterX="473.8714859437751" CenterY="499.5" Width="923.7429718875502" Height="853.0" ZOrder="16384" FontSize="12" Align="Left" ShapeType="RoundedRectangle" LineThickness="3.0" Color="c0c0c0" Rotation="0.0" />
   </Shape>
   <Shape GraphId="c04e6">
     <Graphics CenterX="229.3391498468605" CenterY="840.0071811052562" Width="181.26346015793249" Height="71.70284758392737" ZOrder="32801" FontSize="12" Valign="Middle" ShapeType="Rectangle" Rotation="0.0" />
@@ -537,6 +597,20 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
   <Group GroupId="d63fe" GraphId="c52e4" Style="Complex" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a88">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26904004</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomic Analysis of the Human Gut Microbiome Suggests Novel Enzymes Involved in Quinone Biosynthesis</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Microbiol.</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dmitry A Ravcheev</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ines Thiele</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="bbe">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">27437760</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -548,6 +622,11 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizziolo VR</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Martino HSD</bp:AUTHORS>
     </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K antagonist drug pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002325</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="d9e">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35922516</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -582,31 +661,6 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Derek A Pratt</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marcus Conrad</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">classic metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000002</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ferroptosis pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002626</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001016</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K deficiency bleeding</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:11249</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
-    </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b6b">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">35510250</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -627,19 +681,24 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xi Li</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001016</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hemostasis pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000475</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin and vitamin metabolites signaling pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001012</bp:ID>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000010</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatocyte</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000182</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ferroptosis pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002626</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="fca">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">25079019</bp:ID>
@@ -651,8 +710,23 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fusaro M</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K deficiency bleeding</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:11249</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hepatocyte</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL:0000182</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell Type</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K cycle pathway</bp:TERM>
       <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002592</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin and vitamin metabolites signaling pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0001012</bp:ID>
       <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
     </bp:openControlledVocabulary>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a8c">
@@ -663,20 +737,6 @@ The influence of FSP1 on this process, as well as its potential to eliminate lip
       <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022</bp:YEAR>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nathan P Ward</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gina M DeNicola</bp:AUTHORS>
-    </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vitamin K antagonist drug pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0002325</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="a88">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">26904004</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Genomic Analysis of the Human Gut Microbiome Suggests Novel Enzymes Involved in Quinone Biosynthesis</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Front Microbiol.</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dmitry A Ravcheev</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ines Thiele</bp:AUTHORS>
     </bp:PublicationXref>
   </Biopax>
 </Pathway>
