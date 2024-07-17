@@ -18,9 +18,10 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
     <Xref Database="LIPID MAPS" ID="LMSP01020002" />
   </DataNode>
   <DataNode TextLabel="Ppap2a" GraphId="a9de8" Type="Protein" GroupRef="e29dc">
-    <Comment Source="HomologyMapper">No homologues found for original id L:19012</Comment>
+    <Comment Source="HomologyMapper">No homologues found for original id L:19012
+Also, known as PLPP1</Comment>
     <Graphics CenterX="899.1484758460344" CenterY="545.4711673699013" Width="63.0" Height="23.5" ZOrder="32768" FontSize="12" Valign="Middle" />
-    <Xref Database="" ID="" />
+    <Xref Database="Entrez Gene" ID="8611" />
   </DataNode>
   <DataNode TextLabel="CERK" GraphId="ac40d" Type="GeneProduct">
     <Comment Source="HomologyMapper">Homology Mapping from Mus musculus to Homo sapiens: Original ID = L:223753</Comment>
@@ -65,7 +66,7 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   </DataNode>
   <DataNode TextLabel="Serine" GraphId="c3e72" Type="Metabolite">
     <BiopaxRef>b6c</BiopaxRef>
-    <Graphics CenterX="398.02538196606986" CenterY="113.58333333333334" Width="110.5" Height="33.49999999999999" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="398.02538196606986" CenterY="113.58333333333334" Width="60.0" Height="33.49999999999999" ZOrder="32768" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="PubChem-compound" ID="5951" />
   </DataNode>
   <DataNode TextLabel="GBA1" GraphId="ca787" Type="GeneProduct" GroupRef="e6298">
@@ -89,7 +90,7 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   </DataNode>
   <DataNode TextLabel="DEGS1" GraphId="d7335" Type="GeneProduct" GroupRef="c0c64">
     <Comment Source="HomologyMapper">Homology Mapping from Mus musculus to Homo sapiens: Original ID = L:13244</Comment>
-    <Graphics CenterX="699.9210465305932" CenterY="296.80000982049467" Width="62.5" Height="18.5" ZOrder="32768" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="701.9250545466253" CenterY="296.80000982049467" Width="62.5" Height="18.5" ZOrder="32768" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="O15121" />
   </DataNode>
   <DataNode TextLabel="KDSR" GraphId="de6f3" Type="Protein">
@@ -188,7 +189,7 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   </DataNode>
   <DataNode TextLabel="DEGS2" GraphId="b3147" Type="GeneProduct" GroupRef="c0c64">
     <Comment Source="HomologyMapper">Homology Mapping from Mus musculus to Homo sapiens: Original ID = L:70059</Comment>
-    <Graphics CenterX="699.9210465305932" CenterY="315.3000098204946" Width="62.5" Height="18.5" ZOrder="32786" FontSize="12" Valign="Middle" />
+    <Graphics CenterX="701.9250545466253" CenterY="315.3000098204946" Width="62.5" Height="18.5" ZOrder="32786" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q6QHC5" />
   </DataNode>
   <DataNode TextLabel="SGMS2" GraphId="efc57" Type="Protein" GroupRef="d945f">
@@ -201,7 +202,7 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
     <Xref Database="LIPID MAPS" ID="LMSP01050001" />
   </DataNode>
   <DataNode TextLabel="(2E)-hexadecenal" GraphId="ba579" Type="Metabolite">
-    <Graphics CenterX="760.0531875197355" CenterY="732.755274261604" Width="90.0" Height="25.0" ZOrder="32789" FontSize="12" Valign="Middle" Color="0000ff" />
+    <Graphics CenterX="760.0531875197355" CenterY="732.755274261604" Width="110.0" Height="25.0" ZOrder="32789" FontSize="12" Valign="Middle" Color="0000ff" />
     <Xref Database="LIPID MAPS" ID="LMFA06000089" />
   </DataNode>
   <DataNode TextLabel="PLPP3" GraphId="a5a0a" Type="GeneProduct" GroupRef="e29dc">
@@ -210,8 +211,9 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
     <Xref Database="Uniprot-TrEMBL" ID="O14495" />
   </DataNode>
   <DataNode TextLabel="Ppap2c" GraphId="c0dd9" Type="Protein" GroupRef="e29dc">
+    <Comment>Also known as PLPP2</Comment>
     <Graphics CenterX="899.1484758460344" CenterY="591.7211673699013" Width="63.0" Height="23.5" ZOrder="32791" FontSize="12" Valign="Middle" />
-    <Xref Database="" ID="" />
+    <Xref Database="Entrez Gene" ID="8612" />
   </DataNode>
   <DataNode TextLabel="CoA(16:0)" GraphId="f11ea" Type="Metabolite" GroupRef="af21a">
     <Graphics CenterX="715.7552118446347" CenterY="36.96117249737806" Width="90.0" Height="25.0" ZOrder="32792" FontSize="12" Valign="Middle" Color="0000ff" />
@@ -343,22 +345,6 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
     <Graphics CenterX="547.1141124586545" CenterY="429.4445975744212" Width="46.102535832414986" Height="18.012679162072743" ZOrder="33044" FontSize="12" Valign="Middle" />
     <Xref Database="Uniprot-TrEMBL" ID="Q9H227" />
   </DataNode>
-  <Interaction>
-    <Comment>EC:3.2.1.45</Comment>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="583.4413458930791" Y="366.8965376849662" GraphRef="d60ba" RelX="-0.5" RelY="1.0" />
-      <Point X="702.7096572806357" Y="396.75" GraphRef="bf530" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
-      <Anchor Position="0.4" Shape="None" GraphId="bd8ca" />
-    </Graphics>
-    <Xref Database="Rhea" ID="13270" />
-  </Interaction>
-  <Interaction>
-    <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="578.165380374862" Y="411.43191841234847" GraphRef="cdf83" RelX="1.0" RelY="0.0" />
-      <Point X="631.1486704481017" Y="378.8379226109797" GraphRef="bd8ca" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
-    </Graphics>
-    <Xref Database="" ID="" />
-  </Interaction>
   <Interaction GraphId="id11c71881">
     <Comment>EC:1.1.1.102</Comment>
     <Graphics ZOrder="12288" LineThickness="1.0">
@@ -367,6 +353,15 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
       <Anchor Position="0.4" Shape="None" GraphId="a8460" />
     </Graphics>
     <Xref Database="Rhea" ID="22642" />
+  </Interaction>
+  <Interaction GraphId="id12d094d4">
+    <Comment>EC:3.2.1.45</Comment>
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="583.4413458930791" Y="366.8965376849662" GraphRef="d60ba" RelX="-0.5" RelY="1.0" />
+      <Point X="702.7096572806357" Y="396.75" GraphRef="bf530" RelX="-1.0" RelY="0.0" ArrowHead="mim-conversion" />
+      <Anchor Position="0.4" Shape="None" GraphId="bd8ca" />
+    </Graphics>
+    <Xref Database="Rhea" ID="13270" />
   </Interaction>
   <Interaction GraphId="id1472a2e3">
     <Graphics ZOrder="12288" LineThickness="1.0">
@@ -410,15 +405,15 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   <Interaction GraphId="id2cf5a716">
     <Graphics ConnectorType="Elbow" ZOrder="12288" LineThickness="1.0">
       <Point X="552.4512611034355" Y="308.9552238805972" GraphRef="c268f" RelX="1.0" RelY="-0.5" />
-      <Point X="571.7049924467191" Y="308.2089552238807" />
-      <Point X="616.7701510080417" Y="307.46268656716416" />
+      <Point X="661.3226452905811" Y="308.2089552238807" />
+      <Point X="661.5789774299728" Y="307.46268656716416" />
       <Point X="661.8353095693644" Y="247.22310846018314" GraphRef="ca6bf" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
   <Interaction GraphId="id2fa1d96b">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="739.1710465305932" Y="306.05000982049467" GraphRef="fb07d" RelX="1.0" RelY="0.0" />
+      <Point X="741.1750545466253" Y="306.05000982049467" GraphRef="fb07d" RelX="1.0" RelY="0.0" />
       <Point X="761.4596572806357" Y="305.4263565891473" GraphRef="b938a" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
     </Graphics>
     <Xref Database="" ID="" />
@@ -565,9 +560,16 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
     </Graphics>
     <Xref Database="" ID="" />
   </Interaction>
+  <Interaction GraphId="ida22e2532">
+    <Graphics ZOrder="12288" LineThickness="1.0">
+      <Point X="578.165380374862" Y="411.43191841234847" GraphRef="cdf83" RelX="1.0" RelY="0.0" />
+      <Point X="631.1486704481017" Y="378.8379226109797" GraphRef="bd8ca" RelX="0.0" RelY="0.0" ArrowHead="mim-catalysis" />
+    </Graphics>
+    <Xref Database="" ID="" />
+  </Interaction>
   <Interaction GraphId="idaad03b91">
     <Graphics ZOrder="12288" LineThickness="1.0">
-      <Point X="760.7552118446347" Y="132.46117249737856" GraphRef="bfe17" RelX="0.0" RelY="1.0" />
+      <Point X="760.7552118446347" Y="132.46117249737858" GraphRef="bfe17" RelX="0.0" RelY="1.0" />
       <Point X="761.4596572806357" Y="200.31293952180025" GraphRef="c997e" RelX="0.0" RelY="-1.0" ArrowHead="mim-conversion" />
       <Anchor Position="0.32422846936995403" Shape="None" GraphId="afbb2" />
     </Graphics>
@@ -873,11 +875,51 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   <Label TextLabel="N-acyl chains:" GraphId="b8214">
     <Graphics CenterX="1285.553691275168" CenterY="38.92617449664429" Width="183.25503355704723" Height="25.0" ZOrder="28672" FillColor="ffffff" FontSize="22" Valign="Middle" Color="404040" />
   </Label>
-  <Label TextLabel="NP Type B" GraphId="b59c1" Href="https://omim.org/entry/607616">
+  <Label TextLabel="NP type B" GraphId="b59c1" Href="https://omim.org/entry/607616">
     <Comment>NIEMANN-PICK DISEASE, TYPE B</Comment>
     <Comment>results from mutation in SMPD1 gene</Comment>
-    <Graphics CenterX="1086.369449942553" CenterY="268.94650907102744" Width="90.0" Height="25.0" ZOrder="33041" FillColor="ffcccc" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
+    <Graphics CenterX="1086.369449942553" CenterY="268.94650907102744" Width="90.0" Height="25.0" ZOrder="33041" FillColor="ffdddd" FontSize="12" Valign="Middle" ShapeType="RoundedRectangle" Color="0000ff" />
   </Label>
+  <Shape GraphId="fa19c">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="1232.4649298597194" CenterY="280.9919839679354" Width="64.12825651302596" Height="63.266533066133235" ZOrder="-14" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="e4e65">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="1226.1427855711374" CenterY="129.25851703406815" Width="64.748496993998" Height="62.12424849699399" ZOrder="-12" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="ff99e">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="1148.7975951903807" CenterY="309.56913827655274" Width="91.18236472945893" Height="58.21643286573223" ZOrder="-10" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="b020b">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="763.5270541082165" CenterY="75.15030060120242" Width="210.42084168336692" Height="116.23246492985973" ZOrder="-8" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="e4c3b">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="116.73346693386775" CenterY="545.5611222444891" Width="105.2104208416834" Height="67.07414829659345" ZOrder="-6" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="ed683">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="117.73547094188376" CenterY="198.39679358717433" Width="127.25450901803606" Height="74.14829659318639" ZOrder="-4" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="e5e91">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="703.4068136272546" CenterY="306.1122244488978" Width="74.1482965931862" Height="59.11823647294591" ZOrder="-2" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="bce3e">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="516.5330661322646" CenterY="541.5831663326653" Width="105.21042084168346" Height="61.12224448897791" ZOrder="16384" FillColor="efdddd" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Color="333333" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="d62fd">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="547.3451903807616" CenterY="409.3186372745491" Width="61.62224448897791" Height="73.14629258517031" ZOrder="16384" FillColor="f0e3e3" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
+  <Shape GraphId="f3921">
+    <Attribute Key="org.pathvisio.CellularComponentProperty" Value="Extracellular region" />
+    <Graphics CenterX="899.7995991983968" CenterY="568.8882765531062" Width="80.16032064128271" Height="98.69639278557133" ZOrder="16384" FillColor="e7dada" FontSize="12" Valign="Middle" ShapeType="Rectangle" LineStyle="Broken" Rotation="0.0" />
+  </Shape>
   <Group GroupId="c13d0" GraphId="a6c1c" Style="Group" />
   <Group GroupId="bb5bd" GraphId="a7438" Style="Group" />
   <Group GroupId="d945f" GraphId="a8e79" Style="Group" />
@@ -891,19 +933,6 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
   <Group GroupId="e29dc" GraphId="feaff" Style="Group" />
   <InfoBox CenterX="0.0" CenterY="0.0" />
   <Biopax>
-    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b39">
-      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11756451</bp:ID>
-      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
-      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of murine sphingosine-1-phosphate phosphohydrolase.</bp:TITLE>
-      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem</bp:SOURCE>
-      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2002</bp:YEAR>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Stunff H</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peterson C</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thornton R</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milstien S</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandala SM</bp:AUTHORS>
-      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiegel S</bp:AUTHORS>
-    </bp:PublicationXref>
     <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="e62">
       <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">19416851</bp:ID>
       <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
@@ -919,6 +948,29 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brown RH Jr</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harmon JM</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dunn TM</bp:AUTHORS>
+    </bp:PublicationXref>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingolipid biosynthetic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000162</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingolipid metabolic pathway</bp:TERM>
+      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000197</bp:ID>
+      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
+    </bp:openControlledVocabulary>
+    <bp:PublicationXref xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:id="b39">
+      <bp:ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11756451</bp:ID>
+      <bp:DB rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:DB>
+      <bp:TITLE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Characterization of murine sphingosine-1-phosphate phosphohydrolase.</bp:TITLE>
+      <bp:SOURCE rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem</bp:SOURCE>
+      <bp:YEAR rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2002</bp:YEAR>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le Stunff H</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peterson C</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thornton R</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milstien S</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandala SM</bp:AUTHORS>
+      <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiegel S</bp:AUTHORS>
     </bp:PublicationXref>
     <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
       <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingomyelin metabolic pathway</bp:TERM>
@@ -973,15 +1025,5 @@ The integrated pathway can be found [https://www.wikipathways.org/index.php/Path
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fahy E</bp:AUTHORS>
       <bp:AUTHORS rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Subramaniam S</bp:AUTHORS>
     </bp:PublicationXref>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingolipid biosynthetic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000162</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
-    <bp:openControlledVocabulary xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
-      <bp:TERM xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingolipid metabolic pathway</bp:TERM>
-      <bp:ID xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PW:0000197</bp:ID>
-      <bp:Ontology xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pathway Ontology</bp:Ontology>
-    </bp:openControlledVocabulary>
   </Biopax>
 </Pathway>
