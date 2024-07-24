@@ -82,7 +82,7 @@ check: ${REPORTS} index.md
 reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/curator/CheckRDF.class tests.txt
 	@echo "Detection curation events for $@ ..."
 	@mkdir -p reports
-	@java -cp libs/slf4j-simple-1.7.32.jar:libs/jena-arq-${JENAVERSION}.jar:src/java/main/:libs/${WPCURJAR} org.wikipathways.curator.CheckRDF $< $@
+	@java -cp libs/slf4j-simple-1.7.32.jar:src/java/main/:libs/${WPCURJAR} org.wikipathways.curator.CheckRDF $< $@
 
 index.md: ${REPORTS}
 	@echo "<img style=\"float: right; width: 200px\" src=\"logo.png\" />" > index.md
