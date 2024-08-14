@@ -108,3 +108,6 @@ updateTests:
 	  > tests.tmp
 	@groovy extractTests.groovy > tests.tmp2
 	@mv tests.tmp2 tests.txt
+
+index2.md: ${REPORTS}
+	@groovy summarizeFails.groovy > index2.md
