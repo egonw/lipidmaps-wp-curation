@@ -77,7 +77,7 @@ src/java/main/org/wikipathways/curator/CheckRDF.class: src/java/main/org/wikipat
 	@echo "Compiling $@ ..."
 	@javac -cp libs/${WPCURJAR} src/java/main/org/wikipathways/curator/CheckRDF.java
 
-check: ${REPORTS} index.md
+check: ${REPORTS} index.md index2.md
 
 reports/%.md: wp/Human/%.ttl wp/gpml/Human/%.ttl src/java/main/org/wikipathways/curator/CheckRDF.class tests.txt
 	@echo "Detection curation events for $@ ..."

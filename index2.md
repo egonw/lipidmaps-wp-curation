@@ -6,7 +6,7 @@
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/chebiWithoutMapping).
 
-[WP4142](reports/WP4142#chebi-identifier-without-a-match-in-wikidata) [WP4523](reports/WP4523#chebi-identifier-without-a-match-in-wikidata) [WP5179](reports/WP5179#chebi-identifier-without-a-match-in-wikidata) [WP5186](reports/WP5186#chebi-identifier-without-a-match-in-wikidata) [WP5192](reports/WP5192#chebi-identifier-without-a-match-in-wikidata) [WP5199](reports/WP5199#chebi-identifier-without-a-match-in-wikidata) [WP5272](reports/WP5272#chebi-identifier-without-a-match-in-wikidata) 
+[WP3965](reports/WP3965#chebi-identifier-without-a-match-in-wikidata) [WP5186](reports/WP5186#chebi-identifier-without-a-match-in-wikidata) [WP5192](reports/WP5192#chebi-identifier-without-a-match-in-wikidata) [WP5199](reports/WP5199#chebi-identifier-without-a-match-in-wikidata) [WP5272](reports/WP5272#chebi-identifier-without-a-match-in-wikidata) 
 
 ## Datanodes of unknown type
 
@@ -42,5 +42,5 @@ Read more about why these fails happen and how to fix them in these [instruction
 
 ## WikidataTests.hmdbWithoutMapping
 
-[WP5188](reports/WP5188#wikidatatestshmdbwithoutmapping) 
+[WP1423](reports/WP1423#wikidatatestshmdbwithoutmapping) [WP430](reports/WP430#wikidatatestshmdbwithoutmapping) 
 
