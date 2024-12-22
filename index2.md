@@ -6,7 +6,7 @@
 
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/chebiWithoutMapping).
 
-[WP3965](reports/WP3965#chebi-identifier-without-a-match-in-wikidata) [WP5186](reports/WP5186#chebi-identifier-without-a-match-in-wikidata) [WP5192](reports/WP5192#chebi-identifier-without-a-match-in-wikidata) [WP5199](reports/WP5199#chebi-identifier-without-a-match-in-wikidata) [WP5272](reports/WP5272#chebi-identifier-without-a-match-in-wikidata) 
+[WP5186](reports/WP5186#chebi-identifier-without-a-match-in-wikidata) [WP5199](reports/WP5199#chebi-identifier-without-a-match-in-wikidata) [WP5272](reports/WP5272#chebi-identifier-without-a-match-in-wikidata) 
 
 ## Datanodes of unknown type
 
@@ -18,13 +18,6 @@ Read more about why these fails happen and how to fix them in these [instruction
 ## InteractionTests.interactionsWithLabels
 
 [WP1531](reports/WP1531#interactiontestsinteractionswithlabels) [WP4350](reports/WP4350#interactiontestsinteractionswithlabels) [WP4523](reports/WP4523#interactiontestsinteractionswithlabels) [WP4545](reports/WP4545#interactiontestsinteractionswithlabels) [WP4690](reports/WP4690#interactiontestsinteractionswithlabels) [WP5181](reports/WP5181#interactiontestsinteractionswithlabels) [WP5182](reports/WP5182#interactiontestsinteractionswithlabels) [WP5192](reports/WP5192#interactiontestsinteractionswithlabels) [WP5272](reports/WP5272#interactiontestsinteractionswithlabels) [WP5275](reports/WP5275#interactiontestsinteractionswithlabels) 
-
-## LIPID MAPS identifier without a match in Wikidata
-
-
-Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/WikidataTests/lipidMapsWithoutMapping).
-
-[WP5411](reports/WP5411#lipid-maps-identifier-without-a-match-in-wikidata) 
 
 ## Only LIPID MAPS identifiers
 
@@ -39,8 +32,4 @@ Read more about why these fails happen and how to fix them in these [instruction
 Read more about why these fails happen and how to fix them in these [instructions](https://www.wikipathways.org/WikiPathwaysCurator/InteractionTests/possibleTranslocations).
 
 [WP1531](reports/WP1531#possible-mim-translocation) [WP2533](reports/WP2533#possible-mim-translocation) [WP3601](reports/WP3601#possible-mim-translocation) [WP4142](reports/WP4142#possible-mim-translocation) [WP4347](reports/WP4347#possible-mim-translocation) 
-
-## WikidataTests.hmdbWithoutMapping
-
-[WP1423](reports/WP1423#wikidatatestshmdbwithoutmapping) [WP430](reports/WP430#wikidatatestshmdbwithoutmapping) 
 
