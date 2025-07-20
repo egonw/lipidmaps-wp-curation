@@ -223,14 +223,19 @@ public class CheckRDF {
         reportJSON.println("{");
         reportJSON.println("  \"schemaVersion\": 1,");
         reportJSON.println("  \"label\": \"curation\",");
+        double ratio = (double)failedAssertions.size() / (double)assertions.size();
+        // reportJSON.println("  \"ratio\": \"" + ratio + "\",");
         if (anyTestClassHasFails) {
+          String color = "yellow";
+          if (ratio > 0.05) { color = "red"; }
+          else if  (ratio > 0.01) { color = "orange"; };
           reportStatus.println("status=⨯");
           reportJSON.println("  \"message\": \"" +
             (failedAssertions.size() == 1
                ? "1 issue"
                : failedAssertions.size() + " issues")
             + "\",");
-          reportJSON.println("  \"color\": \"red\"");
+          reportJSON.println("  \"color\": \"" + color + "\"");
         } else {
           reportStatus.println("status=✓");
           reportJSON.println("  \"message\": \"success\",");
