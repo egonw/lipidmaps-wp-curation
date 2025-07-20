@@ -31,7 +31,7 @@
         dc:identifier       <https://identifiers.org/chebi/CHEBI:8403> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "CHEBI:8403" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id879db83f> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id44f7d0a6> , <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id44f7d0a6> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id879db83f> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:8403> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444516> , <https://identifiers.org/chemspider/9375051> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/YUGCAAVRZWBXEQ-WHTXLNIXSA-N> ;
@@ -39,7 +39,7 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST03020222> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5281058> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q139299> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/b7c22> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/b7c22> ;
         foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8403> .
 
 <https://identifiers.org/ncbigene/1593>
@@ -48,13 +48,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/1593> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1593" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         dcterms:references  <https://identifiers.org/pubmed/7690968> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000135929> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1593> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CYP27A1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/F8WD90> , <https://identifiers.org/uniprot/C9J1K5> , <https://identifiers.org/uniprot/Q02318> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/bfa93> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/bfa93> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1593> .
 
 <https://doi.org/10.1073%2FPNAS.0402490101>
@@ -75,13 +75,24 @@
         dcterms:isPartOf    <https://identifiers.org/ncbigene/1717> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/20418485> .
 
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3306118f>
-        rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id3306118f> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0000430> , <https://identifiers.org/hmdb/HMDB0003550> ;
-        wp:source         <https://identifiers.org/hmdb/HMDB0003550> ;
-        wp:target         <https://identifiers.org/hmdb/HMDB0000430> .
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idba7e735a>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/idba7e735a> ;
+        wp:participants   <https://identifiers.org/ncbigene/1594> , <https://identifiers.org/ncbigene/5741> ;
+        wp:source         <https://identifiers.org/ncbigene/5741> ;
+        wp:target         <https://identifiers.org/ncbigene/1594> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idc015bca4>
+        rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
+        dc:source           "Rhea" ;
+        dcterms:identifier  "23986" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:bdbRhea          <https://identifiers.org/rhea/23986> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/idc015bca4> ;
+        wp:participants     <https://identifiers.org/hmdb/HMDB0000032> , <https://identifiers.org/hmdb/HMDB0000067> ;
+        wp:source           <https://identifiers.org/hmdb/HMDB0000032> ;
+        wp:target           <https://identifiers.org/hmdb/HMDB0000067> .
 
 <https://identifiers.org/ncbigene/5741>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -89,29 +100,13 @@
         dc:identifier       <https://identifiers.org/ncbigene/5741> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "5741" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idba7e735a> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id402e7170> , <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idba7e735a> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id402e7170> , <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000152266> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/5741> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/PTH> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/P01270> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/b3aa4> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/b3aa4> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/5741> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3edf95c8>
-        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id3edf95c8> ;
-        wp:participants   <https://identifiers.org/ncbigene/7421> , <https://identifiers.org/hmdb/HMDB0001903> ;
-        wp:source         <https://identifiers.org/hmdb/HMDB0001903> ;
-        wp:target         <https://identifiers.org/ncbigene/7421> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id867ef92>
-        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id867ef92> ;
-        wp:participants   <https://identifiers.org/ncbigene/1594> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3a3d310> ;
-        wp:source         <https://identifiers.org/ncbigene/1594> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3a3d310> .
 
 <https://identifiers.org/hmdb/HMDB0001903>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -119,14 +114,14 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001903> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0001903" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3edf95c8> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3a3d310> , <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id646fbe27> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id646fbe27> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3edf95c8> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3a3d310> , <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17823> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444108> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0001903> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST03020258> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280453> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q139195> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/ba01d> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/ba01d> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001903> .
 
 <https://identifiers.org/hmdb/HMDB0000067>
@@ -135,57 +130,65 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000067> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000067" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idc015bca4> , <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idc015bca4> , <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16113> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5775> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000067> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01010001> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5997> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q43656> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/de7a4> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/de7a4> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000067> .
 
-<https://identifiers.org/pubmed/18689389>
-        rdf:type            wp:PublicationReference ;
-        dc:source           "PubMed" ;
-        dcterms:identifier  "18689389" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18689389> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id646fbe27>
-        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id646fbe27> ;
-        wp:participants   <https://identifiers.org/ncbigene/1591> , <https://identifiers.org/hmdb/HMDB0001903> ;
-        wp:source         <https://identifiers.org/hmdb/HMDB0001903> ;
-        wp:target         <https://identifiers.org/ncbigene/1591> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3a3d310>
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idb2536244>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id3a3d310> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0001903> , <https://identifiers.org/hmdb/HMDB0003550> ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/idb2536244> ;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0003550> ;
         wp:source         <https://identifiers.org/hmdb/HMDB0003550> ;
-        wp:target         <https://identifiers.org/hmdb/HMDB0001903> .
+        wp:target         <https://identifiers.org/hmdb/HMDB0003550> .
 
-<https://identifiers.org/wikipathways/WP1531_r128578>
-        rdf:type                skos:Collection , wp:Pathway ;
+<https://identifiers.org/wikipathways/WP1531_rr137603>
+        rdf:type                wp:Pathway , skos:Collection ;
         dc:identifier           <https://identifiers.org/wikipathways/WP1531> ;
         dc:source               "WikiPathways" ;
         dc:title                "Vitamin D metabolism"@en ;
         dcterms:description     "Photochemical synthesis of vitamin D3 (cholecalciferol, D3) occurs cutaneously where pro-vitamin D3 (7-dehydrocholesterol) is converted to pre-vitamin D3 (pre-D3) in response to ultraviolet B (sunlight) exposure. DHCR7 encodes the enzyme 7-dehydrocholesterol (7-DHC) reductase, which converts 7-DHC to cholesterol, thereby removing the substrate from the synthetic pathway of vitamin D3, a precursor of 25-hydroxyvitamin D3.The finding that common variants at DHCR7 are strongly associated with circulating 25-hydroxyvitamin D concentrations suggests that this enzyme could have a larger role in regulation of vitamin D status than has previously been recognised. Vitamin D3, obtained from the isomerization of pre-vitamin D3 in the epidermal basal layers or intestinal absorption of natural and fortified foods and supplements, binds to vitamin D-binding protein (DBP) in the bloodstream, and is transported to the liver. D3 is hydroxylated by liver 25-hydroxylases (25-OHase). The resultant 25-hydroxycholecalciferol (25(OH)D3) is 1-hydroxylated in the kidney by 25-hydroxyvitamin D3-1 -hydroxylase (1-OHase). This yields the active secosteroid 1 ,25(OH)2D3 (calcitriol), which has different effects on various target tissues. The synthesis of 1,25(OH)2D3 from 25(OH)D3 is stimulated by parathyroid hormone (PTH) and suppressed by Ca2+, Pi and 1,25(OH)2D3 itself. The rate-limiting step in catabolism is the degradation of 25(OH)D3 and 1,25(OH)2D3 to 24,25(OH)D3 and 1,24,25(OH)2D3, respectively,which occurs through 24-hydroxylation by 25-hydroxyvitamin D 24-hydroxylase (24-OHase), encoded by the CYP24A1 gene. 24,25(OH)D3 and 1,24,25(OH)2D3 are consequently excreted. Vitamin D activity is mediated through binding of 1,25(OH)2D3 to the vitamin D receptor (VDR), which can regulate transcription of other genes involved in cell regulation, growth, and immunity. VDR modulates the expression of genes by forming a heterodimer complex with retinoid-X-receptors (RXR).\n\nProteins on this pathway have targeted assays available via the [CPTAC Assay Portal](https://assays.cancer.gov/available_assays?wp_id=WP1531)." ;
         dcterms:identifier      "WP1531" ;
         dcterms:references      <https://identifiers.org/pubmed/18689389> ;
-        cito:cites              <https://identifiers.org/pubmed/15128933> , <https://identifiers.org/pubmed/18689389> , <https://identifiers.org/pubmed/20541252> , <https://identifiers.org/pubmed/20418485> , <https://identifiers.org/pubmed/7690968> , <https://identifiers.org/pubmed/11111101> ;
-        wp:cellTypeOntologyTag  obo:CL_1000497 , obo:CL_0000182 , obo:CL_0002620 ;
+        cito:cites              <https://identifiers.org/pubmed/18689389> , <https://identifiers.org/pubmed/7690968> , <https://identifiers.org/pubmed/20418485> , <https://identifiers.org/pubmed/15128933> , <https://identifiers.org/pubmed/11111101> , <https://identifiers.org/pubmed/20541252> ;
+        wp:cellTypeOntologyTag  obo:CL_0000182 , obo:CL_1000497 , obo:CL_0002620 ;
         wp:diseaseOntologyTag   obo:DOID_10609 , obo:DOID_10573 ;
-        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP1531_r128578> ;
-        wp:ontologyTag          obo:DOID_10573 , obo:DOID_10609 , obo:CL_1000497 , obo:PW_0001011 , obo:CL_0002620 , obo:PW_0000135 , obo:CL_0000182 ;
+        wp:isAbout              <http://rdf.wikipathways.org/Pathway/WP1531_rr137603> ;
+        wp:ontologyTag          obo:DOID_10573 , obo:CL_1000497 , obo:CL_0000182 , obo:PW_0000135 , obo:CL_0002620 , obo:PW_0001011 , obo:DOID_10609 ;
         wp:organism             obo:NCBITaxon_9606 ;
         wp:organismName         "Homo sapiens" ;
         wp:pathwayOntologyTag   obo:PW_0000135 , obo:PW_0001011 ;
-        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=128578> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=128578> ;
-        foaf:page               <http://www.wikipathways.org/instance/WP1531_r128578> .
+        foaf:img                <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=r137603> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=r137603> ;
+        foaf:page               <http://www.wikipathways.org/instance/WP1531_rr137603> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=r137603>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/png" .
+
+<https://identifiers.org/pubmed/18689389>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "18689389" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/18689389> .
+
+<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=r137603>
+        rdf:type        foaf:Image ;
+        dcterms:format  "image/svg+xml" .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id6c5af5d8>
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id6c5af5d8> ;
+        wp:participants   <https://identifiers.org/ncbigene/1591> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3306118f> ;
+        wp:source         <https://identifiers.org/ncbigene/1591> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3306118f> .
 
 <https://identifiers.org/hmdb/HMDB0003550>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -193,7 +196,7 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0003550> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0003550" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3306118f> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3a3d310> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idb2536244> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/ide926490f> , <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3a3d310> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idb2536244> , <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/ide926490f> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3306118f> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17933> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4446820> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0003550> ;
@@ -201,7 +204,7 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST03020246> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5283731> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q139307> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/a51a5> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/a5036> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/a51a5> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/a5036> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0003550> .
 
 <https://identifiers.org/ncbigene/1591>
@@ -210,12 +213,12 @@
         dc:identifier       <https://identifiers.org/ncbigene/1591> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1591" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id402e7170> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id6c5af5d8> , <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id646fbe27> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id6c5af5d8> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id402e7170> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id646fbe27> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000019186> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1591> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CYP24A1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/Q07973> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/e26ee> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/e26ee> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1591> .
 
 <https://identifiers.org/hmdb/HMDB0001429>
@@ -224,15 +227,31 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0001429> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0001429" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:26078> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/979> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0002142> , <https://identifiers.org/hmdb/HMDB0001429> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00009> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID1004> , <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID22486802> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q184782> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/bbd6c> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/bbd6c> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0001429> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/ide926490f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/becb8> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/ide926490f> ;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0003550> , <https://identifiers.org/hmdb/HMDB0000876> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000876> ;
+        wp:target         <https://identifiers.org/hmdb/HMDB0003550> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id867ef92>
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id867ef92> ;
+        wp:participants   <https://identifiers.org/ncbigene/1594> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3a3d310> ;
+        wp:source         <https://identifiers.org/ncbigene/1594> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3a3d310> .
 
 <https://identifiers.org/hmdb/HMDB0000032>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -240,7 +259,7 @@
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000032> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000032" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id879db83f> , <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idc015bca4> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id879db83f> , <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idc015bca4> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17759> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/388534> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000032> ;
@@ -248,25 +267,45 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01010069> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID439423> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q139350> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/fd693> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/fd693> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000032> .
 
 <https://identifiers.org/wikipathways/WP1531>
-        pav:hasVersion  <https://identifiers.org/wikipathways/WP1531_r128578> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idaf407315>
-        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/idaf407315> ;
-        wp:participants   <https://identifiers.org/ncbigene/1717> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idc015bca4> ;
-        wp:source         <https://identifiers.org/ncbigene/1717> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idc015bca4> .
+        pav:hasVersion  <https://identifiers.org/wikipathways/WP1531_rr137603> .
 
 obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 
-<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP1531&oldid=128578>
-        rdf:type        foaf:Image ;
-        dcterms:format  "image/svg+xml" .
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id44f7d0a6>
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/b6cd3> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id44f7d0a6> ;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000876> , <https://identifiers.org/chebi/CHEBI:8403> ;
+        wp:source         <https://identifiers.org/chebi/CHEBI:8403> ;
+        wp:target         <https://identifiers.org/hmdb/HMDB0000876> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id879db83f>
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id879db83f> ;
+        wp:participants   <https://identifiers.org/chebi/CHEBI:8403> , <https://identifiers.org/hmdb/HMDB0000032> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0000032> ;
+        wp:target         <https://identifiers.org/chebi/CHEBI:8403> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3edf95c8>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id3edf95c8> ;
+        wp:participants   <https://identifiers.org/ncbigene/7421> , <https://identifiers.org/hmdb/HMDB0001903> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001903> ;
+        wp:target         <https://identifiers.org/ncbigene/7421> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id402e7170>
+        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id402e7170> ;
+        wp:participants   <https://identifiers.org/ncbigene/1591> , <https://identifiers.org/ncbigene/5741> ;
+        wp:source         <https://identifiers.org/ncbigene/5741> ;
+        wp:target         <https://identifiers.org/ncbigene/1591> .
 
 <https://identifiers.org/hmdb/HMDB0000464>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -274,13 +313,13 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000464> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000464" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:29108> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/266> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000464> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID271> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q23905776> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/ffd6c> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/ffd6c> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000464> .
 
 <https://identifiers.org/ncbigene/120227>
@@ -289,22 +328,14 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/120227> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "120227" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         dcterms:references  <https://identifiers.org/pubmed/15128933> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000186104> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/120227> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CYP2R1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/K7EMQ4> , <https://identifiers.org/uniprot/E9PJT9> , <https://identifiers.org/uniprot/E9PS56> , <https://identifiers.org/uniprot/Q6VVX0> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/ba64b> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/ba64b> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/120227> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/ac27b>
-        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/ac27b> ;
-        wp:participants   <https://identifiers.org/ncbigene/2638> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3edf95c8> ;
-        wp:source         <https://identifiers.org/ncbigene/2638> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3edf95c8> .
 
 <https://identifiers.org/hmdb/HMDB0000876>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -312,14 +343,14 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000876> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000876" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/ide926490f> , <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id44f7d0a6> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id44f7d0a6> , <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/ide926490f> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:28940> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/4444353> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000876> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST03020001> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5280795> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q139347> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/dc335> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/dc335> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000876> .
 
 <https://identifiers.org/hmdb/HMDB0000430>
@@ -328,13 +359,13 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000430> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000430" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3306118f> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3306118f> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:89324> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/17215953> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000430> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID12895043> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27161510> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/a3330> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/a3330> ;
         foaf:page           <http://www.hmdb.ca/metabolites/HMDB0000430> .
 
 <https://identifiers.org/ncbigene/6257>
@@ -343,12 +374,12 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/6257> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "6257" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000204231> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6257> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/RXRB> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A0S2Z570> , <https://identifiers.org/uniprot/E9PK75> , <https://identifiers.org/uniprot/P28702> , <https://identifiers.org/uniprot/Q5STP9> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/d14a3> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/d14a3> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6257> .
 
 <https://identifiers.org/pubmed/7690968>
@@ -358,21 +389,13 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dcterms:isPartOf    <https://identifiers.org/ncbigene/1593> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/7690968> .
 
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idba7e735a>
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id646fbe27>
         rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/idba7e735a> ;
-        wp:participants   <https://identifiers.org/ncbigene/1594> , <https://identifiers.org/ncbigene/5741> ;
-        wp:source         <https://identifiers.org/ncbigene/5741> ;
-        wp:target         <https://identifiers.org/ncbigene/1594> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id6c5af5d8>
-        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id6c5af5d8> ;
-        wp:participants   <https://identifiers.org/ncbigene/1591> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3306118f> ;
-        wp:source         <https://identifiers.org/ncbigene/1591> ;
-        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3306118f> .
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id646fbe27> ;
+        wp:participants   <https://identifiers.org/ncbigene/1591> , <https://identifiers.org/hmdb/HMDB0001903> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0001903> ;
+        wp:target         <https://identifiers.org/ncbigene/1591> .
 
 <https://identifiers.org/ncbigene/2638>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -380,48 +403,29 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/2638> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "2638" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/ac27b> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/ac27b> , <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000145321> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/2638> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/GC> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/D6RF20> , <https://identifiers.org/uniprot/D6RF35> , <https://identifiers.org/uniprot/D6RBJ7> , <https://identifiers.org/uniprot/P02774> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/c72dd> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/c72dd> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/2638> .
 
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idc015bca4>
-        rdf:type            wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
-        dc:source           "Rhea" ;
-        dcterms:identifier  "23986" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:bdbRhea          <https://identifiers.org/rhea/23986> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/idc015bca4> ;
-        wp:participants     <https://identifiers.org/hmdb/HMDB0000032> , <https://identifiers.org/hmdb/HMDB0000067> ;
-        wp:source           <https://identifiers.org/hmdb/HMDB0000032> ;
-        wp:target           <https://identifiers.org/hmdb/HMDB0000067> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/ide926490f>
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3306118f>
         rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/becb8> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/ide926490f> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0003550> , <https://identifiers.org/hmdb/HMDB0000876> ;
-        wp:source         <https://identifiers.org/hmdb/HMDB0000876> ;
-        wp:target         <https://identifiers.org/hmdb/HMDB0003550> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id44f7d0a6>
-        rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/b6cd3> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id44f7d0a6> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0000876> , <https://identifiers.org/chebi/CHEBI:8403> ;
-        wp:source         <https://identifiers.org/chebi/CHEBI:8403> ;
-        wp:target         <https://identifiers.org/hmdb/HMDB0000876> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idb2536244>
-        rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/idb2536244> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0003550> ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id3306118f> ;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000430> , <https://identifiers.org/hmdb/HMDB0003550> ;
         wp:source         <https://identifiers.org/hmdb/HMDB0003550> ;
-        wp:target         <https://identifiers.org/hmdb/HMDB0003550> .
+        wp:target         <https://identifiers.org/hmdb/HMDB0000430> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idaf407315>
+        rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/idaf407315> ;
+        wp:participants   <https://identifiers.org/ncbigene/1717> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idc015bca4> ;
+        wp:source         <https://identifiers.org/ncbigene/1717> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idc015bca4> .
 
 <https://identifiers.org/ncbigene/1594>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -429,13 +433,21 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/1594> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1594" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idba7e735a> , <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id867ef92> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id867ef92> , <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idba7e735a> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000111012> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1594> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CYP27B1> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/F8VWR7> , <https://identifiers.org/uniprot/O15528> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/e42dc> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/e42dc> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1594> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3a3d310>
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/id3a3d310> ;
+        wp:participants   <https://identifiers.org/hmdb/HMDB0001903> , <https://identifiers.org/hmdb/HMDB0003550> ;
+        wp:source         <https://identifiers.org/hmdb/HMDB0003550> ;
+        wp:target         <https://identifiers.org/hmdb/HMDB0001903> .
 
 <https://identifiers.org/uniprot/P02774>
         rdf:type            wp:DataNode , wp:Protein ;
@@ -443,12 +455,12 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/uniprot/P02774> ;
         dc:source           "UniProtKB" ;
         dcterms:identifier  "P02774" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000145321> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/2638> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/GC> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/D6RF35> , <https://identifiers.org/uniprot/D6RBJ7> , <https://identifiers.org/uniprot/D6RF20> , <https://identifiers.org/uniprot/P02774> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/f687e> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/f687e> ;
         foaf:page           <http://www.uniprot.org/uniprot/P02774> .
 
 <https://identifiers.org/ncbigene/6256>
@@ -457,12 +469,12 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/6256> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "6256" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000186350> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6256> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/RXRA> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/A0A3B3IS44> , <https://identifiers.org/uniprot/F1D8Q5> , <https://identifiers.org/uniprot/A0A5F9ZHH6> , <https://identifiers.org/uniprot/P19793> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/a4a3c> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/a4a3c> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/6256> .
 
 <https://identifiers.org/ncbigene/1717>
@@ -471,22 +483,14 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/1717> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "1717" ;
-        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/idaf407315> , <https://identifiers.org/wikipathways/WP1531_r128578> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/idaf407315> ;
         dcterms:references  <https://identifiers.org/pubmed/11111101> , <https://identifiers.org/pubmed/20418485> , <https://identifiers.org/pubmed/20541252> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000172893> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/1717> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/DHCR7> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/E9PIP9> , <https://identifiers.org/uniprot/E9PJ54> , <https://identifiers.org/uniprot/E9PQ71> , <https://identifiers.org/uniprot/E9PLZ2> , <https://identifiers.org/uniprot/E9PM00> , <https://identifiers.org/uniprot/Q9UBM7> , <https://identifiers.org/uniprot/A0A804HI25> , <https://identifiers.org/uniprot/A0A024R5F7> , <https://identifiers.org/uniprot/H0YCS7> , <https://identifiers.org/uniprot/A0A8I5KRR9> , <https://identifiers.org/uniprot/B4E1K5> , <https://identifiers.org/uniprot/H0YE57> , <https://identifiers.org/uniprot/A0A804HJQ7> , <https://identifiers.org/uniprot/A0A804HJI8> , <https://identifiers.org/uniprot/H0YEJ5> , <https://identifiers.org/uniprot/A0A804HL56> , <https://identifiers.org/uniprot/E9PRL8> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/bcdc9> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/bcdc9> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/1717> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id879db83f>
-        rdf:type          wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id879db83f> ;
-        wp:participants   <https://identifiers.org/chebi/CHEBI:8403> , <https://identifiers.org/hmdb/HMDB0000032> ;
-        wp:source         <https://identifiers.org/hmdb/HMDB0000032> ;
-        wp:target         <https://identifiers.org/chebi/CHEBI:8403> .
 
 <https://identifiers.org/ncbigene/7421>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -494,25 +498,13 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier       <https://identifiers.org/ncbigene/7421> ;
         dc:source           "Entrez Gene" ;
         dcterms:identifier  "7421" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_r128578> , <http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id3edf95c8> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP1531_rr137603> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3edf95c8> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000111424> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/7421> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/VDR> ;
         wp:bdbUniprot       <https://identifiers.org/uniprot/F8VVY8> , <https://identifiers.org/uniprot/F8VRJ4> , <https://identifiers.org/uniprot/F1D8P8> , <https://identifiers.org/uniprot/F8VXQ9> , <https://identifiers.org/uniprot/P11473> , <https://identifiers.org/uniprot/F8VPF8> , <https://identifiers.org/uniprot/A0A5K1VW50> ;
-        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_r128578/DataNode/d69a4> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/DataNode/d69a4> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/gene/7421> .
-
-<http://rdf.wikipathways.org/Pathway/WP1531_r128578/WP/Interaction/id402e7170>
-        rdf:type          wp:Stimulation , wp:DirectedInteraction , wp:Interaction ;
-        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_r128578> ;
-        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_r128578/Interaction/id402e7170> ;
-        wp:participants   <https://identifiers.org/ncbigene/1591> , <https://identifiers.org/ncbigene/5741> ;
-        wp:source         <https://identifiers.org/ncbigene/5741> ;
-        wp:target         <https://identifiers.org/ncbigene/1591> .
-
-<https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP1531&oldid=128578>
-        rdf:type        foaf:Image ;
-        dcterms:format  "image/png" .
 
 <https://identifiers.org/pubmed/15128933>
         rdf:type            wp:PublicationReference ;
@@ -522,3 +514,11 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q24562083> ;
         owl:sameAs          <https://doi.org/10.1073%2FPNAS.0402490101> ;
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/15128933> .
+
+<http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/ac27b>
+        rdf:type          wp:Binding , wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP1531_rr137603> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/Interaction/ac27b> ;
+        wp:participants   <https://identifiers.org/ncbigene/2638> , <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3edf95c8> ;
+        wp:source         <https://identifiers.org/ncbigene/2638> ;
+        wp:target         <http://rdf.wikipathways.org/Pathway/WP1531_rr137603/WP/Interaction/id3edf95c8> .
