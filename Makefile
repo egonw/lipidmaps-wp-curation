@@ -32,9 +32,10 @@ clean:
 distclean: clean
 	@rm libs/*.jar
 
+gpml/%.gpml: WPID=`echo '$@' | sed -e 's/gpml\/\(.*\)\.gpml/\1/'`
 gpml/%.gpml:
-	@echo "Git fetching $@ ..."
-	@echo '$@' | sed -e 's/gpml\/\(.*\)\.gpml/\1/' | xargs bash getPathway.sh
+	@echo "Git fetching ${WPID} ..."
+	@cp ../wikipathways-database/pathways/${WPID}/${WPID}.gpml gpml/${WPID}.gpml
 
 wikipathways-rdf-wp.zip: ${WPRDFS}
 	@rm -f wikipathways-rdf-wp.zip
