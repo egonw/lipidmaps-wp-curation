@@ -126,13 +126,13 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMGP> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q420004> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4719_r126469/DataNode/f947a> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37739> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37739> .
 
 <https://identifiers.org/uniprot/P37231>
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "PPAR gamma" ;
         dc:identifier       <https://identifiers.org/uniprot/P37231> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P37231" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4719_r126469/WP/Interaction/b32aa> , <https://identifiers.org/wikipathways/WP4719_r126469> , <http://rdf.wikipathways.org/Pathway/WP4719_r126469/WP/Interaction/d64e5> ;
         dcterms:references  <https://identifiers.org/pubmed/26139350> ;
@@ -205,7 +205,7 @@
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000140043> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/145482> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/PTGR2> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/V9HW32> , <https://identifiers.org/uniprot/Q8N8N7> , <https://identifiers.org/uniprot/G3V2R9> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/Q8N8N7> , <https://identifiers.org/uniprot/G3V2R9> , <https://identifiers.org/uniprot/V9HW32> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18051398> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4719_r126469/DataNode/d4452> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000140043> .
@@ -888,7 +888,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000186115> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/8529> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/CYP4F2> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/K7EK90> , <https://identifiers.org/uniprot/P78329> , <https://identifiers.org/uniprot/K7EQI8> , <https://identifiers.org/uniprot/A0A0A0MQR0> , <https://identifiers.org/uniprot/K7EPM0> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/K7EK90> , <https://identifiers.org/uniprot/K7EQI8> , <https://identifiers.org/uniprot/P78329> , <https://identifiers.org/uniprot/A0A0A0MQR0> , <https://identifiers.org/uniprot/K7EPM0> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18033073> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4719_r126469/DataNode/ba642> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000186115> .
@@ -931,15 +931,15 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier          <https://identifiers.org/wikipathways/WP4719> ;
         dc:source              "WikiPathways" ;
         dc:title               "Eicosanoid metabolism via cyclooxygenases (COX)"@en ;
-        dcterms:description    "This pathway is inspired by the Lipidmaps>Eicosanoids Pathway expended pathway display [https://lipidmaps.org/pathway/pathways_maps] and extended with the top left side of Figure 1 from Dennis and Norris (2015 [https://www.ncbi.nlm.nih.gov/pubmed/26139350]).\nEicosanoids are a large group of compounds metabolised from arachidonic acid (AA), either via cyclooxygenases (COX)[https://www.wikipathways.org/index.php/Pathway:WP4347], lipooxygenases(LOX)[https://www.wikipathways.org/index.php/Pathway:WP4348], or cytochrome P450 monooxygenases (CYP)[https://www.wikipathways.org/index.php/Pathway:WP4349].\nThis pathway visualises the first route, via COX, where additonal colours have been used to visualise which conversions are being performed by the same enzymes.\nGreen and orange boxes represent receptors, where the orange colour depicts peroxisome-proliferator activating receptors (PPARs) potentially activated by the eicosanoids." , "New PW, homology converted" ;
+        dcterms:description    "This pathway is inspired by the [Lipidmaps>Eicosanoids Pathway expended pathway display](https://lipidmaps.org/pathway/pathways_maps) and extended with the top left side of Figure 1 from [Dennis and Norris 2015](https://www.ncbi.nlm.nih.gov/pubmed/26139350).\nEicosanoids are a large group of compounds metabolised from arachidonic acid (AA), either via cyclooxygenases (COX) [WP4347](https://www.wikipathways.org/index.php/Pathway:WP4347), lipooxygenases(LOX) [WP4348](https://www.wikipathways.org/index.php/Pathway:WP4348), or cytochrome P450 monooxygenases (CYP) [WP4349](https://www.wikipathways.org/index.php/Pathway:WP4349).\nThis pathway visualizes the first route, via COX, where additonal colours have been used to visualise which conversions are being performed by the same enzymes.\nGreen and orange boxes represent receptors, where the orange colour depicts peroxisome-proliferator activating receptors (PPARs) potentially activated by the eicosanoids." ;
         dcterms:identifier     "WP4719" ;
         dcterms:references     <https://identifiers.org/pubmed/20923771> ;
         cito:cites             <https://identifiers.org/pubmed/26139350> , <https://identifiers.org/pubmed/18761324> , <https://identifiers.org/pubmed/20923771> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP4719_r126469> ;
-        wp:ontologyTag         wp:Curation:Homology_Converted , obo:PW_0000565 , obo:PW_0001147 , obo:PW_0000024 , obo:PW_0001239 , obo:PW_0000461 , obo:PW_0000485 , obo:PW_0000460 ;
+        wp:ontologyTag         wp:Curation:Homology_Converted , obo:PW_0001147 , obo:PW_0000565 , obo:PW_0000024 , obo:PW_0001239 , obo:PW_0000461 , obo:PW_0000485 , obo:PW_0000460 ;
         wp:organism            obo:NCBITaxon_9606 ;
         wp:organismName        "Homo sapiens" ;
-        wp:pathwayOntologyTag  obo:PW_0000461 , obo:PW_0000024 , obo:PW_0000485 , obo:PW_0001147 , obo:PW_0000565 , obo:PW_0000460 , obo:PW_0001239 ;
+        wp:pathwayOntologyTag  obo:PW_0000461 , obo:PW_0000024 , obo:PW_0001147 , obo:PW_0000485 , obo:PW_0000565 , obo:PW_0000460 , obo:PW_0001239 ;
         foaf:img               <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=png&pwTitle=Pathway:WP4719&oldid=126469> , <https://www.wikipathways.org//wpi/wpi.php?action=downloadFile&type=svg&pwTitle=Pathway:WP4719&oldid=126469> ;
         foaf:page              <http://www.wikipathways.org/instance/WP4719_r126469> .
 

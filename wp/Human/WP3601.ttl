@@ -44,7 +44,7 @@
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "Apo C-III" ;
         dc:identifier       <https://identifiers.org/uniprot/P02656> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P02656" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d92c4> , <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d9618> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000110245> ;
@@ -68,7 +68,7 @@
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "Apo C-II" ;
         dc:identifier       <https://identifiers.org/uniprot/P02655> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P02655" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP3601_r117687/WP/Interaction/id311357b6> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d92c4> , <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d9618> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000234906> ;
@@ -90,7 +90,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3601_r117687> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Group/d92c4> ;
-        wp:participants   <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/chebi/CHEBI:17855> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/uniprot/P02655> , <https://identifiers.org/hmdb/HMDB0000067> .
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000067> , <https://identifiers.org/uniprot/P02655> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/chebi/CHEBI:17855> .
 
 <http://rdf.wikipathways.org/Pathway/WP3601_r117687/ComplexBinding/d9618>
         rdf:type          wp:Interaction , wp:Binding , wp:ComplexBinding ;
@@ -111,13 +111,13 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39027> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q419074> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/ddc4f> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39027> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39027> .
 
 <http://rdf.wikipathways.org/Pathway/WP3601_r117687/ComplexBinding/cd43d>
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3601_r117687> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Group/cd43d> ;
-        wp:participants   <https://identifiers.org/hmdb/HMDB0000067> , <https://identifiers.org/chebi/CHEBI:17002> , <https://identifiers.org/uniprot/P02655> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> , <https://identifiers.org/ensembl/ENSG00000087237> , <https://identifiers.org/uniprot/P02647> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/ensembl/ENSG00000213398> , <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/uniprot/P02652> .
+        wp:participants   <https://identifiers.org/hmdb/HMDB0000067> , <https://identifiers.org/uniprot/P02655> , <https://identifiers.org/chebi/CHEBI:17002> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> , <https://identifiers.org/ensembl/ENSG00000087237> , <https://identifiers.org/uniprot/P02647> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/ensembl/ENSG00000213398> , <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/uniprot/P02652> .
 
 <https://identifiers.org/chebi/CHEBI:26523>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -129,7 +129,7 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:26523> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q424361> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/a08d9> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26523> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26523> .
 
 <https://identifiers.org/pubmed/3283935>
         rdf:type            wp:PublicationReference ;
@@ -177,7 +177,7 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMGL0301> , <https://identifiers.org/lipidmaps/LMGL03010000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q186319> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/cbadb> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/ffd78> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17855> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17855> .
 
 <http://rdf.wikipathways.org/Pathway/WP3601_r117687/ComplexBinding/d92c4>
         rdf:type          wp:ComplexBinding , wp:Interaction , wp:Binding ;
@@ -195,7 +195,7 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39026> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q28749> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/ed5fa> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39026> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39026> .
 
 <https://identifiers.org/ensembl/ENSG00000175445>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -232,7 +232,7 @@
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01020000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q415555> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/f5c88> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/a7738> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17002> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17002> .
 
 <http://rdf.wikipathways.org/Pathway/WP3601_r117687/WP/Interaction/id59ee23b>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -246,7 +246,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "Apo E" ;
         dc:identifier       <https://identifiers.org/uniprot/P02649> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P02649" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d92c4> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d9618> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/WP/Interaction/id6ada6ba6> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130203> ;
@@ -260,7 +260,7 @@
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "Apo A-II" ;
         dc:identifier       <https://identifiers.org/uniprot/P02652> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P02652" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000158874> ;
@@ -280,7 +280,7 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:39025> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q410020> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/c3a06> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39025> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39025> .
 
 <https://identifiers.org/chebi/CHEBI:60151>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -292,13 +292,13 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:60151> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q61963007> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/d1cbe> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:60151> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:60151> .
 
 <https://identifiers.org/uniprot/P04114>
         rdf:type            wp:DataNode , wp:Protein ;
         rdfs:label          "Apo B-100" ;
         dc:identifier       <https://identifiers.org/uniprot/P04114> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P04114" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/d9618> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000084674> ;
@@ -330,7 +330,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dc:identifier          <https://identifiers.org/wikipathways/WP3601> ;
         dc:source              "WikiPathways" ;
         dc:title               "Lipid particles composition"@en ;
-        dcterms:description    "This particle describes the chemical composition of various lipid particles. See also [https://www.wikipathways.org/index.php/Pathway:WP430] for a basic overview of cholesterol synthesis, and for the disease related to the lipoproteins in this pathway see [https://www.wikipathways.org/index.php/Pathway:WP4522].\n\nAdditional sources\n- A. Goldberg, Overview of Lipid Metabolism, 2015. http://www.msdmanuals.com/professional/endocrine-and-metabolic-disorders/lipid-disorders/overview-of-lipid-metabolism" ;
+        dcterms:description    "This particle describes the chemical composition of various lipid particles. See also [WP430](https://www.wikipathways.org/index.php/Pathway:WP430) for a basic overview of cholesterol synthesis, and for the disease related to the lipoproteins in this pathway see [WP4522](https://www.wikipathways.org/index.php/Pathway:WP4522).\n\nAdditional sources\n[A. Goldberg, Overview of Lipid Metabolism, 2015.](http://www.msdmanuals.com/professional/endocrine-and-metabolic-disorders/lipid-disorders/overview-of-lipid-metabolism)." ;
         dcterms:identifier     "WP3601" ;
         cito:cites             <https://identifiers.org/pubmed/3283935> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP3601_r117687> ;
@@ -344,7 +344,6 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 <https://identifiers.org/hmdb/HMDB0000067>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "cholesterol" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/HVYWMOMLDIMFJA-DPAQBDIFSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000067> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000067" ;
@@ -352,8 +351,6 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:16113> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/5775> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000067> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/HVYWMOMLDIMFJA-DPAQBDIFSA-N> ;
-        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00187> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01010001> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5997> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q43656> ;
@@ -364,7 +361,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP3601_r117687> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Group/cd43d> ;
-        wp:participants   <https://identifiers.org/uniprot/P02647> , <https://identifiers.org/ensembl/ENSG00000213398> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/chebi/CHEBI:17002> , <https://identifiers.org/hmdb/HMDB0000067> , <https://identifiers.org/uniprot/P02655> , <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/uniprot/P02652> , <https://identifiers.org/ensembl/ENSG00000087237> .
+        wp:participants   <https://identifiers.org/uniprot/P02647> , <https://identifiers.org/ensembl/ENSG00000213398> , <https://identifiers.org/uniprot/P02649> , <https://identifiers.org/hmdb/HMDB0000067> , <https://identifiers.org/chebi/CHEBI:17002> , <https://identifiers.org/uniprot/P02655> , <https://identifiers.org/uniprot/P02656> , <https://identifiers.org/uniprot/P02652> , <https://identifiers.org/ensembl/ENSG00000087237> .
 
 <http://rdf.wikipathways.org/Pathway/WP3601_r117687/WP/Interaction/id6ada6ba6>
         rdf:type            wp:DirectedInteraction , wp:Binding , wp:Interaction ;
@@ -379,7 +376,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "Apo A-I" ;
         dc:identifier       <https://identifiers.org/uniprot/P02647> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P02647" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP3601_r117687> , <http://rdf.wikipathways.org/Pathway/WP3601_r117687/Complex/cd43d> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000118137> ;
@@ -392,7 +389,6 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
 <https://identifiers.org/hmdb/HMDB0000131>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "glycerol" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/PEDCQBHIVMGVHV-UHFFFAOYSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000131> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000131" ;
@@ -400,7 +396,6 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17754> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/733> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000131> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/PEDCQBHIVMGVHV-UHFFFAOYSA-N> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C00116> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID753> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q72501434> , <http://www.wikidata.org/entity/Q132501> ;
@@ -419,4 +414,4 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMFA01010000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q61476> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP3601_r117687/DataNode/e2320> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35366> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35366> .

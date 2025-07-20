@@ -636,7 +636,7 @@
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMST01010225> .
 
 <https://identifiers.org/ensembl/ENSG00000147383>
-        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdf:type            wp:GeneProduct , wp:DataNode , wp:Protein ;
         rdfs:label          "NSDHL" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000147383> ;
         dc:source           "Ensembl" ;
@@ -811,7 +811,7 @@
         dc:identifier          <https://identifiers.org/wikipathways/WP4718> ;
         dc:source              "WikiPathways" ;
         dc:title               "Cholesterol metabolism with Bloch and Kandutsch-Russell pathways"@en ;
-        dcterms:description    "This pathway is inspired by the Lipidmaps>Sterol lipids expended pathway display [https://lipidmaps.org/pathway/pathways_maps] and extended with Scheme 1 from Acimovic et al (2013 [https://www.ncbi.nlm.nih.gov/pubmed/23558541]).\nLiterature suggests that cholesterol synthesis preferentially starts with the Bloch pathway, however there is a shift to the Kandutsch-Russell part via lathosterol (Bae et al, 1997[https://www.ncbi.nlm.nih.gov/pubmed/9291139]).\n\nDashed lines indicate that multiple steps are involved to create the final product. Several regulatory effects concerning the metabolites of cholesterol have been indicated as well.\nThe content from the Bloch and Kandutsch-Russel pathways have been checked against literature, and differences compared to the original LipidMaps pathway have been coloured turquoise.\n" , "New PW, homology converted" ;
+        dcterms:description    "This pathway is inspired by the [Lipidmaps>Sterol lipids expended pathway display](https://lipidmaps.org/pathway/pathways_maps) and extended with Scheme 1 from [Acimovic et al 2013](https://www.ncbi.nlm.nih.gov/pubmed/23558541). Literature suggests that cholesterol synthesis preferentially starts with the Bloch pathway, however there is a shift to the Kandutsch-Russell part via lathosterol ([Bae et al, 1997](https://www.ncbi.nlm.nih.gov/pubmed/9291139)).\n\nDashed lines indicate that multiple steps are involved to create the final product. Several regulatory effects concerning the metabolites of cholesterol have been indicated as well. The content from the Bloch and Kandutsch-Russel pathways have been checked against literature, and differences compared to the original LipidMaps pathway have been coloured turquoise." ;
         dcterms:identifier     "WP4718" ;
         dcterms:references     <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/23558541> ;
         cito:cites             <https://identifiers.org/pubmed/23558541> , <https://identifiers.org/pubmed/20923771> , <https://identifiers.org/pubmed/22156476> , <https://identifiers.org/pubmed/9291139> ;
@@ -1189,7 +1189,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000123983> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/2181> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/ACSL3> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/F5GWH2> , <https://identifiers.org/uniprot/A0A024R487> , <https://identifiers.org/uniprot/A0A7P0T905> , <https://identifiers.org/uniprot/A0A7P0TA76> , <https://identifiers.org/uniprot/H7BYZ7> , <https://identifiers.org/uniprot/A0A7P0TB52> , <https://identifiers.org/uniprot/A0A7P0TBL9> , <https://identifiers.org/uniprot/A0A7P0TBB1> , <https://identifiers.org/uniprot/O95573> , <https://identifiers.org/uniprot/A0A7P0T8L6> , <https://identifiers.org/uniprot/C9JC11> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/F5GWH2> , <https://identifiers.org/uniprot/A0A024R487> , <https://identifiers.org/uniprot/A0A7P0T905> , <https://identifiers.org/uniprot/A0A7P0TA76> , <https://identifiers.org/uniprot/A0A7P0TB52> , <https://identifiers.org/uniprot/H7BYZ7> , <https://identifiers.org/uniprot/A0A7P0TBL9> , <https://identifiers.org/uniprot/A0A7P0TBB1> , <https://identifiers.org/uniprot/O95573> , <https://identifiers.org/uniprot/A0A7P0T8L6> , <https://identifiers.org/uniprot/C9JC11> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q17927124> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/cd78e> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000123983> .
@@ -1207,7 +1207,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:target         <https://identifiers.org/lipidmaps/LMST01010019> .
 
 <https://identifiers.org/ensembl/ENSG00000149809>
-        rdf:type            wp:DataNode , wp:GeneProduct ;
+        rdf:type            wp:DataNode , wp:Protein , wp:GeneProduct ;
         rdfs:label          "TM7SF2" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000149809> ;
         dc:source           "Ensembl" ;
@@ -1271,7 +1271,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/9291139> .
 
 <https://identifiers.org/ensembl/ENSG00000116133>
-        rdf:type            wp:Protein , wp:DataNode ;
+        rdf:type            wp:Protein , wp:DataNode , wp:GeneProduct ;
         rdfs:label          "DHCR24" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000116133> ;
         dc:source           "Ensembl" ;
@@ -1413,7 +1413,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         foaf:page           <https://www.ensembl.org/id/ENSG00000167508> .
 
 <https://identifiers.org/ensembl/ENSG00000001630>
-        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdf:type            wp:Protein , wp:GeneProduct , wp:DataNode ;
         rdfs:label          "CYP51A1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000001630> ;
         dc:source           "Ensembl" ;
@@ -1688,7 +1688,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:target         <https://identifiers.org/ensembl/ENSG00000116133> .
 
 <https://identifiers.org/ensembl/ENSG00000132196>
-        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdf:type            wp:GeneProduct , wp:Protein , wp:DataNode ;
         rdfs:label          "HSD17B7" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000132196> ;
         dc:source           "Ensembl" ;
@@ -2163,7 +2163,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST01020000> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q415555> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/acad3> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17002> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17002> .
 
 <https://identifiers.org/wikidata/Q412366>
         rdf:type            wp:DataNode , wp:Metabolite ;
@@ -2185,7 +2185,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         foaf:page           <https://scholia.toolforge.org/Q412366> .
 
 <https://identifiers.org/ensembl/ENSG00000052802>
-        rdf:type            wp:GeneProduct , wp:DataNode ;
+        rdf:type            wp:Protein , wp:GeneProduct , wp:DataNode ;
         rdfs:label          "MSMO1" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000052802> ;
         dc:source           "Ensembl" ;
@@ -2194,7 +2194,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000052802> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/6307> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/MSMO1> ;
-        wp:bdbUniprot       <https://identifiers.org/uniprot/D6R952> , <https://identifiers.org/uniprot/D6RDP9> , <https://identifiers.org/uniprot/D6REA2> , <https://identifiers.org/uniprot/Q15800> ;
+        wp:bdbUniprot       <https://identifiers.org/uniprot/D6R952> , <https://identifiers.org/uniprot/D6REA2> , <https://identifiers.org/uniprot/D6RDP9> , <https://identifiers.org/uniprot/Q15800> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18031380> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/c2585> , <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/d4a5a> , <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/e2406> , <http://rdf.wikipathways.org/Pathway/WP4718_r125822/DataNode/b723e> ;
         foaf:page           <https://www.ensembl.org/id/ENSG00000052802> .

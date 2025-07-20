@@ -25,7 +25,7 @@
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "B4GALT4" ;
         dc:identifier       <https://identifiers.org/uniprot/O60513> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "O60513" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000121578> ;
@@ -35,11 +35,21 @@
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5302_r134478/DataNode/cca3c> ;
         foaf:page           <http://www.uniprot.org/uniprot/O60513> .
 
+<https://identifiers.org/wikipathways/WP5303>
+        rdf:type            wp:DataNode , wp:Pathway ;
+        rdfs:label          "Lacto series" ;
+        dc:identifier       <https://identifiers.org/wikipathways/WP5303> ;
+        dc:source           "WikiPathways" ;
+        dcterms:identifier  "WP5303" ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id5305d154> , <https://identifiers.org/wikipathways/WP5302_r134478> ;
+        wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5302_r134478/DataNode/bad33> ;
+        foaf:page           <https://www.wikipathways.org/instance/WP5303> .
+
 <https://identifiers.org/uniprot/Q10981>
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "FUT2" ;
         dc:identifier       <https://identifiers.org/uniprot/Q10981> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "Q10981" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000176920> ;
@@ -64,7 +74,7 @@
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "NEU2" ;
         dc:identifier       <https://identifiers.org/uniprot/Q9Y3R4> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "Q9Y3R4" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id364f1561> , <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000115488> ;
@@ -80,7 +90,7 @@
         dc:identifier       <https://identifiers.org/lipidmaps/LMSP0501AB00> ;
         dc:source           "LIPID MAPS" ;
         dcterms:identifier  "LMSP0501AB00" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id8ecf715d> ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id5305d154> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id8ecf715d> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17950> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C01290> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMSP0501AB00> ;
@@ -92,7 +102,7 @@
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "FUT1" ;
         dc:identifier       <https://identifiers.org/uniprot/P19526> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P19526" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000174951> ;
@@ -107,10 +117,10 @@
         dc:identifier          <https://identifiers.org/wikipathways/WP5302> ;
         dc:source              "WikiPathways" ;
         dc:title               "Neolacto series sphingolipid metabolism"@en ;
-        dcterms:description    "neolacto series glycosphingolipid bisynthesis" , "Ganglio- series of glycosphingolipids, biosynthesis" ;
+        dcterms:description    "Neolacto series glycosphingolipid bisynthesis.The neolacto series are derived from lactosylceramides (abbreviated as LacCer), which are a class of glycosphingolipids connecting a ceramide lipid to a sugar group. These lipids can have various biological functions that we are not aware of at the moment. Silencing of the B3GNT5 gene was found to lead to various issues in mouse models, including preimplantation lethality, early death, growth inhibition, loss of fur, obesity, reproductive problems, and B-cell functional defects. Source: PMID:24165035." ;
         dcterms:identifier     "WP5302" ;
-        dcterms:references     <https://identifiers.org/pubmed/15938018> ;
-        cito:cites             <https://identifiers.org/pubmed/15938018> ;
+        dcterms:references     <https://identifiers.org/pubmed/15938018> , <https://identifiers.org/pubmed/24165035> ;
+        cito:cites             <https://identifiers.org/pubmed/24165035> , <https://identifiers.org/pubmed/15938018> ;
         wp:isAbout             <http://rdf.wikipathways.org/Pathway/WP5302_r134478> ;
         wp:ontologyTag         obo:PW_0000733 , obo:PW_0000010 ;
         wp:organism            obo:NCBITaxon_9606 ;
@@ -154,7 +164,7 @@
         rdf:type            wp:GeneProduct , wp:DataNode ;
         rdfs:label          "B4GALT3" ;
         dc:identifier       <https://identifiers.org/uniprot/O60512> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "O60512" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000158850> ;
@@ -168,7 +178,7 @@
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "NAGA" ;
         dc:identifier       <https://identifiers.org/uniprot/P17050> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P17050" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/ide9302e> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000198951> ;
@@ -227,7 +237,7 @@
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "B4GALT1" ;
         dc:identifier       <https://identifiers.org/uniprot/P15291> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P15291" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000086062> ;
@@ -268,6 +278,14 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:participants     <https://identifiers.org/lipidmaps/LMSP0505AD00> , <https://identifiers.org/lipidmaps/LMSP0505AA00> ;
         wp:source           <https://identifiers.org/lipidmaps/LMSP0505AA00> ;
         wp:target           <https://identifiers.org/lipidmaps/LMSP0505AD00> .
+
+<http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id5305d154>
+        rdf:type          wp:DirectedInteraction , wp:Interaction ;
+        dcterms:isPartOf  <https://identifiers.org/wikipathways/WP5302_r134478> ;
+        wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP5302_r134478/Interaction/id5305d154> ;
+        wp:participants   <https://identifiers.org/lipidmaps/LMSP0501AB00> , <https://identifiers.org/wikipathways/WP5303> ;
+        wp:source         <https://identifiers.org/wikipathways/WP5303> ;
+        wp:target         <https://identifiers.org/lipidmaps/LMSP0501AB00> .
 
 <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id1274f887>
         rdf:type            wp:Interaction , wp:Conversion , wp:DirectedInteraction ;
@@ -351,7 +369,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "B3GNT5" ;
         dc:identifier       <https://identifiers.org/uniprot/Q9BYG0> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "Q9BYG0" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/ide75092d9> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000176597> ;
@@ -373,9 +391,9 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "FUT5" ;
         dc:identifier       <https://identifiers.org/uniprot/Q11128> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "Q11128" ;
-        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id2c6358b3> ;
+        dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id2c6358b3> , <https://identifiers.org/wikipathways/WP5302_r134478> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000130383> ;
         wp:bdbEntrezGene    <https://identifiers.org/ncbigene/2527> ;
         wp:bdbHgncSymbol    <https://identifiers.org/hgnc.symbol/FUT5> ;
@@ -481,11 +499,18 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP5302_r134478/DataNode/b470e> ;
         foaf:page           <https://www.lipidmaps.org/data/structure/LMSDSearch.php?Mode=ProcessClassSearch&LMID=LMSP0505AB00> .
 
+<https://identifiers.org/pubmed/24165035>
+        rdf:type            wp:PublicationReference ;
+        dc:source           "PubMed" ;
+        dcterms:identifier  "24165035" ;
+        dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> ;
+        foaf:page           <http://www.ncbi.nlm.nih.gov/pubmed/24165035> .
+
 <https://identifiers.org/uniprot/P04066>
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "FUCA1" ;
         dc:identifier       <https://identifiers.org/uniprot/P04066> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P04066" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/ida59b24a0> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000179163> ;
@@ -511,7 +536,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:DataNode , wp:GeneProduct ;
         rdfs:label          "ST3GAL4" ;
         dc:identifier       <https://identifiers.org/uniprot/Q11206> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "Q11206" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP5302_r134478> , <http://rdf.wikipathways.org/Pathway/WP5302_r134478/WP/Interaction/id1615f91d> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000110080> ;

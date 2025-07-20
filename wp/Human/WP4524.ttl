@@ -35,7 +35,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID15983949> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27124944> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/d276b> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/d2206> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57783> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57783> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id9f8485dd>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
@@ -64,7 +64,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "5-alpha-reductase 2" ;
         dc:identifier       <https://identifiers.org/uniprot/P31213> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P31213" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4524_r128554> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/ided05a70c> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000277893> ;
@@ -93,27 +93,26 @@
 <https://identifiers.org/chebi/CHEBI:27727>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "Androstanediol" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CRQQDORFSA-N> , <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CAHXEBCQSA-N> ;
+        rdfs:seeAlso        <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CAHXEBCQSA-N> ;
         dc:identifier       <https://identifiers.org/chebi/CHEBI:27727> ;
         dc:source           "ChEBI" ;
         dcterms:identifier  "CHEBI:27727" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4524_r128554> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/ide5c0716e> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id4aee0e2a> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:27727> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/30402> ;
-        wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000383> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CAHXEBCQSA-N> , <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CRQQDORFSA-N> ;
+        wp:bdbInChIKey      <https://identifiers.org/inchikey/CBMYJHIOYJEBSB-CAHXEBCQSA-N> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C07632> ;
-        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID53477690> , <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID32801> ;
+        wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID32801> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27103288> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/fda41> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27727> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27727> .
 
 <https://identifiers.org/wikipathways/WP4524_r128554>
         rdf:type               wp:Pathway , skos:Collection ;
         dc:identifier          <https://identifiers.org/wikipathways/WP4524> ;
         dc:source              "WikiPathways" ;
         dc:title               "Alternative pathway of fetal androgen synthesis"@en ;
-        dcterms:description    "The development of sexual organs in humans is still not completely understood at the molecular level, controlled through the chromosomal difference between men and women. Steroids related to sexual development can have a temporary or permanent effects. Androgens are the leading compounds differentiating between (among other sexual organs) the internal and external genitalia of men.\nNext to the classical pathway of androgen synthesis (see [https://www.wikipathways.org/index.php/Pathway:WP4523]), alternative pathways are known, which make use of either selective expression patterns of isoenzymes or alternate enzymes. As an alternative, a socalled 'backdoor pathway', which can create dihydrotestosterone (DHT), skipping testosterone. Several enzymes between the classical and backdoor pathway are shared, however the later one utilises one unique enzyme, 3-alpha hydroxysteroid dehydrogenase 3 (gene: AKR1C2). Even though the relevance of this backdoor pathway for humans is not completely clear yet, mutations in the human AKR1C2 gene can lead to disordered sexual differentiation. This finding would indicate that both the classical and the alternative pathway are needed for normal development of male genitalia in humans.\nFor more information on androgens, see Hiort (2013 [https://www.ncbi.nlm.nih.gov/pubmed/23800242]), and for more information on the disease linked to this pathway, please visit Chapter 37 of the book of Blau (ISBN 3642403360 (978-3642403361))." ;
+        dcterms:description    "The development of sexual organs in humans is still not completely understood at the molecular level, controlled through the chromosomal difference between men and women. Steroids related to sexual development can have a temporary or permanent effects. Androgens are the leading compounds differentiating between (among other sexual organs) the internal and external genitalia of men.\nNext to the classical pathway of androgen synthesis (see [WP4523](https://www.wikipathways.org/index.php/Pathway:WP4523)), alternative pathways are known, which make use of either selective expression patterns of isoenzymes or alternate enzymes. As an alternative, a so called 'backdoor pathway', which can create dihydrotestosterone (DHT), skipping testosterone. Several enzymes between the classical and backdoor pathway are shared, however the later one utilizes one unique enzyme, 3-alpha hydroxysteroid dehydrogenase 3 (gene: AKR1C2). Even though the relevance of this backdoor pathway for humans is not completely clear yet, mutations in the human AKR1C2 gene can lead to disordered sexual differentiation. This finding would indicate that both the classical and the alternative pathway are needed for normal development of male genitalia in humans.\nFor more information on androgens, see [Hiort 2013 ](https://www.ncbi.nlm.nih.gov/pubmed/23800242)), and for more information on the disease linked to this pathway, please visit Chapter 37 of the book of Blau (ISBN 3642403360 (978-3642403361))." ;
         dcterms:identifier     "WP4524" ;
         dcterms:references     <https://identifiers.org/pubmed/21802064> ;
         cito:cites             <https://identifiers.org/pubmed/21159775> , <https://identifiers.org/pubmed/1238395> , <https://identifiers.org/pubmed/11360992> , <https://identifiers.org/pubmed/21636783> , <https://identifiers.org/pubmed/25577493> , <https://identifiers.org/pubmed/23800242> , <https://identifiers.org/pubmed/11329262> , <https://identifiers.org/pubmed/26855069> , <https://identifiers.org/pubmed/9452426> , <https://identifiers.org/pubmed/10998348> , <https://identifiers.org/pubmed/10898110> , <https://identifiers.org/pubmed/19661994> , <https://identifiers.org/pubmed/12917011> , <https://identifiers.org/pubmed/18707589> , <https://identifiers.org/pubmed/2339109> , <https://identifiers.org/pubmed/26668369> , <https://identifiers.org/pubmed/21802064> , <https://identifiers.org/pubmed/7217084> , <https://identifiers.org/pubmed/26587646> , <https://identifiers.org/pubmed/17386955> , <https://identifiers.org/pubmed/26976652> , <https://identifiers.org/pubmed/11294878> , <https://identifiers.org/pubmed/21586563> , <https://identifiers.org/pubmed/27339894> , <https://identifiers.org/pubmed/16216911> , <https://identifiers.org/pubmed/14640697> , <https://identifiers.org/pubmed/164477> ;
@@ -130,7 +129,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "P450c17" ;
         dc:identifier       <https://identifiers.org/uniprot/P05093> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P05093" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4524_r128554> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/idfd3f8932> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/a2369> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/d877b> ;
         dcterms:references  <https://identifiers.org/pubmed/18707589> ;
@@ -159,7 +158,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6128> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q411064> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/e5199> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/e5bd1> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16422> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16422> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id63351752>
         rdf:type          wp:Conversion , wp:DirectedInteraction , wp:Interaction ;
@@ -173,7 +172,7 @@
         rdf:type          wp:ComplexBinding , wp:Binding , wp:Interaction ;
         dcterms:isPartOf  <https://identifiers.org/wikipathways/WP4524_r128554> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Group/db883> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000140459> , <https://identifiers.org/ensembl/ENSG00000147465> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Complex/db883> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000147465> , <https://identifiers.org/ensembl/ENSG00000140459> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Complex/db883> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/idd7e06f70>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
@@ -225,7 +224,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID92787> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q18352362> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/a7210> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:11909> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:11909> .
 
 <https://identifiers.org/pubmed/21586563>
         rdf:type            wp:PublicationReference ;
@@ -246,7 +245,7 @@
         rdf:type          wp:Complex , wp:DataNode ;
         dcterms:isPartOf  <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id1009078c> , <https://identifiers.org/wikipathways/WP4524_r128554> ;
         wp:isAbout        <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Group/db883> ;
-        wp:participants   <https://identifiers.org/ensembl/ENSG00000140459> , <https://identifiers.org/ensembl/ENSG00000147465> .
+        wp:participants   <https://identifiers.org/ensembl/ENSG00000147465> , <https://identifiers.org/ensembl/ENSG00000140459> .
 
 <https://identifiers.org/pubmed/27339894>
         rdf:type            wp:PublicationReference ;
@@ -258,7 +257,6 @@
 <https://identifiers.org/hmdb/HMDB0000374>
         rdf:type            wp:DataNode , wp:Metabolite ;
         rdfs:label          "17-hydroxyprogesterone" ;
-        rdfs:seeAlso        <https://identifiers.org/inchikey/DBPWSSGDRRHUNT-CEGNMAFCSA-N> ;
         dc:identifier       <https://identifiers.org/hmdb/HMDB0000374> ;
         dc:source           "HMDB" ;
         dcterms:identifier  "HMDB0000374" ;
@@ -267,8 +265,6 @@
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:17252> ;
         wp:bdbChemspider    <https://identifiers.org/chemspider/6002> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000374> ;
-        wp:bdbInChIKey      <https://identifiers.org/inchikey/DBPWSSGDRRHUNT-CEGNMAFCSA-N> ;
-        wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C01176> ;
         wp:bdbLipidMaps     <https://identifiers.org/lipidmaps/LMST02030161> ;
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6238> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q175901> ;
@@ -324,7 +320,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID6013> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q1318776> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/fbbb2> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17347> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17347> .
 
 <https://identifiers.org/pubmed/21636783>
         rdf:type            wp:PublicationReference ;
@@ -346,7 +342,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "Cytb5" ;
         dc:identifier       <https://identifiers.org/uniprot/P00167> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P00167" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Complex/c7e2a> , <https://identifiers.org/wikipathways/WP4524_r128554> ;
         dcterms:references  <https://identifiers.org/pubmed/26587646> , <https://identifiers.org/pubmed/9452426> ;
@@ -376,7 +372,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "POR" ;
         dc:identifier       <https://identifiers.org/uniprot/P16435> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P16435" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4524_r128554> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id81dace9> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000127948> ;
@@ -441,7 +437,7 @@
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "RODH" ;
         dc:identifier       <https://identifiers.org/uniprot/O14756> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "O14756" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Complex/b78ec> , <https://identifiers.org/wikipathways/WP4524_r128554> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000025423> ;
@@ -466,7 +462,7 @@
         wp:participants   <https://identifiers.org/ensembl/ENSG00000198610> , <https://identifiers.org/uniprot/O14756> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/Complex/b78ec> .
 
 <https://identifiers.org/ensembl/ENSG00000148795>
-        rdf:type            wp:DataNode , wp:Protein ;
+        rdf:type            wp:GeneProduct , wp:DataNode , wp:Protein ;
         rdfs:label          "P450c17" ;
         dc:identifier       <https://identifiers.org/ensembl/ENSG00000148795> ;
         dc:source           "Ensembl" ;
@@ -514,7 +510,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5994> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q26963> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/e69d3> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17026> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17026> .
 
 <https://identifiers.org/pubmed/14640697>
         rdf:type            wp:PublicationReference ;
@@ -546,7 +542,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID21604869> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27125072> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/b7401> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/a40f8> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57945> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57945> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/ide98cb2fa>
         rdf:type            wp:Interaction , wp:DirectedInteraction , wp:Conversion ;
@@ -573,7 +569,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID15938971> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q28529711> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/f5fc2> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/c0305> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57540> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57540> .
 
 <https://identifiers.org/ensembl/ENSG00000140459>
         rdf:type            wp:GeneProduct , wp:DataNode ;
@@ -607,7 +603,7 @@
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5997> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q43656> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/eee11> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16113> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16113> .
 
 <https://identifiers.org/pubmed/2339109>
         rdf:type            wp:PublicationReference ;
@@ -660,7 +656,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID222865> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27455994> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/df135> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15994> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15994> .
 
 <https://identifiers.org/chebi/CHEBI:16581>
         rdf:type            wp:Metabolite , wp:DataNode ;
@@ -679,7 +675,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID8955> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q412158> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/a2c10> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16581> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16581> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/c9d1a>
         rdf:type            wp:DirectedInteraction , wp:Interaction ;
@@ -786,7 +782,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "3 HSD" ;
         dc:identifier       <https://identifiers.org/uniprot/P26439> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P26439" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id293aa68f> , <https://identifiers.org/wikipathways/WP4524_r128554> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000203859> ;
@@ -870,7 +866,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID107701> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27116937> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/d1b18> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:36723> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:36723> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/ide3961988>
         rdf:type            wp:DirectedInteraction , wp:Catalysis , wp:Interaction ;
@@ -943,7 +939,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5879> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q422469> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/a4488> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16032> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16032> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id1009078c>
         rdf:type          wp:Catalysis , wp:DirectedInteraction , wp:Interaction ;
@@ -1009,7 +1005,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID15938972> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q27125717> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/ba0f7> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/d01b3> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58349> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:58349> .
 
 <https://identifiers.org/ensembl/ENSG00000130948>
         rdf:type            wp:DataNode , wp:GeneProduct ;
@@ -1114,7 +1110,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         rdf:type            wp:Protein , wp:DataNode ;
         rdfs:label          "AKR1C2" ;
         dc:identifier       <https://identifiers.org/uniprot/P52895> ;
-        dc:source           "Uniprot-TrEMBL" ;
+        dc:source           "UniProtKB" ;
         dcterms:identifier  "P52895" ;
         dcterms:isPartOf    <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/iddd04df92> , <https://identifiers.org/wikipathways/WP4524_r128554> ;
         wp:bdbEnsembl       <https://identifiers.org/ensembl/ENSG00000151632> ;
@@ -1145,7 +1141,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         dcterms:identifier  "CHEBI:28689" ;
         dcterms:isPartOf    <https://identifiers.org/wikipathways/WP4524_r128554> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/idd7b10afc> , <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/iddad61340> ;
         wp:bdbChEBI         <https://identifiers.org/chebi/CHEBI:28689> ;
-        wp:bdbChemspider    <https://identifiers.org/chemspider/8036443> , <https://identifiers.org/chemspider/5670> ;
+        wp:bdbChemspider    <https://identifiers.org/chemspider/5670> ;
         wp:bdbHmdb          <https://identifiers.org/hmdb/HMDB0000077> ;
         wp:bdbInChIKey      <https://identifiers.org/inchikey/FMGSKLZLMKYGDP-USOAJAOKSA-N> ;
         wp:bdbKeggCompound  <https://identifiers.org/kegg.compound/C01227> ;
@@ -1153,7 +1149,7 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID5881> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q408376> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/ad852> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28689> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28689> .
 
 <http://rdf.wikipathways.org/Pathway/WP4524_r128554/WP/Interaction/id90bf9399>
         rdf:type            wp:DirectedInteraction , wp:Interaction , wp:Conversion ;
@@ -1273,4 +1269,4 @@ obo:NCBITaxon_9606  obo:NCIT_C179773  "9606" .
         wp:bdbPubChem       <http://rdf.ncbi.nlm.nih.gov/pubchem/compound/CID10635> ;
         wp:bdbWikidata      <http://www.wikidata.org/entity/Q411054> ;
         wp:isAbout          <http://rdf.wikipathways.org/Pathway/WP4524_r128554/DataNode/a1820> ;
-        foaf:page           <http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16330> .
+        foaf:page           <https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16330> .
